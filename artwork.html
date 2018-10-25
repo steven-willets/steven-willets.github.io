@@ -1,0 +1,165 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>Portfolio - Steven Willets</title>    
+    <meta name="description" content="A Porfolio of my works." />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400|Roboto|Roboto+Condensed">
+    <link rel="stylesheet" href="/styles/style.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   
+    <style>
+        body {
+            font-size: 14px;
+            color: rgb(44, 44, 44);
+            line-height: 1.43;
+            margin: 0;
+            font-family:'Roboto', Arial, sans-serif;
+        }
+        * {
+            box-sizing: border-box;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(0, 119, 204);
+        }
+        p {
+            margin: 0;
+        }
+        ul {
+            margin: 0;
+        }
+        a:hover {
+        }
+        .section-wrapper {
+            padding: 0 20px;
+        }
+        .content-container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .menu {
+            display:inline-block;
+            list-style: none;
+            padding-left: 0;
+            margin-left: -20px;
+            margin-right: -20px;
+        }
+        .menu-item {
+            float: left;
+        }
+        .menu-link {
+            display: block;
+            line-height: 50px;
+            font-size: 16px;
+            padding: 0 15px;
+            margin: 0 5px;
+        }
+        .cf:before, .cf:after {
+            display: table;
+            clear: both;
+            content: '';
+        }
+        #page-container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background-color: rgb(228,228,228);
+            font-size:0;
+        }
+        #content-wrapper {
+            background-color: rgb(236,236,236);
+            flex: 1;
+            display: flex;
+        }
+        #content-wrapper .content-container {
+            display: flex;
+            flex-direction: column;
+        }
+        #main-content {
+            background-color: rgb(250,250,250);
+        }
+        #side-content {
+            background-color: rgb(200,200,200);
+        }
+        footer {
+            background-color: rgb(228,228,228);
+            margin-top: auto;
+        }
+        @media (min-width:479px) {
+
+        }
+        @media (min-width:767px) {
+            #content-wrapper .content-container {
+                flex-direction: row;
+            }
+            #main-content {
+                flex: 2;
+            }
+            #side-content {
+                flex: 1;
+            }
+        }
+        @media (min-width:992px) {
+
+        }
+        @media (min-width:1199px) {
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="page-container">
+        <header class="section-wrapper">
+            <div class="content-container">
+                <nav>
+                    <ul class="menu cf">
+                        <li class="menu-item"><a class="menu-link" href="/resume">Résumé</a></li>
+                        <li class="menu-item"><a class="menu-link" href="/websites">Websites</a></li>
+                        <li class="menu-item"><a class="menu-link" href="/excel">Excel</a></li>
+                        <li class="menu-item"><a class="menu-link" href="/artwork">Artwork</a></li>
+                        <li class="menu-item"><a class="menu-link" href="/baking">Baking</a></li>
+                        <li class="menu-item"><a class="menu-link" href="/diy">DIY</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div id="content-wrapper" class="section-wrapper">
+            <div class="content-container cf">
+                <div id="side-content">
+                    <section>
+                        <p>Side Bar</p>
+                    </section>
+                </div>
+                <main id="main-content">
+                    <section>
+                        <p>Main Content</p>
+                    </section>
+                </main>
+            </div>
+        </div>
+
+        <footer class="section-wrapper">
+            <div class="content-container">
+                <section>
+                    <p>Footer</p>
+                </section>
+            </div>
+        </footer>
+    </div>
+    <script>
+
+    </script>
+    <script src="/scripts/script.js"></script>
+</body>
+</html>
