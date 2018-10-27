@@ -47,18 +47,18 @@
             min-height: 100vh;
             position: relative;
         }
-        .modal-open #overlay{
-        	display:none;
-        	content:'';
-        	position:absolute;
-        	top:0;
-        	left:0;
-        	right:0;
-        	bottom:0;
-        	background:rgba(0,0,0,.7);
-        	z-index:1;
+        .modal-open #overlay {
+        	display: none;
+        	content: '';
+        	position: absolute;
+        	top: 0;
+        	left: 0;
+        	right: 0;
+        	bottom: 0;
+        	background: rgba(0,0,0,.7);
+        	z-index: 1;
         }
-        .modal-open #overlay{
+        .modal-open #overlay {
         	display:block;
         }
         .section-wrapper {
@@ -73,10 +73,10 @@
         /* Header */
         header {
             background-color: rgb(228,228,228);
-            font-size:0;
+            font-size: 0;
         }
         .menu {
-            display:inline-block;
+            display: inline-block;
             list-style: none;
             padding-left: 0;
             margin-left: -20px;
@@ -108,12 +108,12 @@
         }
         #side-content {
             background-color: rgb(200,200,200);
-            display:none;
+            display: none;
         }
 
         /* Tiles */
         .tiles {
-        	list-style:none;
+        	list-style: none;
         	display: flex;
         	padding: 0;
         	flex-wrap: wrap;
@@ -122,14 +122,19 @@
         	flex: 1 0 20%;
         	padding: 10px;
         }
-        .tile-content{
+        .tile-thumbnail {
         	border: 1px solid black;
+        	background-color: rgb(30,30,30);
         }
         .tile.inactive {
         	font-size: 0;
         	cursor:pointer;
         }
-        .active .tile-content{
+        .tile-content {
+        	display: none;
+        }
+        .active .tile-content {
+        	display: block;
         	position:absolute;
         	top: 50%;
     		left: 50%;
@@ -140,7 +145,7 @@
     		border:0;
     		box-shadow:0 0 5px rgba(0,0,0,.5);
         }
-        .tile-image{
+        .tile-image {
         	max-height:100%;
         	max-width:100%;
         	flex: 3;
@@ -153,7 +158,7 @@
     	    position:relative;
     	    flex: 1;
         }
-        .close{
+        .close {
         	position:absolute;
         	height:40px;
         	width:40px;
@@ -221,6 +226,7 @@
                             <h1>Websites</h1>
                             <ul class='tiles'>
                                 <li class='tile inactive'>
+                                	<img class='tile-thumbnail' src="images/websites/beta-ticketliquidator.png" />
                                 	<div class='tile-content'>
 	                                	<img class='tile-image' src="images/websites/beta-ticketliquidator.png" />
 	                                	<div class='tile-info'>
@@ -232,6 +238,7 @@
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
+                                	<img class='tile-thumbnail' src="images/websites/newyorktheatertickets.png" />
                                 	<div class='tile-content'>
 	                                	<img class='tile-image' src="images/websites/newyorktheatertickets.png" />
 	                                	<div class='tile-info'>
@@ -243,6 +250,7 @@
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
+                                	<img class='tile-thumbnail' src="images/websites/rad-tickets.png" />
                                 	<div class='tile-content'>
 	                                	<img class='tile-image' src="images/websites/rad-tickets.png" />
 	                                	<div class='tile-info'>
@@ -254,6 +262,7 @@
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
+                                	<img class='tile-thumbnail' src="images/websites/revamp.png" />
                                 	<div class='tile-content'>
 	                                	<img class='tile-image' src="images/websites/revamp.png" />
 	                                	<div class='tile-info'>
@@ -265,6 +274,7 @@
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
+                                	<img class='tile-thumbnail' src="images/websites/tickets-ezevent.png" />
                                 	<div class='tile-content'>
 	                                	<img class='tile-image' src="images/websites/tickets-ezevent.png" />
 	                                	<div class='tile-info'>
@@ -276,6 +286,7 @@
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
+                                	<img class='tile-thumbnail' src="images/websites/wsj-tickets.png" />
                                 	<div class='tile-content'>
 	                                	<img class='tile-image' src="images/websites/wsj-tickets.png" />
 	                                	<div class='tile-info'>
@@ -287,6 +298,7 @@
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
+                                	<img class='tile-thumbnail' src="images/websites/corporate-ticketnetwork.png" />
                                 	<div class='tile-content'>
 	                                	<img class='tile-image' src="images/websites/corporate-ticketnetwork.png" />
 	                                	<div class='tile-info'>
@@ -298,6 +310,7 @@
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
+                                	<img class='tile-thumbnail' src="images/websites/onbroadway.png" />
                                 	<div class='tile-content'>
 	                                	<img class='tile-image' src="images/websites/onbroadway.png" />
 	                                	<div class='tile-info'>
@@ -309,6 +322,7 @@
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
+                                	<img class='tile-thumbnail' src="images/websites/opentable-tickets.png" />
                                 	<div class='tile-content'>
 	                                	<img class='tile-image' src="images/websites/opentable-tickets.png" />
 	                                	<div class='tile-info'>
@@ -320,6 +334,7 @@
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
+                                	<img class='tile-thumbnail' src="images/websites/brianwilson.png" />
                                 	<div class='tile-content'>
 	                                	<img class='tile-image' src="images/websites/brianwilson.png" />
 	                                	<div class='tile-info'>
