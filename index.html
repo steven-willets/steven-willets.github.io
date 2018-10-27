@@ -385,6 +385,7 @@
 		});
 		$('.close, #overlay').click(function(e){
 			e.stopPropagation()
+			e.preventDefault()
 			$('.active').removeClass('active').addClass('inactive')
 			$('#page-container').removeClass('modal-open')
 		});
