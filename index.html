@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-    <title>Portfolio - Steven Willets</title>    
+    -heading>Portfolio - Steven Willets<-heading>    
     <meta name="description" content="A Porfolio of my works." />
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -98,6 +98,7 @@
             background-color: rgb(236,236,236);
             flex: 1;
             display: flex;
+            flex-direction: column;
         }
         #content-wrapper .content-container {
             display: flex;
@@ -108,7 +109,6 @@
         }
         #side-content {
             background-color: rgb(200,200,200);
-            display: none;
         }
 
         /* Tiles */
@@ -215,138 +215,154 @@
         <div id="content-wrapper" class="section-wrapper">
             <div class="content-container cf">
                 <div id="side-content">
-                    <div>
-                        <p>Side Bar</p>
-                    </div>
+                    <section>
+                        <article>
+                        	<h1>Steven Willets - Portfolio</h1>
+                        	<h2>Jr Front-End Web Developer</h2>
+                        	<p class='contact-info'>
+                        		<span class='contact-address'>289 Parmelee Hill Rd, Durham CT, 06422</span> 
+                        		<a class='contact-phone' href='tel:+12036504590'>(203) 650-4590</a> 
+                        		<a class='contact-email' href='mailto:stevenawillets@gmail.com'>stevenawillets@gmail.com</a>
+                        	</p>
+                        	<p><span>See my</span> <a href='resume'>r&eacute;sum&eacute;</p>
+                        </article>
+                    </section>
                 </div>
                 <main id="main-content">
                     <div>
                         <p>Main Content</p>
-                        <div>
-                            <h1>Websites</h1>
+
+                        <section>
+                            <h2 class='content-heading'>Websites</h2>
                             <ul class='tiles'>
                                 <li class='tile inactive'>
                                 	<img class='tile-thumbnail' src="images/websites/beta-ticketliquidator.png" />
                                 	<div class='tile-content'>
 	                                	<img class='tile-image' src="images/websites/beta-ticketliquidator.png" />
-	                                	<div class='tile-info'>
+	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-close'></i></a>
-	                                		<h3 class='tile-title'>Beta TicketLiquidator</h3>
+	                                		<div class='tile-heading'><h3>Beta TicketLiquidator</h3> <span></span></div>
 	                                		<a class='tile-link' target='_blank' href='beta.ticketliquidator.com'>See the site</a>
 	                                		<p></p>
-	                                	</div>
+	                                	</article>
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
                                 	<img class='tile-thumbnail' src="images/websites/newyorktheatertickets.png" />
                                 	<div class='tile-content'>
 	                                	<img class='tile-image' src="images/websites/newyorktheatertickets.png" />
-	                                	<div class='tile-info'>
+	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-close'></i></a>
-	                                		<h3 class='tile-title'>NewYorkTheaterTickets</h3>
+	                                		<div class='tile-heading'><h3>NewYorkTheaterTickets</h3> <span></span></div>
 	                                		<a class='tile-link' target='_blank' href='http://newyorktheatertickets.center'>See the site</a>
-	                                		<p></p>
-	                                	</div>
+	                                		<p>Our CEO requested that I build a site similar in design to the official broadway site.</p>
+	                                	</article>
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
                                 	<img class='tile-thumbnail' src="images/websites/rad-tickets.png" />
                                 	<div class='tile-content'>
 	                                	<img class='tile-image' src="images/websites/rad-tickets.png" />
-	                                	<div class='tile-info'>
+	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-close'></i></a>
-	                                		<h3 class='tile-title'>Rad.Tickets</h3>
+	                                		<div class='tile-heading'><h3>Rad.Tickets</h3> <span></span></div>
 	                                		<a class='tile-link' target='_blank' href='https://rad.tickets'>See the site</a>
 	                                		<p></p>
-	                                	</div>
+	                                	</article>
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
                                 	<img class='tile-thumbnail' src="images/websites/revamp.png" />
                                 	<div class='tile-content'>
 	                                	<img class='tile-image' src="images/websites/revamp.png" />
-	                                	<div class='tile-info'>
+	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-close'></i></a>
-	                                		<h3 class='tile-title'>CMS Template Revamp</h3>
+	                                		<div class='tile-heading'><h3>CMS Template Revamp</h3> <span></span></div>
 	                                		<a class='tile-link' target='_blank' href='http://revamp.showsearch.com'>See the site</a>
 	                                		<p></p>
-	                                	</div>
+	                                	</article>
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
                                 	<img class='tile-thumbnail' src="images/websites/tickets-ezevent.png" />
                                 	<div class='tile-content'>
 	                                	<img class='tile-image' src="images/websites/tickets-ezevent.png" />
-	                                	<div class='tile-info'>
+	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-close'></i></a>
-	                                		<h3 class='tile-title'>EzEvent Tickets</h3>
+	                                		<div class='tile-heading'><h3>EzEvent Tickets</h3> <span></span></div>
 	                                		<a class='tile-link' target='_blank' href='https://tickets.ezevent.com'>See the site</a>
 	                                		<p></p>
-	                                	</div>
+	                                	</article>
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
                                 	<img class='tile-thumbnail' src="images/websites/wsj-tickets.png" />
                                 	<div class='tile-content'>
 	                                	<img class='tile-image' src="images/websites/wsj-tickets.png" />
-	                                	<div class='tile-info'>
+	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-close'></i></a>
-	                                		<h3 class='tile-title'>Wall Street Journal Tickets</h3>
+	                                		<div class='tile-heading'><h3>Wall Street Journal Tickets</h3> <span></span></div>
 	                                		<a class='tile-link' target='_blank' href='http://wsj.fansupfront.com'>See the site</a>
 	                                		<p></p>
-	                                	</div>
+	                                	</article>
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
                                 	<img class='tile-thumbnail' src="images/websites/corporate-ticketnetwork.png" />
                                 	<div class='tile-content'>
 	                                	<img class='tile-image' src="images/websites/corporate-ticketnetwork.png" />
-	                                	<div class='tile-info'>
+	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-close'></i></a>
-	                                		<h3 class='tile-title'>TicketNetwork Corporate Site</h3>
+	                                		<div class='tile-heading'><h3>TicketNetwork Corporate Site</h3> <span></span></div>
 	                                		<a class='tile-link' target='_blank' href='https://corporate.ticketnetwork.com'>See the site</a>
 	                                		<p></p>
-	                                	</div>
+	                                	</article>
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
                                 	<img class='tile-thumbnail' src="images/websites/onbroadway.png" />
                                 	<div class='tile-content'>
 	                                	<img class='tile-image' src="images/websites/onbroadway.png" />
-	                                	<div class='tile-info'>
+	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-close'></i></a>
-	                                		<h3 class='tile-title'>OnBroadway</h3>
+	                                		<div class='tile-heading'><h3>OnBroadway</h3> <span></span></div>
 	                                		<a class='tile-link' target='_blank' href='http://www.onbroadway.com'>See the site</a>
 	                                		<p></p>
-	                                	</div>
+	                                	</article>
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
                                 	<img class='tile-thumbnail' src="images/websites/opentable-tickets.png" />
                                 	<div class='tile-content'>
 	                                	<img class='tile-image' src="images/websites/opentable-tickets.png" />
-	                                	<div class='tile-info'>
+	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-close'></i></a>
-	                                		<h3 class='tile-title'>OpenTable Ticket Site Demo</h3>
+	                                		<div class='tile-heading'><h3>OpenTable Ticket Site Demo</h3> <span></span></div>
 	                                		<a class='tile-link' target='_blank' href='http://opentable.showsearch.com'>See the site</a>
 	                                		<p></p>
-	                                	</div>
+	                                	</article>
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
                                 	<img class='tile-thumbnail' src="images/websites/brianwilson.png" />
                                 	<div class='tile-content'>
 	                                	<img class='tile-image' src="images/websites/brianwilson.png" />
-	                                	<div class='tile-info'>
+	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-close'></i></a>
-	                                		<h3 class='tile-title'>Brian Wilson Ticket Site Demo</h3>
+	                                		<div class='tile-heading'><h3>Brian Wilson Ticket Site Demo</h3> <span></span></div>
 	                                		<a class='tile-link' target='_blank' href='http://brianwilson.showsearch.com'>See the site</a>
 	                                		<p></p>
-	                                	</div>
+	                                	</article>
                                 	</div>
                                 </li>
                             </ul>
-                        </div>
+                        </section>
+                        <section>
+                        	<h2 class='content-heading'>JavaScript</h2>
+                        	<ul class='tiles'>
+                        		<li class='tile inactive'></li>
+                        	</ul>
+                        </section>
                     </div>
                 </main>
             </div>
@@ -363,7 +379,7 @@
     </div>
 
     <script>
-		$('.inactive').click(function(e){
+		$('.inactive').click(function(){
 			$(this).removeClass('inactive').addClass('active')
 			$('#page-container').addClass('modal-open')
 		});
