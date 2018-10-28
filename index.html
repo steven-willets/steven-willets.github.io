@@ -8,7 +8,7 @@
     <meta name="description" content="A Porfolio of my works." />
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Krub:400,600"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Krub:400,600|Montserrat:300"> 
     <link rel="stylesheet" href="/styles/style.css">
     
     <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
@@ -24,9 +24,10 @@
             font-family:'Krub', Arial, sans-serif;
         }
         h1, h2, h3, h4, h5, strong {
-            font-weight: 600;
+            font-weight: 300;
             margin: 0;
             line-height: 1.1;
+            font-family:'Montserrat';
         }
         * {
             box-sizing: border-box;
@@ -77,7 +78,7 @@
             margin: 0 auto;
         }
         .content-section {
-        	padding: 20px;
+        	margin: 10px 20px;
         }
 
         /* Header */
@@ -113,10 +114,27 @@
         #code-portfolio #content-container {
         	flex-direction: column;
         }
+        section {
+		    padding: 12px 0;
+        }
+        .content-heading {
+        	margin: 20px 0;
+        }
 
 		/* Side */
 		#code-portfolio #business-card {
 			text-align: center;
+		}
+		.card-info > * {
+			margin: 20px 0;
+		}
+		.name {
+    		font-size: 36px;
+		}
+		.position {
+		    font-size: 26px;
+		}
+		.contact-info {
 		}
 		.contact-info li{
 			display: inline-block;
@@ -138,6 +156,9 @@
 			content:',';
 			display: inline;
 		}
+		.photo, .resume {
+			display: none;
+		}
 
         /* Tiles */
         .tiles {
@@ -146,10 +167,10 @@
         }
         .tile {	
         	flex: 1 0 20%;
-        	padding: 10px;
+        	padding: 18px;
         }
         .tile-thumbnail {
-        	border: 1px solid black;
+        	border: 1px solid;
         	max-height: 100%;
         	max-width: 100%;
         	background-color: rgb(30,30,30);
@@ -249,7 +270,7 @@
 	                        			<a class='contact-email u-email' href='mailto:stevenawillets@gmail.com'>stevenawillets@gmail.com</a>
 	                        		</li>
 	                        	</ul>
-	                        	<p>
+	                        	<p class='resume'>
 	                        		<span>View my</span>
 	                        		<a href='resume'>r&eacute;sum&eacute;</a>
 	                        	</p>
@@ -264,9 +285,9 @@
                             <h2 class='content-heading'>Websites</h2>
                             <ul class='tiles'>
                                 <li class='tile inactive'>
-                                	<img class='tile-thumbnail' src="images/websites/beta-ticketliquidator.png" alt='Beta TicketLiquidator' />
+                                	<img class='tile-thumbnail' src="images/beta-ticketliquidator.png" alt='Beta TicketLiquidator' />
                                 	<div class='tile-content'>
-	                                	<img class='tile-image' src="images/websites/beta-ticketliquidator.png" alt='Beta TicketLiquidator' />
+	                                	<img class='tile-image' src="images/beta-ticketliquidator.png" alt='Beta TicketLiquidator' />
 	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-window-close'></i></a>
 	                                		<div class='tile-heading'>
@@ -279,9 +300,9 @@
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
-                                	<img class='tile-thumbnail' src="images/websites/newyorktheatertickets.png" alt='NewYorkTheaterTickets' />
+                                	<img class='tile-thumbnail' src="images/newyorktheatertickets.png" alt='NewYorkTheaterTickets' />
                                 	<div class='tile-content'>
-	                                	<img class='tile-image' src="images/websites/newyorktheatertickets.png" alt='NewYorkTheaterTickets' />
+	                                	<img class='tile-image' src="images/newyorktheatertickets.png" alt='NewYorkTheaterTickets' />
 	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-window-close'></i></a>
 	                                		<div class='tile-heading'>
@@ -294,9 +315,9 @@
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
-                                	<img class='tile-thumbnail' src="images/websites/rad-tickets.png" alt='Rad.Tickets' />
+                                	<img class='tile-thumbnail' src="images/rad-tickets.png" alt='Rad.Tickets' />
                                 	<div class='tile-content'>
-	                                	<img class='tile-image' src="images/websites/rad-tickets.png" alt='Rad.Tickets' />
+	                                	<img class='tile-image' src="images/rad-tickets.png" alt='Rad.Tickets' />
 	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-window-close'></i></a>
 	                                		<div class='tile-heading'>
@@ -309,9 +330,9 @@
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
-                                	<img class='tile-thumbnail' src="images/websites/revamp.png" alt='CMS Template Revamp' />
+                                	<img class='tile-thumbnail' src="images/revamp.png" alt='CMS Template Revamp' />
                                 	<div class='tile-content'>
-	                                	<img class='tile-image' src="images/websites/revamp.png" alt='CMS Template Revamp' />
+	                                	<img class='tile-image' src="images/revamp.png" alt='CMS Template Revamp' />
 	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-window-close'></i></a>
 	                                		<div class='tile-heading'>
@@ -324,9 +345,9 @@
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
-                                	<img class='tile-thumbnail' src="images/websites/tickets-ezevent.png" alt='EzEvent Tickets' />
+                                	<img class='tile-thumbnail' src="images/tickets-ezevent.png" alt='EzEvent Tickets' />
                                 	<div class='tile-content'>
-	                                	<img class='tile-image' src="images/websites/tickets-ezevent.png" alt='EzEvent Tickets' />
+	                                	<img class='tile-image' src="images/tickets-ezevent.png" alt='EzEvent Tickets' />
 	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-window-close'></i></a>
 	                                		<div class='tile-heading'>
@@ -339,9 +360,9 @@
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
-                                	<img class='tile-thumbnail' src="images/websites/wsj-tickets.png" alt='Wall Street Journal Tickets' />
+                                	<img class='tile-thumbnail' src="images/wsj-tickets.png" alt='Wall Street Journal Tickets' />
                                 	<div class='tile-content'>
-	                                	<img class='tile-image' src="images/websites/wsj-tickets.png" alt='Wall Street Journal Tickets' />
+	                                	<img class='tile-image' src="images/wsj-tickets.png" alt='Wall Street Journal Tickets' />
 	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-window-close'></i></a>
 	                                		<div class='tile-heading'>
@@ -354,9 +375,9 @@
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
-                                	<img class='tile-thumbnail' src="images/websites/opentable-tickets.png" alt='OpenTable Ticket Site Demo' />
+                                	<img class='tile-thumbnail' src="images/opentable-tickets.png" alt='OpenTable Ticket Site Demo' />
                                 	<div class='tile-content'>
-	                                	<img class='tile-image' src="images/websites/opentable-tickets.png" alt='OpenTable Ticket Site Demo' />
+	                                	<img class='tile-image' src="images/opentable-tickets.png" alt='OpenTable Ticket Site Demo' />
 	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-window-close'></i></a>
 	                                		<div class='tile-heading'>
@@ -369,9 +390,9 @@
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
-                                	<img class='tile-thumbnail' src="images/websites/onbroadway.png" alt='OnBroadway' />
+                                	<img class='tile-thumbnail' src="images/onbroadway.png" alt='OnBroadway' />
                                 	<div class='tile-content'>
-	                                	<img class='tile-image' src="images/websites/onbroadway.png" alt='OnBroadway' />
+	                                	<img class='tile-image' src="images/onbroadway.png" alt='OnBroadway' />
 	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-window-close'></i></a>
 	                                		<div class='tile-heading'>
@@ -384,9 +405,9 @@
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
-                                	<img class='tile-thumbnail' src="images/websites/brianwilson.png" alt='Brian Wilson Ticket Site Demo' />
+                                	<img class='tile-thumbnail' src="images/brianwilson.png" alt='Brian Wilson Ticket Site Demo' />
                                 	<div class='tile-content'>
-	                                	<img class='tile-image' src="images/websites/brianwilson.png" alt='Brian Wilson Ticket Site Demo' />
+	                                	<img class='tile-image' src="images/brianwilson.png" alt='Brian Wilson Ticket Site Demo' />
 	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-window-close'></i></a>
 	                                		<div class='tile-heading'>
@@ -399,9 +420,9 @@
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
-                                	<img class='tile-thumbnail' src="images/websites/corporate-ticketnetwork.png" alt='TicketNetwork Corporate Site' />
+                                	<img class='tile-thumbnail' src="images/corporate-ticketnetwork.png" alt='TicketNetwork Corporate Site' />
                                 	<div class='tile-content'>
-	                                	<img class='tile-image' src="images/websites/corporate-ticketnetwork.png" alt='TicketNetwork Corporate Site' />
+	                                	<img class='tile-image' src="images/corporate-ticketnetwork.png" alt='TicketNetwork Corporate Site' />
 	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-window-close'></i></a>
 	                                		<div class='tile-heading'>
@@ -415,13 +436,14 @@
                                 </li>
                             </ul>
                         </section>
+
                         <section>
                         	<h2 class='content-heading'>JavaScript</h2>
                         	<ul class='tiles'>
                                 <li class='tile inactive'>
-                                	<img class='tile-thumbnail' src="images/" alt='Ticket Results with Filters' />
+                                	<img class='tile-thumbnail' src="images/filters.png" alt='Ticket Results with Filters' />
                                 	<div class='tile-content'>
-	                                	<img class='tile-image' src="images/" alt='Ticket Results with Filters' />
+	                                	<img class='tile-image' src="images/filters.png" alt='Ticket Results with Filters' />
 	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-window-close'></i></a>
 	                                		<div class='tile-heading'>
@@ -434,9 +456,9 @@
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
-                                	<img class='tile-thumbnail' src="images/" alt='Ticket Results as Cards' />
+                                	<img class='tile-thumbnail' src="images/cards.png" alt='Ticket Results as Cards' />
                                 	<div class='tile-content'>
-	                                	<img class='tile-image' src="images/" alt='Ticket Results as Cards' />
+	                                	<img class='tile-image' src="images/cards.png" alt='Ticket Results as Cards' />
 	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-window-close'></i></a>
 	                                		<div class='tile-heading'>
@@ -449,9 +471,9 @@
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
-                                	<img class='tile-thumbnail' src="images/" alt='Ticket Results Mapped to Calendar' />
+                                	<img class='tile-thumbnail' src="images/calendar.png" alt='Ticket Results Mapped to Calendar' />
                                 	<div class='tile-content'>
-	                                	<img class='tile-image' src="images/" alt='Ticket Results Mapped to Calendar' />
+	                                	<img class='tile-image' src="images/calendar.png" alt='Ticket Results Mapped to Calendar' />
 	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-window-close'></i></a>
 	                                		<div class='tile-heading'>
@@ -464,9 +486,9 @@
                                 	</div>
                                 </li>
                                 <li class='tile inactive'>
-                                	<img class='tile-thumbnail' src="images/" alt='Affiliate Search Widget Builder' />
+                                	<img class='tile-thumbnail' src="images/widget.png" alt='Affiliate Search Widget Builder' />
                                 	<div class='tile-content'>
-	                                	<img class='tile-image' src="images/" alt='Affiliate Search Widget Builder' />
+	                                	<img class='tile-image' src="images/widget.png" alt='Affiliate Search Widget Builder' />
 	                                	<article class='tile-info'>
 	                                		<a class='close' href='#'><i class='fa fa-window-close'></i></a>
 	                                		<div class='tile-heading'>
