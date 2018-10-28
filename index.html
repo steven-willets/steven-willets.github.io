@@ -168,12 +168,18 @@
         .tile {	
         	flex: 0 0 20%;
         	padding: 18px;
+        	background-color: rgb(30,30,30);
+        }        
+        .tile:hover{
+			opacity:.8;
+        }
+        .tile:focus{
+        	opacity:.6;
         }
         .tile-thumbnail {
         	border: 1px solid;
         	max-height: 100%;
         	max-width: 100%;
-        	background-color: rgb(30,30,30);
         }
         .tile.inactive {
         	font-size: 0;
@@ -193,9 +199,10 @@
     		display: flex;
     		border: 0;
     		box-shadow: 0 0 5px rgba(0,0,0,.5);
+		    max-width: 100%;
         }
         .tile-image {
-
+    		max-width: 100%;
         }
         .tile-info {
         	background-color: #ddd;
@@ -227,13 +234,19 @@
 
         }
         @media (max-width:992px) {
-
+			.tile {
+			    flex: 0 0 25%;
+			}
         } 
         @media (max-width:767px) {
-
+        	.tile {
+			    flex: 0 0 33%;
+			}
         }       
         @media (max-width:479px) {
-
+			.tile {
+			    padding: 12px;
+			}
         }
     </style>
 </head>
