@@ -168,18 +168,23 @@
         .tile {	
         	flex: 0 0 20%;
         	padding: 18px;
-        	background-color: rgb(30,30,30);
+        	
         }        
-        .tile:hover{
-			opacity:.8;
-        }
-        .tile:focus{
-        	opacity:.6;
-        }
         .tile-thumbnail {
         	border: 1px solid;
         	max-height: 100%;
         	max-width: 100%;
+        	transition: opacity .3s ease-in-out, border-color .3s ease-in-out;
+        }
+        .tile-thumbnail:hover{
+			opacity:.85;
+			border-color: #14A8D6;
+        }
+        .active .tile-thumbnail,
+        .tile-thumbnail:focus,
+        .tile-thumbnail:active{
+        	opacity:.65;
+        	border-color: #14A8D6;
         }
         .tile.inactive {
         	font-size: 0;
@@ -203,6 +208,7 @@
         }
         .tile-image {
     		max-width: 100%;
+    		height: auto;
         }
         .tile-info {
         	background-color: #ddd;
