@@ -207,8 +207,9 @@ section {
     margin-bottom: 12px;
 }
 .tile-heading span {
-    font-size: 22px;
+    font-size: 18px;
     margin-bottom: 12px;
+    display:block;
 }
 .tile-info p{
     margin-bottom: 10px;
