@@ -181,22 +181,27 @@ header {
 }
 .tile-content {
     display: flex;
-    top: calc(50% - 60px);
-    left: calc(50% - 60px);
+    top: calc(50% - 40px);
+    left: calc(50% - 40px);
     transform: translate(-50%, -50%);
-    z-index: 3;
+    z-index: 2;
     background-color: white;
     box-shadow: 0 0 5px rgba(0,0,0,.5);
-    max-width: calc(100% - 120px);
-    max-height: calc(100% - 120px);
-    margin: 60px;
+    max-width: calc(100% - 80px);
+    max-height: calc(100% - 80px);
+    margin: 40px;
     overflow: hidden;
-    width:1300px;
+    width: 1300px;
+}
+.active .tile-content {
+    pointer-events: auto;
+}
+.project-content {
+    width: 100%;
+    padding: 40px;
 }
 .project-image {
-    padding: 30px;
     max-width:calc(100% - 400px);
-    width:100%;
 }
 .project-image img {
     max-width: 100%;
@@ -205,11 +210,7 @@ header {
     height: auto;
 }
 .project-info {
-    padding: 30px;
-    width: 400px;
-    overflow-y: auto;
-    overflow-x: hidden;
-    flex: 1 0 auto;
+    max-width: 400px;
 }
 .project-title {
     font-size: 22px;
@@ -221,6 +222,10 @@ header {
     display:block;
 }
 .project-desc {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.project-desc p {
     margin-bottom: 10px;
 }
 .btn {
@@ -255,7 +260,6 @@ header {
 .modal-open #controls,
 .active .tile-content {
     opacity: 1;
-    pointer-events: auto;
 }
 #overlay {
     top: 0;
@@ -265,30 +269,35 @@ header {
     background: rgba(0,0,0,.8);
     z-index: 1;
 }
+.modal-open #overlay {
+    pointer-events: auto;
+}
 #controls {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
+    z-index: 3;
+    pointer-events: none;
 }
 .move-slide,
 #close-slide {
     display: block;
     position: absolute;
     text-align: center;
-    color: white;
     opacity: .6;
     transition: opacity .3s ease-in-out;
+    pointer-events: auto;
 }
 .move-slide:hover,
 #close-slide:hover {
     opacity: 1;
 }
 .move-slide {
-    top: 0;
-    bottom: 0;
-    font-size:60px;
-    width: 60px;
+    font-size: 40px;
+    width: 40px;
+    height: 50%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .move-slide i{
     position: relative;
@@ -296,17 +305,17 @@ header {
     transform: translateY(-50%);
 }
 #prev-slide {
-    left: -60px;
+    left: 0;
 }
 #next-slide {
-    right: -60px;
+    right: 0;
 }
 #close-slide {
-    height: 50px;
-    line-height: 50px;
-    width: 50px;
-    top: -50px;
-    right: -50px;
+    height: 40px;
+    line-height: 40px;
+    width: 40px;
+    top: 0;
+    right: 0;
     font-size: 28px;
 }
 
@@ -364,8 +373,21 @@ footer {
 	    flex: 0 0 33%;
 	}
     .tile-content {
+        top: 50%;
+        left: 50%;
         flex-direction: column;
-        width: 100%;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0;
+    }
+    .project-content {
+        max-width: 100%;
+    }
+    .project-image {
+        padding-bottom:10px;
+    }
+    .project-info {
+        padding-top: 10px;
     }
 }
 @media (max-width:632px) {

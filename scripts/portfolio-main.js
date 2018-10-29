@@ -7,6 +7,16 @@ function checkArrows(target){
 	}
 }
 
+$(window).resize(function () {
+    console.log('resizing')
+    var $active = $('.active')
+    var $slide = $active.find('.tile-content')
+    if ($active.length) {
+        console.log('true')
+        $('#controls').css({ 'height': $slide.height(), 'width': $slide.width() })
+    }
+});
+
 $('.inactive').click(function(){
 	var $slide = $(this).find('.tile-content')
 	$(this).addClass('active').removeClass('inactive');
