@@ -29,7 +29,25 @@ ul {
 }
 a:hover {
 }
-
+.btn {
+    display: block;
+    padding: 6px 12px;
+    border-radius: 4px;
+    background-color: #14A8D6;
+    border: 1px solid #1296bf;
+    transition: .3s background-color ease-in-out;
+    color: white;
+    text-align: center;
+}
+.btn:hover {
+	background-color: #1083a7;
+    border-color: #1083a7;
+}
+.btn:focus,
+.btn:active {
+	background-color: #0d7190;
+    border-color: #0d7190;
+}
 
 /* Layout */
 
@@ -235,25 +253,9 @@ header {
 .project-desc p {
     margin-bottom: 10px;
 }
-.btn {
-	display: block;
-	padding: 6px 12px;
-	border-radius:4px;
-	background-color: #14A8D6;
-	border:1px solid #1296bf;
-	transition: .3s background-color ease-in-out;
-	color: white;
-	text-align: center;
-	margin-top: 20px;
-}
-.btn:hover {
-	background-color: #1083a7;
-    border-color: #1083a7;
-}
-.btn:focus,
-.btn:active {
-	background-color: #0d7190;
-    border-color: #0d7190;
+.tile-link {
+    margin-top: 20px;
+    font-size: 16px;
 }
 #overlay,
 #controls,
@@ -419,6 +421,9 @@ footer {
     .project-desc {
         clear: both;
         max-height: calc(50vh - 120px);
+        border: 1px solid rgba(40,40,40,.15);
+        padding: 14px;
+        background-color: rgb(244,244,244);
     }
 }
 @media (max-width:632px) {
