@@ -198,10 +198,11 @@ header {
 }
 .project-content {
     width: 100%;
-    padding: 40px;
+    padding: 50px;
 }
 .project-image {
     max-width:calc(100% - 400px);
+    padding-right: 20px;
 }
 .project-image img {
     max-width: 100%;
@@ -211,6 +212,7 @@ header {
 }
 .project-info {
     max-width: 400px;
+    padding-left: 20px;
 }
 .project-title {
     font-size: 22px;
@@ -283,10 +285,10 @@ header {
 #close-slide {
     display: block;
     position: absolute;
-    text-align: center;
     opacity: .6;
     transition: opacity .3s ease-in-out;
     pointer-events: auto;
+    padding: 8px;
 }
 .move-slide:hover,
 #close-slide:hover {
@@ -306,9 +308,11 @@ header {
 }
 #prev-slide {
     left: 0;
+    text-align:left;
 }
 #next-slide {
     right: 0;
+    text-align: right;
 }
 #close-slide {
     height: 40px;
@@ -317,6 +321,7 @@ header {
     top: 0;
     right: 0;
     font-size: 28px;
+    text-align: center;
 }
 
 
@@ -382,6 +387,7 @@ footer {
     }
     .project-content {
         max-width: 100%;
+        padding: 50px;
     }
     .project-image {
         padding-bottom:10px;

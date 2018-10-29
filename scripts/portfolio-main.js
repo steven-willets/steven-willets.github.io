@@ -1,4 +1,4 @@
-function checkArrows(target){
+function checkArrows(target) {
 	if (target.next().length == 0) {
 		$('#next-slide').hide()
 	}
@@ -7,22 +7,23 @@ function checkArrows(target){
 	}
 }
 
+function sizeControls(target) {
+    var $slide = target.find('.tile-content')
+    $('#controls').css({ 'height': $slide.height(), 'width': $slide.width() })
+}
+
 $(window).resize(function () {
-    console.log('resizing')
     var $active = $('.active')
-    var $slide = $active.find('.tile-content')
     if ($active.length) {
-        console.log('true')
-        $('#controls').css({ 'height': $slide.height(), 'width': $slide.width() })
+        sizeControls($active)
     }
 });
 
 $('.inactive').click(function(){
-	var $slide = $(this).find('.tile-content')
 	$(this).addClass('active').removeClass('inactive');
 	$('body').addClass('modal-open');
 	$('.move-slide').show();
-	$('#controls').css({'height': $slide.height(), 'width': $slide.width()})
+    sizeControls($(this))
 	checkArrows($('.active'))
 });
 
@@ -33,10 +34,10 @@ $('.move-slide').click(function(e){
 	$('.move-slide').show();
 	var $current = $('.current'),
 		$next = $(this).attr('href') == 'next' ? $current.next() : $current.prev();
-	checkArrows($next)
+    checkArrows($next)
+    sizeControls($next)
 	$current.addClass('inactive').removeClass('active current');
 	$next.addClass('active').removeClass('inactive')
-
 });
 
 $('#close-slide, #overlay').click(function(e){
