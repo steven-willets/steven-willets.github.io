@@ -12,6 +12,22 @@ function sizeControls(target) {
     $('#controls').css({ 'height': $slide.height(), 'width': $slide.width() })
 }
 
+function moveSlide(direction) {
+    $('.active').addClass('current')
+    $('.move-slide').show();
+    var $current = $('.current')
+    var $next = direction == 'next' ? $current.next() : $current.prev();
+    checkArrows($next)
+    sizeControls($next)
+    $current.addClass('inactive').removeClass('active current');
+    $next.addClass('active').removeClass('inactive')
+}
+
+function closeSlide() {
+    $('.active').removeClass('active').addClass('inactive');
+    $('body').removeClass('modal-open');
+}
+
 $(window).resize(function () {
     var $active = $('.active')
     if ($active.length) {
@@ -30,20 +46,27 @@ $('.inactive').click(function(){
 $('.move-slide').click(function(e){
 	e.stopPropagation();
 	e.preventDefault();
-	$('.active').addClass('current')
-	$('.move-slide').show();
-	var $current = $('.current'),
-		$next = $(this).attr('href') == 'next' ? $current.next() : $current.prev();
-    checkArrows($next)
-    sizeControls($next)
-	$current.addClass('inactive').removeClass('active current');
-	$next.addClass('active').removeClass('inactive')
+    moveSlide($(this).attr('href'))
 });
 
 $('#close-slide, #overlay').click(function(e){
 	e.stopPropagation();
 	e.preventDefault();
-	$('.active').removeClass('active').addClass('inactive');
-	$('body').removeClass('modal-open');
+    closeSlide()
+});
+
+$(document).keydown(function (e) {
+    if (e.keyCode == 37 && $('#prev-slide').is(":visible")) { // Left Arrow
+        moveSlide('prev')
+        return false;
+    }
+    if (e.keyCode == 39 && $('#next-slide').is(":visible")) { // Right Arrow
+        moveSlide('next')
+        return false;
+    }
+    if (e.keyCode == 27 && $('.active').length) { // Escape Key
+        closeSlide()
+        return false;
+    }
 });
 
