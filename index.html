@@ -3,11 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
-	<meta name="description" content="A Porfolio of my works." />
+	<meta name="description" content="A porfolio of my work as a front-end developer." />
     <title>Portfolio - Steven Willets</title>   
     <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Krub:400,600|Montserrat:300"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600"> 
     <link rel="stylesheet" href="styles/portfolio-main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
@@ -23,7 +23,7 @@
                 <div id="side-content" class='content-section'>
                     <section>
                         <article id='business-card' class='h-card'>
-                        	<img class='photo u-photo' src='' alt='Steven Willets'/>
+                        	<img class='photo u-photo' src='images/steven-willets.png' alt='Steven Willets'/>
                         	<div class='card-info'>
                         		<h2 class='name p-name'>Steven Willets</h2>
 	                        	<h3 class='position p-job-title'>Front-End Web Developer</h3>
@@ -51,17 +51,20 @@
                         </article>
                     </section>
                 </div>
+                <hr class='section-break' />
                 <main id="main-content" class='content-section'>
                     <div>
  						<h1>Portfolio</h1>
-                        <section>
+                        <section id='websites'>
                             <h2 class='content-heading'>Websites</h2>
-                            <ul class='tiles'>
+                            <ul class='tile-container'>
                                 <li class='tile inactive'>
                                 	<img class='tile-thumbnail' src="images/beta-ticketliquidator-thumbnail.png" alt='Beta TicketLiquidator' />
                                 	<article class='tile-content'>
-	                                	<div class='project-image'><img src="images/beta-ticketliquidator.png" alt='Beta TicketLiquidator' /></div>
-	                                	<div class='project-info'>
+	                                	<div class='project-image'>
+	                                		<img src="images/beta-ticketliquidator.png" alt='Beta TicketLiquidator' />
+	                                	</div>
+	                                	<div class='project-info project'>
 	                                		<h3 class='project-title'>Beta TicketLiquidator</h3>
                                 			<p class='project-date'>2018</p>
 	                                		<p class='project-desc'>
@@ -75,7 +78,7 @@
                                 	<img class='tile-thumbnail' src="images/zeromarkup-thumbnail.png" alt='ZeroMarkup' />
                                 	<article class='tile-content'>
 	                                	<div class='project-image'><img src="images/zeromarkup.png" alt='ZeroMarkup' /></div>
-	                                	<div class='project-info'>
+	                                	<div class='project-info project'>
 	                                		<h3 class='project-title'>Zero Markup</h3>
                                 			<p class='project-date'>2018</p>
 	                                		<p class='project-desc'>
@@ -89,7 +92,7 @@
                                 	<img class='tile-thumbnail' src="images/newyorktheatertickets-thumbnail.png" alt='NewYorkTheaterTickets' />
                                 	<article class='tile-content'>
 	                                	<div class='project-image'><img src="images/newyorktheatertickets.png" alt='NewYorkTheaterTickets' /></div>
-	                                	<div class='project-info'>
+	                                	<div class='project-info project'>
 	                                		<h3 class='project-title'>NewYorkTheaterTickets</h3>
                                 			<p class='project-date'>2017</p>
 	                                		<p class='project-desc'>
@@ -103,7 +106,7 @@
                                 	<img class='tile-thumbnail' src="images/revamp-thumbnail.png" alt='CMS Template Revamp' />
                                 	<article class='tile-content'>
 	                                	<div class='project-image'><img src="images/revamp.png" alt='CMS Template Revamp' /></div>
-	                                	<div class='project-info'>
+	                                	<div class='project-info project'>
 	                                		<h3 class='project-title'>CMS Template Revamp</h3>
                                 			<p class='project-date'>2017</p>
 	                                		<p class='project-desc'>
@@ -123,7 +126,7 @@
                                 	<img class='tile-thumbnail' src="images/rad-tickets-thumbnail.png" alt='Rad.Tickets' />
                                 	<article class='tile-content'>
 	                                	<div class='project-image'><img src="images/rad-tickets.png" alt='Rad.Tickets' /></div>
-	                                	<div class='project-info'>
+	                                	<div class='project-info project'>
 	                                		<h3 class='project-title'>Rad.Tickets</h3>
                                 			<p class='project-date'>2017</p>
 	                                		<p class='project-desc'>
@@ -138,7 +141,7 @@
                                 	<img class='tile-thumbnail' src="images/tickets-ezevent-thumbnail.png" alt='EzEvent Tickets' />
                                 	<article class='tile-content'>
 	                                	<div class='project-image'><img src="images/tickets-ezevent.png" alt='EzEvent Tickets' /></div>
-	                                	<div class='project-info'>
+	                                	<div class='project-info project'>
 	                                		<h3 class='project-title'>EzEvent Tickets</h3>
                                 			<p class='project-date'>2017</p>
 	                                		<p class='project-desc'>
@@ -152,7 +155,7 @@
                                 	<img class='tile-thumbnail' src="images/wsj-tickets-thumbnail.png" alt='Wall Street Journal Tickets' />
                                 	<article class='tile-content'>
 	                                	<div class='project-image'><img src="images/wsj-tickets.png" alt='Wall Street Journal Tickets' /></div>
-	                                	<div class='project-info'>
+	                                	<div class='project-info project'>
 	                                		<h3 class='project-title'>Wall Street Journal Tickets</h3>
                                 			<p class='project-date'>2017</p>
 	                                		<p class='project-desc'>
@@ -166,7 +169,7 @@
                                 	<img class='tile-thumbnail' src="images/opentable-tickets-thumbnail.png" alt='OpenTable Ticket Site Demo' />
                                 	<article class='tile-content'>
 	                                	<div class='project-image'><img src="images/opentable-tickets.png" alt='OpenTable Ticket Site Demo' /></div>
-	                                	<div class='project-info'>
+	                                	<div class='project-info project'>
 	                                		<h3 class='project-title'>OpenTable Ticket Site Demo</h3>
                                 			<p class='project-date'>2017</p>
 	                                		<p class='project-desc'>
@@ -180,7 +183,7 @@
                                 	<img class='tile-thumbnail' src="images/brianwilson-thumbnail.png" alt='Brian Wilson Ticket Site Demo' />
                                 	<article class='tile-content'>
 	                                	<div class='project-image'><img src="images/brianwilson.png" alt='Brian Wilson Ticket Site Demo' /></div>
-	                                	<div class='project-info'>
+	                                	<div class='project-info project'>
 	                                		<h3 class='project-title'>Brian Wilson Ticket Site Demo</h3>
                                 			<p class='project-date'>2016</p>
 	                                		<p class='project-desc'>
@@ -194,7 +197,7 @@
                                 	<img class='tile-thumbnail' src="images/corporate-ticketnetwork-thumbnail.png" alt='TicketNetwork Corporate Site' />
                                 	<article class='tile-content'>
 	                                	<div class='project-image'><img src="images/corporate-ticketnetwork.png" alt='TicketNetwork Corporate Site' /></div>
-	                                	<div class='project-info'>
+	                                	<div class='project-info project'>
 	                                		<h3 class='project-title'>TicketNetwork Corporate Site</h3>
                                 			<p class='project-date'>2015</p>
 	                                		<p class='project-desc'>
@@ -206,15 +209,15 @@
                                 </li>
                             </ul>
                         </section>
-
-                        <section>
+						<hr class='section-break' />
+                        <section id='javascript'>
                         	<h2 class='content-heading'>JavaScript</h2>
-                        	<ul class='tiles'>
+                        	<ul class='tile-container'>
                                 <li class='tile inactive'>
                                 	<img class='tile-thumbnail' src="images/filters-thumbnail.png" alt='Event Results with Filters' />
                                 	<article class='tile-content'>
 	                                	<div class='project-image'><img class='project-image' src="images/filters.png" alt='Event Results with Filters' /></div>
-	                                	<div class='project-info'>
+	                                	<div class='project-info project'>
 	                                		<h3 class='project-title'>Event Results with Filters</h3>
                                 			<p class='project-date'>2018</p>
 	                                		<p class='project-desc'>
@@ -234,7 +237,7 @@
                                 	<img class='tile-thumbnail' src="images/cards-thumbnail.png" alt='Event Results as Cards' />
                                 	<article class='tile-content'>
 	                                	<div class='project-image'><img src="images/cards.png" alt='Event Results as Cards' /></div>
-	                                	<div class='project-info'>
+	                                	<div class='project-info project'>
 	                                		<h3 class='project-title'>Event Results as Cards</h3>
                                 			<p class='project-date'>2017</p>
 	                                		<p class='project-desc'>
@@ -251,7 +254,7 @@
                                 	<img class='tile-thumbnail' src="images/calendar-thumbnail.png" alt='Event Results Mapped to Calendar' />
                                 	<article class='tile-content'>
 	                                	<div class='project-image'><img src="images/calendar.png" alt='Event Results Mapped to Calendar' /></div>
-	                                	<div class='project-info'>
+	                                	<div class='project-info project'>
 	                                		<h3 class='project-title'>Event Results Mapped to Calendar</h3>
                                 			<p class='project-date'>2017</p>
 	                                		<p class='project-desc'>
@@ -268,7 +271,7 @@
                                 	<img class='tile-thumbnail' src="images/widget-thumbnail.png" alt='Affiliate Search Widget Builder' />
                                 	<article class='tile-content'>
 	                                	<div class='project-image'><img src="images/widget.png" alt='Affiliate Search Widget Builder' /></div>
-	                                	<div class='project-info'>
+	                                	<div class='project-info project'>
 	                                		<h3 class='project-title'>Affiliate Search Widget Builder</h3>
                                 			<p class='project-date'>2016</p>
 	                                		<p class='project-desc'>
@@ -295,6 +298,11 @@
             </div>
         </footer>
 		<div id='overlay'></div>
+        <div id='controls'>
+        	<a id='close-slide' href='#'><i class="fas fa-times"></i></a>
+        	<a id='prev-slide' class='move-slide' href='prev'><i class='fa fa-angle-left'></i></a>
+        	<a id='next-slide' class='move-slide' href='next'><i class='fa fa-angle-right'></i></a>
+        </div>
     </div>
     <script src="scripts/portfolio-main.js"></script>
 </body>

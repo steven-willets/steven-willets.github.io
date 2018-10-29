@@ -1,15 +1,20 @@
 body {
-    font-size: 14px;
+    font-size: 16px;
     color: rgb(62, 62, 62);
     line-height: 1.43;
-    margin: 0;
-    font-family:'Krub', Arial, sans-serif;
+    font-family:'Montserrat', Arial, sans-serif;
+}
+.modal-open{
+    overflow-y: none;
 }
 h1, h2, h3, h4, h5, strong {
     font-weight: 300;
+    line-height: 1.1;  
+}
+body, h1, h2, h3, h4, h5, p, ul, img, hr {
     margin: 0;
-    line-height: 1.1;
-    font-family:'Montserrat';
+    padding: 0;
+    border: 0;
 }
 * {
     box-sizing: border-box;
@@ -17,20 +22,17 @@ h1, h2, h3, h4, h5, strong {
 a {
     text-decoration: none;
     color: rgb(0, 119, 204);
-}
-p {
-    margin: 0;
-    padding: 0;
+    transition: color .3s ease-in-out;
 }
 ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
 }
 a:hover {
 }
 
+
 /* Layout */
+
 .page-container {
     display: flex;
     flex-direction: column;
@@ -38,41 +40,31 @@ a:hover {
     position: relative;
     background-color: rgb(251,252,253);
 }
-.modal-open #overlay {
-	display: none;
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: rgba(0,0,0,.8);
-	z-index: 1;
-}
-.modal-open #overlay {
-	display:block;
-}
 .section-wrapper {
-    padding: 0 20px;
 }
 .section-container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1140px;
     margin: 0 auto;
 }
-.content-section {
-	margin: 10px 20px;
+.section-break{
+    box-shadow: none;
+}
+section {
+    padding: 10px 0;
 }
 
+
 /* Header */
+
 header {
 }
 .menu {
     display: inline-block;
     list-style: none;
     padding-left: 0;
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 .menu-item {
     float: left;
@@ -85,39 +77,48 @@ header {
     margin: 0 5px;
 }
 
+
 /* Content */
+
 #content-wrapper {
+    padding: 0 100px;
+}
+#content-wrapper,
+#content-container {
     flex: 1;
     display: flex;
-    flex-direction: column;
 }
-#content-container {
-    display: flex; 
-}
+#content-wrapper,
 #code-portfolio #content-container {
 	flex-direction: column;
 }
-section {
-    padding: 12px 0;
+.content-section {
+    padding: 10px 20px;
 }
 .content-heading {
-	margin: 20px 0;
+	margin: 10px 0;
+    opacity: .7;
+    font-size: 22px;
 }
 
+
 /* Side */
+
 #code-portfolio #business-card {
 	text-align: center;
 }
 .card-info > * {
-	margin: 20px 0;
+    padding: 10px 0;
 }
 .name {
 	font-size: 36px;
 }
 .position {
     font-size: 26px;
+    opacity: .7;
 }
 .contact-info {
+    opacity: .7;
 }
 .contact-info li{
 	display: inline-block;
@@ -125,11 +126,10 @@ section {
 .contact-info li:not(:last-child)::after {
 	content: '';
 	width: 0;
-	border: 3px solid;
+	border: 3px solid #14A8D6;
 	border-radius: 10px;
 	display: inline-block;
 	margin: 0 20px;
-	opacity: .5;
 	vertical-align: middle;
 }
 .contact-info a {
@@ -143,10 +143,14 @@ section {
 	display: none;
 }
 
+
 /* Tiles */
-.tiles {
+
+.tile-container {
 	display: flex;
 	flex-wrap: wrap;
+    margin-left: -18px;
+    margin-right: -18px;
 }
 .tile {	
 	flex: 0 0 20%;
@@ -170,32 +174,32 @@ section {
 	border-color: #14A8D6;
 }
 .tile.inactive {
-	font-size: 0;
 	cursor: pointer;
 }
 .tile-content {
-	display: none;
-	font-size: 0;
-}
-.active .tile-content {
-	display: flex;
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: 2;
-	background-color: white;
-	border: 0;
-	box-shadow: 0 0 5px rgba(0,0,0,.5);
-    max-width: 100%;
+    display: flex;
+    top: calc(50% - 60px);
+    left: calc(50% - 60px);
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0,0,0,.5);
+    max-width: calc(100% - 120px);
+    max-height: calc(100% - 120px);
+    margin: 60px;
+    overflow: hidden;
 }
 .project-image {
     padding: 30px;
+}
+.project-image img { 
 }
 .project-info {
     padding: 30px;
     font-size: 16px;
     width: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 .project-title {
     font-size: 22px;
@@ -229,45 +233,136 @@ section {
 	background-color: #0d7190;
     border-color: #0d7190;
 }
-.close {
-	position: absolute;
-	height: 40px;
-	width: 40px;
-	text-align: center;
-	line-height: 40px;
-	top: -40px;
-	right: -40px;
-	color: inherit;
-	font-size: 22px;
+#overlay,
+#controls,
+.tile-content {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .3s ease-in-out;
+}
+.modal-open #overlay,
+.modal-open #controls,
+.active .tile-content {
+    opacity: 1;
+    pointer-events: auto;
+}
+#overlay {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,.8);
+    z-index: 1;
+}
+#controls {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.move-slide,
+#close-slide {
+    display: block;
+    position: absolute;
+    text-align: center;
     color: white;
+    opacity: .6;
+    transition: opacity .3s ease-in-out;
+}
+.move-slide:hover,
+#close-slide:hover {
+    opacity: 1;
+}
+.move-slide {
+    top: 0;
+    bottom: 0;
+    font-size:60px;
+    width: 60px;
+}
+.move-slide i{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#prev-slide {
+    left: -60px;
+}
+#next-slide {
+    right: -60px;
+}
+#close-slide {
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    top: -50px;
+    right: -50px;
+    font-size: 28px;
 }
 
 
 /* Footer */
+
 footer {
     margin-top: auto;
 }
 
+
 /* Responsive */
+
 @media (max-width:1199px) {
 
 }
 @media (max-width:992px) {
+    #content-wrapper {
+        padding: 0 20px;
+    }
+    .section-container {
+        max-width: 720px;
+    }
 	.tile {
 	    flex: 0 0 25%;
 	}
 } 
 @media (max-width:767px) {
-	.tile {
+    .contact-info li:not(:last-child)::after {
+        display: none;
+    }
+    .contact-info li {
+        display: block;
+    }
+    .tile {
 	    flex: 0 0 33%;
 	}
     .tile-content {
         flex-direction: column;
         width: 100%;
     }
-}       
+}
+@media (max-width:632px) {
+    #content-wrapper {
+        padding: 0 14px;
+    }
+    .tile-container {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+    .tile {
+        padding: 12px;
+    }    
+} 
 @media (max-width:479px) {
+    #content-wrapper {
+        padding: 0 10px;
+    }
+    .card-info > * {
+        margin: 6px 0;
+    }
+    .tile-container {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
 	.tile {
-	    padding: 12px;
+	    padding: 8px;
 	}
 }
