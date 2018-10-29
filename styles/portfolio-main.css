@@ -146,7 +146,7 @@ header {
 	content:',';
 	display: inline;
 }
-.photo, .resume {
+.card-photo, .resume {
 	display: none;
 }
 
