@@ -107,6 +107,10 @@ header {
 
 /* Side */
 
+.contact-info i {
+    display: none;
+    margin-right: 8px;
+}
 #code-portfolio #business-card {
 	text-align: center;
 }
