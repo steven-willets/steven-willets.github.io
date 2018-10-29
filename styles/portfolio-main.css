@@ -340,6 +340,12 @@ footer {
     }
 }
 @media (max-width:992px) {
+    .contact-info li:not(:last-child)::after {
+        margin: 0 16px;
+    }
+    .contact-info {
+        font-size: 13px;
+    } 
     #content-wrapper {
         padding: 0 20px;
     }
