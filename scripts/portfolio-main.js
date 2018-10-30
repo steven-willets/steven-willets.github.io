@@ -36,13 +36,6 @@ function closeSlide() {
     $('body').removeClass('modal-open');
 }
 
-$(window).resize(function () {
-    var $active = $('.active')
-    if ($active.length) {
-        sizeControls($active)
-    }
-});
-
 $('.inactive').click(function(){
 	openSlide($(this))
 });
@@ -57,6 +50,13 @@ $('#close-slide, #overlay').click(function(e){
 	e.stopPropagation();
 	e.preventDefault();
     closeSlide()
+});
+
+$(window).resize(function () {
+    var $active = $('.active')
+    if ($active.length) {
+        sizeControls($active)
+    }
 });
 
 //Keyboard navigation
