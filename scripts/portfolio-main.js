@@ -52,6 +52,12 @@ $('#close-slide, #overlay').click(function(e){
     closeSlide()
 });
 
+$('.menu-link').each(function (i, e) {
+    if (e.href == window.location) {
+        $(e).parent('li').addClass('selected');
+    }
+});
+
 $(window).resize(function () {
     var $active = $('.active')
     if ($active.length) {
