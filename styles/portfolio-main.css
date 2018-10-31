@@ -139,7 +139,7 @@ section {
     margin-right: -18px;
 }
 .tile {	
-	flex: 0 0 25%;
+	flex: 0 0 20%;
 	padding: 18px;	
 }        
 .tile-thumbnail {
