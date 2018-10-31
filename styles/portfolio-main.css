@@ -90,41 +90,6 @@ section {
 
 
 /* Header */
-header {
-    background-color: #0077CC;
-    margin-bottom: 16px;
-}
-.header-link {
-    color: white;
-    display: block;
-    line-height: 40px;
-    padding: 0 12px;
-}
-.header-link > * {
-    margin: 0 8px;
-    display: inline-block;
-}
-#about-link {
-    float: left;
-}
-#contact-link {
-    float: right;
-}
-
-#code-portfolio #business-card {
-    text-align: center;
-}
-.card-info > * {
-    padding: 10px 0;
-}
-.name {
-	font-size: 36px;
-}
-.position {
-    font-size: 26px;
-    opacity: .7;
-}
-
 
 /* Content */
 
@@ -145,53 +110,24 @@ header {
     opacity: .7;
     font-size: 22px;
 }
-.side-bar {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    background: #0077CC;
-    width: 100%;
-    max-width: 500px;
-    color: white;
-    box-shadow: 0px 0 3px rgb(30,30,30);
-    z-index: 60;
-    transition: .3s left ease-in-out, .3s right ease-in-out
-}
-.side-bar section {
-    padding: 10px 20px;
-}
-#about {
-    left: -600px;
-}
-#about.open {
-    left: 0;
-}
-#contact {
-    right: -600px;
-}
-#contact.open {
-    right: 0;
-}
-.close-side {
-    position: absolute;
-    top: 0;
-    height: 40px;
-    width: 40px;
-    line-height: 40px;
-    font-size: 20px;
-    color: white;
+
+#code-portfolio #business-card {
     text-align: center;
-    z-index: 70;
 }
-#about .close-side {
-    right: 0;
+
+.card-info > * {
+    padding: 10px 0;
 }
-#contact .close-side {
-    left: 0;
+
+.name {
+    font-size: 36px;
 }
-#contact .side-heading {
-    text-align: right;
+
+.position {
+    font-size: 26px;
+    opacity: .7;
 }
+
 
 
 /* Tiles */
