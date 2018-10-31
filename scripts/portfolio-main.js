@@ -62,6 +62,19 @@ $('#close-slide, #overlay').click(function(e){
     closeSlide()
 });
 
+$('.header-link').click(function (e) {
+    e.stopPropagation();
+    e.preventDefault();
+    $('.side-bar').removeClass('open')
+    $('#' + $(this).attr('id').replace('-link', '')).addClass('open')
+});
+
+$('.close-side').click(function (e) {
+    e.stopPropagation();
+    e.preventDefault();
+    $(this).parent().removeClass('open')
+});
+
 $(window).resize(function () {
     var $active = $('.active')
     if ($active.length) {
