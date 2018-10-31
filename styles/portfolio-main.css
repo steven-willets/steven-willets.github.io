@@ -355,6 +355,9 @@ footer {
 	.tile {
 	    flex: 0 0 25%;
 	}
+    .project-content {
+        padding: 40px;
+    }
 	.contact-info {
 		flex-direction: column;
 		font-size: 13px;
@@ -401,7 +404,7 @@ footer {
         padding-bottom: 10px;
     }
     .project-info {
-        padding-top: 10px;
+        padding: 10px;
     }
     .project-title {
         font-size: 18px;
@@ -418,6 +421,11 @@ footer {
         border: 1px solid rgba(40,40,40,.15);
         padding: 14px;
         background-color: rgb(244,244,244);
+    }
+    .move-slide {
+        height: 50%;
+        top: 0;
+        transform: none;
     }
 }
 @media (max-width:632px) {
@@ -455,12 +463,4 @@ footer {
 	.tile {
 	    padding: 8px;
 	}
-    .project-info {
-        padding: 10px;
-    }
-    .move-slide {
-        height: 50%;
-        top: 0;
-        transform: none;
-    }
 }
