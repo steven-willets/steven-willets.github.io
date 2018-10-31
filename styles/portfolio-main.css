@@ -342,6 +342,9 @@ footer {
     .section-container {
         max-width: 720px;
     }
+	.tile {
+	    flex: 0 0 25%;
+	}
 	.contact-info {
 		flex-direction: column;
 		font-size: 13px;
