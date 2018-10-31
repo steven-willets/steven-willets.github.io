@@ -327,6 +327,9 @@ footer {
 	margin-right: 14px;
 	color: white;
 }
+.contact-item .fa-phone {
+	transform: rotateZ(85deg);
+}
 
 /* Responsive */
 
