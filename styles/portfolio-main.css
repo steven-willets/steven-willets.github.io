@@ -157,6 +157,9 @@ header {
     z-index: 60;
     transition: .3s left ease-in-out, .3s right ease-in-out
 }
+.side-bar section {
+    padding: 10px 20px;
+}
 #about {
     left: -600px;
 }
