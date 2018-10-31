@@ -455,4 +455,12 @@ footer {
 	.tile {
 	    padding: 8px;
 	}
+    .project-info {
+        padding: 10px;
+    }
+    .move-slide {
+        height: 50%;
+        top: 0;
+        transform: none;
+    }
 }
