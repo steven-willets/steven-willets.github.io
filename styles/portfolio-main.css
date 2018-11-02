@@ -344,6 +344,9 @@ footer {
     .menu-item {
         font-size: 12px;
     }
+	.tile {
+	    flex: 0 0 25%;
+	}
 }
 @media (max-width:959px) {
     .section-wrapper {
@@ -352,9 +355,7 @@ footer {
     .section-container {
         max-width: 720px;
     }
-	.tile {
-	    flex: 0 0 25%;
-	}
+
     .project-content {
         padding: 40px;
     }
