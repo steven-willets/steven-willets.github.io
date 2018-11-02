@@ -436,7 +436,8 @@ footer {
     }
     .tile {
         padding: 12px;
-    }    
+	    flex: 0 0 50%;
+	}    
 } 
 @media (max-width:479px) {
     .section-wrapper {
@@ -457,9 +458,11 @@ footer {
     .tile-container {
         margin-left: -8px;
         margin-right: -8px;
+		flex-direction: column;
     }
 	.tile {
 	    padding: 8px;
+		flex: 0 0 auto;
 	}
 	.project-info {
         padding: 10px;
