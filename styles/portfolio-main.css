@@ -6,8 +6,9 @@ body {
 }
 .modal-open{
     overflow-y: hidden;
-	-ms-touch-action: none;
-	touch-action: none;
+    position: fixed;
+	left: 0;
+	right: 0;
 }
 h1, h2, h3, h4, h5, strong {
     font-weight: 300;
