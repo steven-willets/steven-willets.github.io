@@ -54,12 +54,12 @@ a:hover {
 
 
 /* Layout */
-.ui-mobile .ui-page-active,
+
 .page-container {
-    display: flex;
+    display: flex !important;
     flex-direction: column;
     min-height: 100vh;
-    position: relative;
+    position: relative !important;
     background-color: rgb(251,252,253);
     overflow-x: hidden;
 }
