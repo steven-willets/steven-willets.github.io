@@ -52,6 +52,14 @@ $('#close-slide, #overlay').click(function(e){
     closeSlide()
 });
 
+$('#prev-slide').swipeleft(function(){
+	moveSlide(left);
+});
+
+$('#prev-slide').swiperight(function(){
+	moveSlide(right);
+});
+
 $(window).resize(function () {
     var $active = $('.active')
     if ($active.length) {
