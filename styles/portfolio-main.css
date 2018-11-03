@@ -180,6 +180,8 @@ section {
 }
 .active .tile-content {
     pointer-events: auto;
+	-ms-touch-action: pan-y;
+    touch-action: pan-y;
 }
 .project-content {
     width: 100%;
