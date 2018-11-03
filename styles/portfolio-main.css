@@ -68,7 +68,7 @@ a:hover {
 }
 .section-container {
     width: 100%;
-    max-width: 1134px;
+    max-width: 1154px;
     margin: 0 auto;
 }
 .content-section {
@@ -355,7 +355,9 @@ footer {
     .section-container {
         max-width: 720px;
     }
-
+    .tile {
+	    flex: 0 0 33%;
+	}
     .project-content {
         padding: 40px;
     }
@@ -385,9 +387,6 @@ footer {
         font-size: 18px;
         margin: 6px 0;
     }
-    .tile {
-	    flex: 0 0 33%;
-	}
     .tile-content {
         top: 50%;
         left: 50%;
