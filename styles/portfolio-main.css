@@ -6,6 +6,8 @@ body {
 }
 .modal-open{
     overflow-y: hidden;
+	-ms-touch-action: none;
+	touch-action: none;
 }
 h1, h2, h3, h4, h5, strong {
     font-weight: 300;
@@ -180,8 +182,6 @@ section {
 }
 .active .tile-content {
     pointer-events: auto;
-	-ms-touch-action: pan-y;
-    touch-action: pan-y;
 }
 .project-content {
     width: 100%;
