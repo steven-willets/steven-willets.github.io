@@ -61,7 +61,7 @@ a:hover {
 .page-container {
     display: flex !important;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh !important;
     position: relative !important;
     background-color: rgb(251,252,253);
     overflow-x: hidden;
