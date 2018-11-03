@@ -84,9 +84,11 @@ $(document).keydown(function (e) {
 
 $(document).on("pagecreate",".page-container",function(){
 	  $(".tile-content").on("swipeleft",function(){
-		moveSlide('left')
+		if ($(this).parent().next().length) 
+			moveSlide('next')
 	  });
 	  $(".tile-content").on("swiperight",function(){
-		moveSlide('right')
+		if ($(this).parent().prev().length) 
+			moveSlide('prev')
 	  });  
 });
