@@ -53,10 +53,12 @@ $('#close-slide, #overlay').click(function(e){
 });
 
 $('.active .tile-content').on("swipeleft",function(){
+	console.log('go left')
 	moveSlide(left);
 });
 
 $('.active .tile-content').on("swiperight",function(){
+	console.log('go right')
 	moveSlide(right);
 });
 
