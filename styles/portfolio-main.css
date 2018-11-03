@@ -54,7 +54,7 @@ a:hover {
 
 
 /* Layout */
-
+.ui-mobile .ui-page-active,
 .page-container {
     display: flex;
     flex-direction: column;

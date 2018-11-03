@@ -82,14 +82,11 @@ $(document).keydown(function (e) {
 
 // Mobile Navigation
 
-$(document).on("pagecreate","#main-content",function(){
-$('.active .tile-content').on("swipeleft",function(){
-	console.log('go left')
-	moveSlide(left);
-});
-
-$('.active .tile-content').on("swiperight",function(){
-	console.log('go right')
-	moveSlide(right);
-});
+$(document).on("pagecreate",".page-container",function(){
+	  $(".tile-content").on("swipeleft",function(){
+		moveSlide('left')
+	  });
+	  $(".tile-content").on("swiperight",function(){
+		moveSlide('right')
+	  });  
 });
