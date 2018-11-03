@@ -52,11 +52,11 @@ $('#close-slide, #overlay').click(function(e){
     closeSlide()
 });
 
-$('#prev-slide').on("swipeleft",function(){
+$('.active .tile-content').on("swipeleft",function(){
 	moveSlide(left);
 });
 
-$('#prev-slide').on("swiperight",function(){
+$('.active .tile-content').on("swiperight",function(){
 	moveSlide(right);
 });
 
