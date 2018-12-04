@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta name="description" content="ZAG Homework" />
+    <link rel="canonical" href="https://steven-willets.github.io/exercise" />
+    <title>Exercise - Steven Willets</title>   
+    <link href="images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC|Lato|Muli"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+	
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		font-family: 'Lato', sans-serif;
+		line-height: 1.43;
+	}
+	h1, h2, h3, h4, h5, strong {
+		line-height: 1.1;  
+	}
+	body, h1, h2, h3, h4, h5, p, ul, img, hr {
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+	#carousel-container {
+		margin: 0 auto;
+		padding: 25px;
+		max-width: 1540px;
+		position:relative;
+	}
+	.carousel-heading {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 52px;
+		padding-bottom: 16px;
+		font-family: 'Amatic SC', cursive;
+	}
+	.carousel-subheading {
+		text-align: center;
+		padding-bottom: 50px;
+	}
+	#carousel-slides {
+		position: relative;
+		padding: 0 50px;
+	}
+	.slide-desktop {
+		display: flex;	
+	}
+	.slide-mobile {
+		display: flex;
+		width: 50%;
+		padding: 12px 60px;
+	}
+	.slide-image::before {
+		content: '';
+		background-image: url('images/frame.png');
+		background-repeat: no-repeat;
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+	.slide-image {
+		height: 168px;
+		width: 168px;
+		overflow: hidden;
+		position: relative;
+	}
+	.slide-image img {
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		position: relative;
+	}
+	.slide-text {
+		max-width: calc(100% - 168px);
+		padding-left: 30px;
+	}
+	.slide-quote {
+		padding: 26px 0;
+	}
+	.slide-name {
+		font-family: 'Muli', sans-serif;
+	}
+	.slide-name::before {
+		content:'-';
+		display:inline-block;
+
+	}
+	.slide-membership {
+		font-style: italic;
+	}
+	#carousel-controls {
+		position: absolute;
+		top: 0;
+		left: 25px;
+		right: 25px;
+		bottom: 0;
+		pointer-events: none;
+	}
+	.move-slide {
+		position: absolute;
+		bottom: 50px;
+		width: 50px;
+		text-align: center;
+		pointer-events: initial;
+		text-decoration: none;
+		font-size: 0;
+	}
+	#prev-slide {
+		left: 0;
+	}
+	#next-slide {
+		right: 0;
+	}
+	
+	@media (max-width:992px) {
+		.carousel-heading {
+			font-size: 34px;
+		}
+		.carousel-subheading {
+			display: none;
+		}
+		.slide-desktop {
+			display: block;
+		}
+		.slide-mobile {
+			width: 100%;
+			flex-direction: column;
+			text-align: center;
+			padding: 12px 0px;
+		}
+		.slide-image {
+		    margin: 0 auto;
+		}
+		.slide-text {
+			max-width: 400px;
+			padding-left: 0px;
+			margin: 0 auto;
+		}
+		.move-slide img {
+			height: 80px;
+		}
+	}
+	</style>
+</head>
+
+<body>
+
+<div id='carousel-container'>
+	<h1 class='carousel-heading'>Happy to Help Stories</h1>
+	<p class='carousel-subheading'>Why do our members love being part of OECU? Find out below.</p>
+	<div id='carousel-slides'>
+		<div class='slide-desktop'>
+			<div class='slide-mobile'>
+				<div class='slide-image'>
+					<img src='images/james-bacon.png' alt='James Bacon'>
+				</div>
+				<div class='slide-text'>
+					<p class='slide-quote'>
+						I am in the process of getting a car loan and Linda has made things so effortless and enjoyable. 
+						Thank you very much for helping me save money.
+					</p>
+					<p class='slide-name'>James Bacon</p>
+					<p class='slide-membership'>Member Since 2012</p>
+				</div>
+			</div>
+			<div class='slide-mobile'>
+				<div class='slide-image'>
+					<img src='images/placeholder.png' alt='Placeholder User Image'>
+				</div>
+				<div class='slide-text'>
+					<p class='slide-quote'>
+						You have done everything i want from a bank. Courtesy, prompt, polite, professional 
+						most of all you love what you do and it shows.
+					</p>
+					<p class='slide-name'>Augustine Uche</p>
+					<p class='slide-membership'>Member Since 2012</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id='carousel-controls'>
+		<a tabindex="1" id="prev-slide" class="move-slide" href="prev" aria-label="Previous" role="button">
+			<img src='images/previous.png' alt='Previous'>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a tabindex="1" id="next-slide" class="move-slide" href="next" aria-label="Next" role="button">
+			<img src='images/next.png' alt='Next'>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+</div>
+
+<script>
+
+</script>
+
+</body>
+</html>
