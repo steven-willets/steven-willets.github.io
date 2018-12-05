@@ -123,13 +123,13 @@
 
 		//Mobile Nav
 		$(document).on("pagecreate",".page-container",function(){
-			var $carousel = $('#carousel')
+			var $carousel = $('#carousel-inner')
+			$carousel.on("swiperight",function(){
+				rotateSlides('prev')
+			});
 			$carousel.on("swipeleft",function(){
 				rotateSlides('next')
 			});
-			$carousel.on("swiperight",function(){
-				rotateSlides('prev')
-			});  
 		});
     </script>
 

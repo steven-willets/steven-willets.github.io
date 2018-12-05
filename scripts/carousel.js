@@ -57,7 +57,7 @@ $(document).keyup(function(e){
 
 //Mobile Nav
 $(document).on("pagecreate",".page-container",function(){
-	var $carousel = $('#carousel')
+	var $carousel = $('#carousel-inner')
 	$carousel.on("swipeleft",function(){
 		rotateSlides('next')
 	});

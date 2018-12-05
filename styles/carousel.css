@@ -65,6 +65,7 @@ hr {
   display: flex;
   top: 0;
   left: 0;
+  rigt: 0;
   z-index: 2;
   -webkit-transition: transform 0.3s ease-in-out;
   -moz-transition: transform 0.3s ease-in-out;
@@ -157,14 +158,6 @@ hr {
   font-weight: 600;
   font-size: 17px;
   line-height: 1.2;
-}
-#carousel-controls {
-  position: absolute;
-  top: 0;
-  left: 25px;
-  right: 25px;
-  bottom: 0;
-  pointer-events: none;
 }
 .move-slide {
   top: 50%;
