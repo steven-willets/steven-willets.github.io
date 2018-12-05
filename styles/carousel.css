@@ -285,10 +285,12 @@ hr {
   }
   #prev-slide {
     left: 50%;
-    margin-left: -150px;
+    margin-left: -175px;
+    width: 100px;
   }
   #next-slide {
     right: 50%;
-    margin-right: -150px;
+    margin-right: -175px;
+    width: 100px;
   }
 }
