@@ -7,7 +7,7 @@
     <link rel="canonical" href="https://steven-willets.github.io/exercise" />
     <title>Exercise - Steven Willets</title>
     <link href="images/favicon-smile.ico" rel="shortcut icon" type="image/x-icon" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC|Lato|Muli">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC|Lato|Muli:600,600i">
     <link rel="stylesheet" href="styles/jquery.mobile.structure-1.4.5.min.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
@@ -20,6 +20,8 @@
         body {
             font-family: 'Lato', sans-serif;
             line-height: 1.43;
+			font-size: 16px;
+			color: #250858;
         }
 
         h1, h2, h3, h4, h5, strong {
@@ -42,14 +44,17 @@
         .carousel-heading {
             text-align: center;
             text-transform: uppercase;
-            font-size: 52px;
-            padding-bottom: 16px;
+            font-size: 60px;
+            padding-bottom: 8px;
             font-family: 'Amatic SC', cursive;
+			letter-spacing: -1.2px;
         }
 
         .carousel-subheading {
             text-align: center;
-            padding-bottom: 50px;
+            padding-bottom: 36px;
+			font-size: 18px;
+			letter-spacing: .4px
         }
 
         #carousel-inner {
@@ -109,44 +114,23 @@
         .active.next {
             transform: translateX(-50%);
         }
-
-        .slide-image::before {
-            content: '';
-            background-image: url('images/frame.png');
-            background-repeat: no-repeat;
-            position: absolute;
-            z-index: 1;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-        }
-
-        .slide-image {
-            height: 168px;
-            width: 168px;
-            overflow: hidden;
-            position: relative;
-        }
-
-            .slide-image img {
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                position: relative;
-            }
-
+		.slide-image {
+			height: 166px;
+			width: auto;	
+		}
         .slide-text {
             max-width: calc(100% - 168px);
             padding-left: 30px;
         }
 
         .slide-quote {
-            padding: 26px 0;
+            padding: 30px 0;
         }
 
         .slide-name {
             font-family: 'Muli', sans-serif;
+			font-weight: 600;
+			font-size: 17px;
         }
 
             .slide-name::before {
@@ -155,7 +139,11 @@
             }
 
         .slide-membership {
+			font-family: 'Muli', sans-serif;
             font-style: italic;
+			font-weight: 600;
+			font-size: 17px;
+			line-height: 1.2;
         }
 
         #carousel-controls {
@@ -169,7 +157,7 @@
 
         .move-slide {
             position: absolute;
-            bottom: 50px;
+            bottom: 3px;
             width: 50px;
             text-align: center;
             pointer-events: initial;
@@ -200,7 +188,7 @@
 
         @media (max-width:992px) {
             .carousel-heading {
-                font-size: 34px;
+                font-size: 44px;
             }
 
             .carousel-subheading {
@@ -257,9 +245,7 @@
             <div id="slide-container">
                 <div class="item active">
                     <div class='slide'>
-                        <div class='slide-image'>
-                            <img src='images/james-bacon.png' alt='James Bacon'>
-                        </div>
+						<img class='slide-image' src='images/james-bacon.png' alt='James Bacon'>
                         <div class='slide-text'>
                             <p class='slide-quote'>
                                 I am in the process of getting a car loan and Linda has made things so effortless and enjoyable.
@@ -272,9 +258,7 @@
                 </div>
                 <div class="item">
                     <div class='slide'>
-                        <div class='slide-image'>
-                            <img src='images/placeholder.png' alt='Placeholder User Image'>
-                        </div>
+						<img class='slide-image' src='images/placeholder.png' alt='Placeholder User Image'>
                         <div class='slide-text'>
                             <p class='slide-quote'>
                                 You have done everything i want from a bank. Courtesy, prompt, polite, professional
