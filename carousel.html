@@ -9,267 +9,9 @@
     <link href="images/favicon-smile.ico" rel="shortcut icon" type="image/x-icon" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC|Lato|Muli:600,600i">
     <link rel="stylesheet" href="styles/jquery.mobile.structure-1.4.5.min.css" />
+	<link rel="stylesheet" href="styles/carousel.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
-
-    <style>
-        * {
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Lato', sans-serif;
-            line-height: 1.43;
-			font-size: 16px;
-			color: #250858;
-        }
-
-        h1, h2, h3, h4, h5, strong {
-            line-height: 1.1;
-        }
-
-        body, h1, h2, h3, h4, h5, p, ul, img, hr {
-            margin: 0;
-            padding: 0;
-            border: 0;
-        }
-
-        #carousel-container {
-            margin: 0 auto;
-            padding: 25px;
-            max-width: 1540px;
-            position: relative;
-        }
-
-        .carousel-heading {
-            text-align: center;
-            text-transform: uppercase;
-            font-size: 60px;
-            padding-bottom: 8px;
-            font-family: 'Amatic SC', cursive;
-			letter-spacing: -1.2px;
-        }
-
-        .carousel-subheading {
-            text-align: center;
-            padding-bottom: 36px;
-			font-size: 18px;
-			letter-spacing: .4px
-        }
-
-        #carousel-inner {
-            position: relative;
-            padding: 0 50px;
-        }
-        #slide-container {
-            position: relative;
-            overflow-x: hidden;
-        }
-        .item {
-            position: absolute;
-            display: flex;
-            transition: transform .3s ease-in-out;
-            top: 0;
-            left: 0;
-            z-index: 2;
-        }
-
-            .item.active {
-                transform: translateX(0%);
-                position: relative;
-                display: flex;
-                z-index: 3;
-            }
-
-            .item.reset {
-                display: none;
-            }
-
-        .slide {
-            display: flex;
-            width: 50%;
-            padding: 12px 60px;
-            background-color: #fff;
-            transition: transform .3s ease-in-out;
-        }
-
-            .slide:first-child {
-                transform: translateX(-100%);
-            }
-
-            .slide:last-child {
-                transform: translateX(100%);
-            }
-
-        .active .slide,
-        .prev .slide,
-        .next .slide {
-            transform: translateX(0%);
-        }
-
-        .active.prev {
-            transform: translateX(50%);
-        }
-
-        .active.next {
-            transform: translateX(-50%);
-        }
-		.slide-image {
-			height: 166px;
-			width: auto;
-			position: relative;
-			top: 50%;
-			transform: translateY(-50%);
-		}
-        .slide-text {
-            max-width: calc(100% - 168px);
-            padding-left: 30px;
-        }
-
-        .slide-quote {
-            padding: 30px 0;
-        }
-
-        .slide-name {
-            font-family: 'Muli', sans-serif;
-			font-weight: 600;
-			font-size: 17px;
-        }
-
-            .slide-name::before {
-                content: '-';
-                display: inline-block;
-            }
-
-        .slide-membership {
-			font-family: 'Muli', sans-serif;
-            font-style: italic;
-			font-weight: 600;
-			font-size: 17px;
-			line-height: 1.2;
-        }
-
-        #carousel-controls {
-            position: absolute;
-            top: 0;
-            left: 25px;
-            right: 25px;
-            bottom: 0;
-            pointer-events: none;
-        }
-
-        .move-slide {
-            position: absolute;
-            top: 50%;
-			transform:translateY(-50%);
-            width: 50px;
-            text-align: center;
-            pointer-events: initial;
-            text-decoration: none;
-            font-size: 0;
-            opacity: .129;
-            transition: opacity .3s ease-in-out;
-            z-index: 10;
-        }
-            .move-slide:hover {
-                opacity: .4;
-            }
-            .move-slide:active {
-                opacity: .8
-            }
-        #prev-slide {
-            left: 0;
-        }
-
-        #next-slide {
-            right: 0;
-        }
-
-            #next-slide img {
-                -webkit-transform: scaleX(-1);
-                transform: scaleX(-1);
-            }
-		@media (max-width:1199px) {
-			.carousel-subheading {
-				padding-bottom: 20px;
-			}
-			.slide {
-				padding: 10px 20px;
-			}
-			.slide-image {
-				height: 140px;
-			}
-			.slide-quote {
-				padding: 20px 0;
-			}
-			.move-slide img {
-				height: 130px;
-			}
-			
-		}
-        @media (max-width:992px) {
-            .carousel-heading {
-                font-size: 44px;
-            }
-
-            .carousel-subheading {
-                display: none;
-            }
-            .item, .item.active {
-                display: block;
-            }
-            .item:not(.active) .slide:not(:first-child) {
-                display:none;
-            }
-			.active .slide:last-child {
-				position:absolute;
-				transform:translateX(100%);
-				top: 0;
-			}
-            .slide {
-                width: 100%;
-                flex-direction: column;
-                text-align: center;
-                padding: 12px 0px;
-            }
-            .active.prev {
-                transform: translateX(100%);
-            }
-            .active.next {
-                transform: translateX(-100%);
-            }
-            .slide-image {
-                margin: 0 auto;
-				top: 0;
-				transform: none;
-				height: 132px;
-            }
-            .slide-text {
-                max-width: 400px;
-                padding-left: 0px;
-                margin: 0 auto;
-            }
-			.slide-quote {
-				max-width: 300px;
-			}
-            .move-slide {
-                top: 40px;
-				transform: none;
-                bottom: initial;
-            }
-            .move-slide img {
-                height: 80px;
-            }
-			#prev-slide {
-				left: 50%;
-				margin-left: -150px;
-			}
-			#next-slide {
-				right: 50%;
-				margin-right: -150px;
-			}
-        }
-    </style>
 </head>
 
 <body>
@@ -317,9 +59,11 @@
         </div>
     </div>
 
+	<!-- 
+		<script src='scripts/carousel.js'></script> 
+		Commented out external file since sometimes .js files get flagged in emails.
+	-->
     <script>
-        var $item = $('.item');
-
         function rotateSlides(direction) {
             var $active = $('.active');
             var $next
@@ -332,10 +76,11 @@
                 wrap = 'first'
             }
             if (!$next.length) {
-                $next = $('.item:' + wrap + '-child')
+                $next = $('.item:' + wrap)
             }
             $next.addClass(direction)
             $active.addClass(direction)
+			//Delay to account for .3s transition in css
             setTimeout(function () {
                 $next.addClass('active').removeClass(direction);
                 $active.removeClass('active').removeClass(direction);
@@ -343,21 +88,23 @@
         }
 
         (function () {
+			var $item = $('.item');
             $item.each(function(i,e){
                 var $next = $(e).next()
                 if (!$next.length) {
-                    $next = $('.item:first-child')
+                    $next = $('.item:first')
                 }
-                $next.find('.slide:first-child').clone().appendTo($(e))
+                $next.find('.slide:first').clone().appendTo($(e))
             });
         }());
 
+		//Mouse Nav
         $('.move-slide').click(function(e){
-            e.stopPropagation();
             e.preventDefault();
             rotateSlides($(this).attr('href').replace('#', ''))
         });
 
+		//Keyboard Nav
         $(document).keyup(function(e){
             if (e.keyCode == 37){ // Left Arrow
                 rotateSlides('prev')
@@ -369,6 +116,16 @@
             }
         });
 
+		//Mobile Nav
+		$(document).on("pagecreate",".page-container",function(){
+			var $carousel = $('carousel')
+			$carousel.on("swipeleft",function(){
+				rotateSlides('next')
+			});
+			$carousel.on("swiperight",function(){
+				rotateSlides('prev')
+			});  
+		});
     </script>
 
 </body>
