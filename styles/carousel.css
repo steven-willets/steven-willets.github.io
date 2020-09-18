@@ -187,9 +187,10 @@ hr {
 .move-slide:hover {
   opacity: .4;
 }
-.move-slide:active,
-.move-slide:focus {
+.move-slide:active {
   opacity: .8;
+}
+.move-slide:focus {
   outline: none;
 }
 #prev-slide {

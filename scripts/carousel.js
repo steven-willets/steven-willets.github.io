@@ -22,14 +22,18 @@ function rotateSlides(direction) {
 }
 
 (function () {
+	var height = 0
 	var $item = $('.item');
 	$item.each(function(i,e){
+		height = $('.slide', e).height() > height ? $('.slide', e).height() : height
+		console.log(height)
 		var $next = $(e).next()
 		if (!$next.length) {
 			$next = $('.item:first')
 		}
 		$next.find('.slide:first').clone().appendTo($(e))
 	});
+	$('.slide').height(height)
 }());
 
 //Mouse Nav
