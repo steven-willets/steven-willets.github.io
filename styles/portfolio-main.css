@@ -175,7 +175,6 @@ section {
     overflow:hidden;
 }   
 .tile:hover {
-    border-color: #14A8D6;
     padding:0;
 }    
 .tile[data-type='demo']:hover .tile-thumbnail-container::after {
