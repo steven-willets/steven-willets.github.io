@@ -147,6 +147,9 @@ section {
     position: relative;
     line-height: 0;
     border: 1px solid rgba(0,0,0,.3);
+    background-color: white;
+    padding: 4px;
+    transition: padding .3s;
 }
 .tile[data-type='demo']::after {
     content: "demo";
@@ -172,6 +175,7 @@ section {
 }   
 .tile:hover {
     border-color: #14A8D6;
+    padding:0;
 }    
 .tile[data-type='demo']:hover::after {
     height:0;
@@ -181,10 +185,9 @@ section {
 	max-width: 100%;
 	transition: opacity .3s ease-in-out, border-color .3s ease-in-out;
 }
-.tile-thumbnail:hover,
+.tile::hover .tile-thumbnail,
 .tile:focus .tile-thumbnail{
 	opacity:.85;
-
 }
 .active .tile-thumbnail,
 .tile-thumbnail:focus,
