@@ -166,7 +166,11 @@ section {
     justify-content: center;
     font-weight: bold;
     font-size: 16px;
+    transition: height .3s;
 }       
+.tile[data-type='demo']:hover::after {
+    height:0;
+}
 .tile-thumbnail {
 	border: 1px solid rgba(0,0,0,.3);
 	max-height: 100%;
