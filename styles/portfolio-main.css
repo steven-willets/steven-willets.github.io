@@ -143,15 +143,16 @@ section {
     align-items: stretch;
 }
 .tile {
-    padding: 0;
-    position: relative;
     line-height: 0;
     border: 1px solid rgba(0,0,0,.3);
     background-color: white;
     padding: 4px;
     transition: padding .3s;
 }
-.tile[data-type='demo']::after {
+.tile-thumbnail-container {
+    position: relative;
+}
+[data-type='demo'] .tile-thumbnail-container::after {
     content: "demo";
     text-transform: uppercase;
     position: absolute;
