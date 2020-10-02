@@ -146,15 +146,11 @@ section {
     line-height: 0;
     border: 1px solid rgba(0,0,0,.3);
     background-color: white;
-    padding: 5px;
+    padding: 4px;
     transition: padding .3s;
 }
 .tile-thumbnail-container {
     position: relative;
-    left: -1px;
-    right: -1px;
-    top: -1px;
-    bottom: -1px;
 }
 [data-type='demo'] .tile-thumbnail-container::after {
     content: "demo";
@@ -186,8 +182,8 @@ section {
     height:0;
 }
 .tile-thumbnail {
-	max-height: calc(100% + 2px);
-	max-width: calc(100% + 2px);
+	max-height: 100%;
+	max-width: 100%;
 	transition: opacity .3s ease-in-out, border-color .3s ease-in-out;
 }
 .tile::hover .tile-thumbnail,
