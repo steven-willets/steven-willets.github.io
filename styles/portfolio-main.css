@@ -145,6 +145,7 @@ section {
     flex: 0 0 20%;
     padding: 18px;
     position: relative;
+    line-height: 0;
 }
 .tile[data-type='demo']::after {
     content: "demo";
@@ -201,6 +202,7 @@ section {
     max-height: 100%;
     overflow: hidden;
     width: 1362px;
+    line-height: 1.43;
 }
 .active .tile-content {
     pointer-events: auto;
