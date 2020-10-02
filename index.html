@@ -19,42 +19,19 @@
     <div id="code-portfolio" class="page-container" data-role="page" >
         <header>
         </header>
-        <div id="business-card" class="section-wrapper" style="display:none;">
+		<div id="business-card" class="section-wrapper">
             <div class="section-container">
                 <section class="h-card content-section">
-                    <div class='contact-info'>
-                        <div class="card-photo contact-item"">
-                            <img class="u-photo" src="images/steven-willets.png" alt="Steven Willets" />
-                        </div>
-                        <div class="card-info contact-item"">
-                            <h2 class="name p-name">Steven Willets</h2>
-                            <h3 class="position p-job-title">Front-End Web Developer</h3>
-                        </div>
-						<div class="contact-item">
-							<span class="p-adr"> 
-								<i class="fas fa-map-marker-alt"></i>
-								<span class="p-street-address">289 Parmelee Hill Rd</span>
-								<span class="p-locality">Durham</span>
-								<span class="p-region">CT</span> 
-								<span class="p-postal-code">06422</span>
-							</span>
-						</div>
-						<div class="contact-item">
-							<a class="contact-link u-email" href="mailto:stevenawillets@gmail.com">
-								<i class="fas fa-envelope"></i>
-								<span>stevenawillets@gmail.com</span>
-							</a>
-						</div>
-						<div class="contact-item">
-							<a class="contact-link p-tel" href="tel:+12038236645">
-								<i class="fas fa-phone"></i>
-								<span>(203)823-6645</span>
-							</a>
-						</div>
-					</div>
+                    <div class="card-photo">
+                        <img class="u-photo" src="images/steven-willets.png" alt="Steven Willets" />
+                    </div>
+                    <div class="card-info">
+                        <h2 class="name p-name">Steven Willets</h2>
+                        <h3 class="position p-job-title">Front-End Web Developer</h3>
+                    </div>
                 </section>
             </div>
-		</div>
+        </div>
 		
         <div id="main-content" class="section-wrapper">
             <div class="section-container">
@@ -80,8 +57,21 @@
 										<p class="project-date">2020</p>
 										<div class="project-desc">
 											<p>
-												
-                                            </p>
+												When upper management decided to end their contract with TicketNetwork.com's third party CMS as a cost-cutting measure, 
+												the retail team that runs the site reached out to me to migrate it onto our in-house CMS.
+											</p>
+											<p>
+												This left us with a hard deadline a matter of months away.  
+												Luckily, I was actively collaborating with the team's creative director to build a new version of their other site, 
+												TicketLiquidator (one I had previously migrated).
+											</p>
+											<p>
+												Rather than pause that work and start from scratch with this, the team decided to repurpose the existing site in development to be the new TicketNetwork site.
+											</p>
+											<p>
+												The development of this site coincided nicely with the release of the client-side version of our newest ticket inventory API, 
+												this allowed me to create a lot of features for the site that previously would have been impossible.
+											</p>
 										</div>
 										<a class="tile-link btn" target="_blank" href="https://ticketnetwork.com">View Site</a>
 									</div>
@@ -102,7 +92,17 @@
 										<p class="project-date">2020</p>
 										<div class="project-desc">
 											<p>
-												
+												This is one of a few projects that I revisited once the client-side version of the our newest ticket inventory API came out.
+											</p>
+											<p>
+												Since I was already rebuilding it, I decided it was a good time to try to expand the customization options such that a person could create a whole site around it.
+											</p>
+											<p>
+												This created a new problem is that there were so many customizations that it was overwhelming and the preview was pushed out of view.  It was a UX mess.
+											</p>
+											<p>
+												I reached out to a coworker, a graphic designer, and together we came up with a format where the customizations were split into steps to create visual bite-size chunks.  
+												Condensing the options like this also allowed us to expand the size of the preview and bring it front and center. 
 											</p>
 										</div>
 										<a class="tile-link btn" target="_blank" href="https://www.ticketnetwork.com/en/affiliate-plugin#form">View Feature</a>
@@ -124,7 +124,12 @@
 										<p class="project-date">2020</p>
 										<div class="project-desc">
 											<p>
-												
+												This widget builder was based on the ones I had made for affiliates.  
+												One of our business directors asked if I could extend the functionality so that our clients could build widgets to put on their non-retail sites (like blogs) 
+												to direct traffic to their white label sites.
+											</p>
+											<p>
+												When the client-side version of our ticket inventory API was released, it allow me to update this widget with search suggestions, a feature that had been sorely lacking.
 											</p>
 										</div>
 										<a class="tile-link btn" target="_blank" href="http://utilities.showsearch.com/page/pl-search-widget">View Feature</a>
@@ -135,18 +140,30 @@
 							<!-- VENUES NEAR YOU, FEATURE, 2020 -->
 							<li id="venues-near-you" tabindex="1" class="tile inactive" data-type='feature' data-year='2020'>
 								<div class='tile-thumbnail-container'>
-									<img class="tile-thumbnail" src="images/feature/venues-near-you-thumbnail.png" alt="Events Near You" />
+									<img class="tile-thumbnail" src="images/feature/venues-near-you-thumbnail.png" alt="Venues Near You" />
 								</div>
 								<article class="tile-content">
 									<div class="project-image project-content">
-										<img src="images/feature/venues-near-you.png" alt="Events Near You" />
+										<img src="images/feature/venues-near-you.png" alt="Venues Near You" />
 									</div>
 									<div class="project-info project-content">
-										<h3 class="project-title">Events Near You</h3>
+										<h3 class="project-title">Venues Near You</h3>
 										<p class="project-date">2020</p>
 										<div class="project-desc">
 											<p>
-												
+												This was a feature present in the creative director's mockups for the version of TicketLiquidator I was developing (that would become the new TicknetNetwork instead).
+											</p>
+											<p>
+												I couldn't get the user's location client-side without causing the dreaded geolocation popup, so instead I took advantage of the fact that the CMS stored the user's location as a cookie.
+											</p>
+											<p>
+												Since this was a feature on the global sidebar, there was one other thing to consider.  
+												As the user progressed through the site, the call would be made on each new page, regardless of whether the location changed or not.
+											</p>
+											<p>
+												As a fix for this, when the call is first made, the venues it returns and the user location are stored in local storage.  
+												Then, whenever a subsequent call would be made, it checks to see if the location in the cookie matches the location in local storage first.  
+												If it does match, it re-uses the venues in local storage and skips making the call.
 											</p>
 										</div>
 										<a class="tile-link btn" target="_blank" href="https://www.ticketnetwork.com/sports-tickets">View Feature</a>
@@ -155,20 +172,34 @@
 							</li>
 							
 							<!-- TOP SELLERS, FEATURE, 2020 -->
-							<li id="top-sellers" tabindex="1" class="tile inactive" data-type='feature' data-year='2020'>
+							<li id="top-sellers-tool" tabindex="1" class="tile inactive" data-type='feature' data-year='2020'>
 								<div class='tile-thumbnail-container'>
-									<img class="tile-thumbnail" src="images/feature/top-sellers-thumbnail.png" alt="Top Sellers" />
+									<img class="tile-thumbnail" src="images/feature/top-sellers-thumbnail.png" alt="Top Sellers Tool" />
 								</div>
 								<article class="tile-content">
 									<div class="project-image project-content">
-										<img src="images/feature/top-sellers.png" alt="Top Sellers" />
+										<img src="images/feature/top-sellers.png" alt="Top Sellers Tool" />
 									</div>
 									<div class="project-info project-content">
-										<h3 class="project-title">Top Sellers</h3>
+										<h3 class="project-title">Top Sellers Tool</h3>
 										<p class="project-date">2020</p>
 										<div class="project-desc">
 											<p>
-												
+												One of the dilemmas for ticket retail sites is how to keep content up-to-date.  
+												Things like 'featured events' or 'popular performers' should be regularly updated based on whats on tour and what's selling well.  
+												The problem arises in the how - curation from a content team, which costs in man(or woman)-hours or auto-generated, which costs in pageload time. 
+											</p>
+											<p>
+												For the newest site I was building, TicketNetwork.com, the navigation dropdowns utilized top seller lists for each non-sport category (almost a dozen) 
+												and top-level category pages have 3-4 top seller lists for sub-categories.
+											</p>
+											<p>
+												Since that was both too much for a content team to reasonably update and would cost too much load time, I devised this tool as a compromise.
+											</p>
+											<p>
+												To go along with this, I created a document of where the lists were on the site and what category they currently were for, 
+												standardized the HTML structure between those two varieties (navigation dropdown, category page) so that the tool could generate the full HTML, 
+												and demarcated the replacement spots with comments.
 											</p>
 										</div>
 										<a class="tile-link btn" target="_blank" href="https://www.ticketnetwork.com/en/top-sellers-tool">View Feature</a>
@@ -822,7 +853,34 @@
 
                 </main>
             </div>
-        </div>
+		</div>
+		<footer class="section-wrapper">
+            <div class="section-container">
+				<ul class='contact-info content-section h-card'>
+					<li class="contact-item">
+						<span class="p-adr"> 
+							<i class="fas fa-map-marker-alt"></i>
+							<span class="p-street-address">289 Parmelee Hill Rd</span>
+							<span class="p-locality">Durham</span>
+							<span class="p-region">CT</span> 
+							<span class="p-postal-code">06422</span>
+						</span>
+					</li>
+					<li class="contact-item">
+						<a class="contact-link u-email" href="mailto:stevenawillets@gmail.com">
+							<i class="fas fa-envelope"></i>
+							<span>stevenawillets@gmail.com</span>
+						</a>
+					</li>
+					<li class="contact-item">
+						<a class="contact-link p-tel" href="tel:+12036504590">
+							<i class="fas fa-phone"></i>
+							<span>(203) 650-4590</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+        </footer>
 		<div id="overlay"></div>
         <div id="controls">
         	<a id="close-slide" href="#"><i class="fas fa-times"></i></a>
