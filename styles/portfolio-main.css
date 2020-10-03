@@ -196,12 +196,14 @@ section {
 }
 .thumbnail-details {
     position:absolute;
-    transform:translateY(-100%);
+    transform:translateY(100%);
     transition: transform .3s;
     width:100%;
     left:0;
     color:white;
     background-color: rgba(30,30,30,.8);
+    line-height: 1.43;
+    padding:10px;
 }
 .tile-thumbnail:hover .thumbnail-details{
     transform:translateY(0);
