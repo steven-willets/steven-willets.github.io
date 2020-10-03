@@ -193,14 +193,14 @@ header {
 	max-width: 100%;
 	transition: opacity .3s ease-in-out, border-color .3s ease-in-out;
 }
-.tile::hover .thumbnail-image,
+.tile:hover .thumbnail-image,
 .tile:focus .thumbnail-image{
-	opacity:.85;
+	opacity:.65;
 }
 .active .thumbnail-image,
 .thumbnail-image:focus,
 .thumbnail-image:active{
-	opacity:.65;
+	opacity:.45;
 }
 .thumbnail-details {
     position:absolute;
