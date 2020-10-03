@@ -93,6 +93,10 @@ section {
 
 
 /* Header */
+header {
+    background-color: rgb(74, 76, 74);
+    color:white;
+}
 
 /* Content */
 
