@@ -157,9 +157,6 @@ header {
     background-color: rgb(30,30,30);
     border-radius: 4px;
 }
-[data-type='feature'] {
-    display:none;
-}
 /*[data-type='demo'] .tile-thumbnail::after {
     content: "demo";
     text-transform: uppercase;
