@@ -149,10 +149,10 @@ section {
     padding: 4px;
     transition: padding .3s;
 }
-.tile-thumbnail-container {
+.tile-thumbnail {
     position: relative;
 }
-[data-type='demo'] .tile-thumbnail-container::after {
+[data-type='demo'] .tile-thumbnail::after {
     content: "demo";
     text-transform: uppercase;
     position: absolute;
@@ -177,22 +177,34 @@ section {
 .tile:hover {
     padding:0;
 }    
-.tile[data-type='demo']:hover .tile-thumbnail-container::after {
+.tile[data-type='demo']:hover .tile-thumbnail::after {
     height:0;
 }
-.tile-thumbnail {
+.thumbnail-image {
 	max-height: 100%;
 	max-width: 100%;
 	transition: opacity .3s ease-in-out, border-color .3s ease-in-out;
 }
-.tile::hover .tile-thumbnail,
-.tile:focus .tile-thumbnail{
+.tile::hover .thumbnail-image,
+.tile:focus .thumbnail-image{
 	opacity:.85;
 }
-.active .tile-thumbnail,
-.tile-thumbnail:focus,
-.tile-thumbnail:active{
+.active .thumbnail-image,
+.thumbnail-image:focus,
+.thumbnail-image:active{
 	opacity:.65;
+}
+.thumbnail-details {
+    position:absolute;
+    transform:translateY(-100%);
+    transition: transform .3s;
+    width:100%;
+    left:0;
+    color:white;
+    background-color: rgba(30,30,30,.8);
+}
+.tile-thumbnail:hover .thumbnail-details{
+    transform:translateY(0);
 }
 .tile.inactive {
 	cursor: pointer;
