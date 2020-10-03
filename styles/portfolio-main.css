@@ -137,22 +137,22 @@ section {
 
 .tile-container {
 	display: grid;
-    grid-gap: 18px;
+    grid-gap: 8px;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     justify-items: stretch;
     align-items: stretch;
 }
 .tile {
     line-height: 0;
-    border: 1px solid rgba(30,30,30,.2);
+    border: 1px solid rgba(0,0,0,.3);
     background-color: white;
-    padding: 0;
-    border-radius:8px;
-    overflow: hidden;
+    padding: 4px;
+    transition: padding .3s;
 }
 .tile-thumbnail {
     position: relative;
-    background-color: rgb(30,30,30);
+    overflow: hidden;
+    background-color: rgb(30,30,30)
 }
 /*[data-type='demo'] .tile-thumbnail::after {
     content: "demo";
@@ -187,7 +187,7 @@ section {
 	max-width: 100%;
 	transition: opacity .3s ease-in-out, border-color .3s ease-in-out;
 }
-.tile:hover .thumbnail-image,
+.tile::hover .thumbnail-image,
 .tile:focus .thumbnail-image{
 	opacity:.85;
 }
