@@ -75,13 +75,7 @@ a:hover {
     margin: 0 auto;
 }
 .content-section {
-    padding: 10px 20px;
-}
-.content-section::before,
-.content-section::after {
-    content: '';
-    clear: both;
-    display: table;
+    padding: 20px;
 }
 .section-break{
     box-shadow: none;
@@ -111,6 +105,7 @@ header {
 }
 .main-heading {
     font-size: 26px;
+    margin: 10px 0;
 }
 .content-heading {
     margin: 10px 0;
