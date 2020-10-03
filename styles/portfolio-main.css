@@ -94,7 +94,7 @@ header {
 
 /* Content */
 #main-content {
-    background: url('images/background/gplaypattern.png') top left repeat;
+    background: url('../images/background/gplaypattern.png') top left repeat;
 }
 #main-content,
 #content-container {
