@@ -187,7 +187,7 @@ section {
 	max-width: 100%;
 	transition: opacity .3s ease-in-out, border-color .3s ease-in-out;
 }
-/*.tile::hover .thumbnail-image,
+.tile::hover .thumbnail-image,
 .tile:focus .thumbnail-image{
 	opacity:.85;
 }
@@ -195,7 +195,7 @@ section {
 .thumbnail-image:focus,
 .thumbnail-image:active{
 	opacity:.65;
-}*/
+}
 .thumbnail-details {
     position:absolute;
     transition: transform .3s;
@@ -206,7 +206,7 @@ section {
     line-height: 1.43;
     padding:10px;
     bottom:0;
-    transform:translateY(-100%);
+    transform:translateY(100%);
 }
 .tile-thumbnail:hover .thumbnail-details{
     transform:translateY(0);
