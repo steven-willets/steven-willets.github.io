@@ -27,7 +27,7 @@
                     </div>
                     <div class="card-info">
                         <h2 class="name p-name">Steven Willets</h2>
-                        <h3 class="position p-job-title">Front-End Web Developer</h3>
+                        <h3 class="position p-job-title">Front-End Developer</h3>
                     </div>
                 </section>
             </div>
@@ -36,9 +36,9 @@
         <div id="main-content" class="section-wrapper">
             <div class="section-container">
                 <main class="content-section">
-					<h1 class="main-heading">Portfolio</h1>
+					<h1 class="main-heading">Web Portfolio</h1>
 					<section id="websites">
-						<h2 class="content-heading">Websites</h2>
+						<!--<h2 class="content-heading">Websites</h2>-->
 						<ul class="tile-container">
 
 							<!-- 2020 -->
@@ -221,10 +221,27 @@
 										<p class="project-date">2020</p>
 										<div class="project-desc">
 											<p>
-												
+												One of the requested features from the retail team for TicketNetwork.com was to have a dynamic page that displays 
+												results based on ID's rather than names to serve as a landing page for their email marketing.
+											</p>
+											<p>
+												Since the CMS had no such functionality, I needed to built it.  The page I created made use of our ticket inventory API which had just been updated to allow client-side access.  
+												It's able to generate results from ID's for performers, venues, cities, states, categories and any combination thereof.
+											</p>
+											<p>
+												The page has some notable features I built into it.  First, it allows the user to filter the results by date, performer, city, and venue.  
+												These filters are context sensitive so that a filter that would not make sense (like city for venue results) and filters that only have a single option are not shown.
+												Applying a filter creates a 'filter tag' so that the user can see what filters are active, and the filters that are shown are updated to reflect the new results.
+											</p>
+											<p>
+												In addition to simple things like updating the heading and subheading to match the results, there's some more robust situational content.  
+												If a performer ID is generated, a performer image will generate, if a venue, a venue image along with venue info and an embedded google map.
+											</p>
+											<p>
+												Lastly, if there are no results, a modal will appear suggesting related pages for the user to try instead
 											</p>
 										</div>
-										<a class="tile-link btn" target="_blank" href="https://www.ticketnetwork.com/events/performer-at-venue?p=1145&v=26">View Feature</a>
+										<a class="tile-link btn" target="_blank" href="https://www.ticketnetwork.com/events/find-tickets?p=1145&v=26">View Feature</a>
 									</div>
 								</article>
 							</li>
@@ -247,7 +264,8 @@
 										<p class="project-date">2019</p>
 										<div class="project-desc">
 											<p>
-												
+												This demo ended up becoming a site, but instead of being implemented as a new look for TicketLiquidator, 
+												it was used as the design for new version of TicketNetwork after we migrated it to our in-house CMS.
                                             </p>
 										</div>
 										<a class="tile-link btn" target="_blank" href="https://dev-tl.ticketstoday.us">View Site</a>
@@ -269,7 +287,7 @@
 										<p class="project-date">2019</p>
 										<div class="project-desc">
 											<p>
-												
+												A possible design revamp for one of our existing sites that borrowed heavily from a competitor's look.
                                             </p>
 										</div>
 										<a class="tile-link btn" target="_blank" href="https://tm2.ticketstoday.us">View Site</a>
@@ -291,7 +309,7 @@
 										<p class="project-date">2019</p>
 										<div class="project-desc">
 											<p>
-												
+												Note: This site is not currently in use, so the SSL has expired and you will get a warning when clicking on the link.
                                             </p>
 										</div>
 										<a class="tile-link btn" target="_blank" href="http://broadwaytoday.org">View Site</a>
@@ -313,10 +331,16 @@
 										<p class="project-date">2019</p>
 										<div class="project-desc">
 											<p>
-												
+												This is the site that the DoD Demo would become.
+											</p>
+											<p>
+												For this project I needed to work closely with an external team to make the site only accessible to authorized users.
+											</p>
+											<p>
+												Unfortunately, because of that users without a login cannot look at the site, so the pictures will have to suffice in this case.
                                             </p>
 										</div>
-										<a class="tile-link btn" target="_blank" href="http://events.americanforcestravel.com">View Site</a>
+										<!--<a class="tile-link btn" target="_blank" href="http://events.americanforcestravel.com">View Site</a>-->
 									</div>
 								</article>
 							</li>
@@ -355,8 +379,14 @@
 										<p class="project-date">2019</p>
 										<div class="project-desc">
 											<p>
-												
-                                            </p>
+												I built this site for an outside consultant who ultimately was hired specifically to run it.  
+											</p>
+											<p>
+												The site went through many looks as he tried to come up with a design that would stand out amongst all the other ticket sites.
+											</p>
+											<p>
+												The key feature he settled on was having the events displayed as cards rather than as rows.
+											</p>
 										</div>
 										<a class="tile-link btn" target="_blank" href="https://megaseats.com">View Site</a>
 									</div>
@@ -377,7 +407,8 @@
 										<p class="project-date">2019</p>
 										<div class="project-desc">
 											<p>
-												This MLB site was built around the graphic designer's idea for a list of teams with an interesting hover transition effect, both incorporating team colors.	
+												This MLB focused site was built around the graphic designer's idea for a list of teams with an interesting hover transition effect he liked.  
+												To attempt to put it into words, a shape slides in behind the team abbreviation, with both being complementing team colors.
                                             </p>
 										</div>
 										<a class="tile-link btn" target="_blank" href="https://tickets-center.org">View Site</a>
@@ -399,7 +430,17 @@
 										<p class="project-date">2019</p>
 										<div class="project-desc">
 											<p>
-												
+												This was part of a project to improve the sites of clients who had strong domains (redsoxtickets.com) to capitalize on their organic traffic.
+											</p>
+											<p>
+												The ticket results we had to work with at the time allowed for very little customization, they were directly written to the page by doc.write as a table element.
+											</p>
+											<p>
+												To make the results more befitting a site for a specific team, I devised some JavaScript that would iterate through that table and tag each event as either home or away depending on what venue it was it.  
+												Then I put tabs at the top of the results table that show/hide events based on those tags.
+											</p>
+											<p>
+												Note: The SSL on this site has expired so you will receive a security warning.
 											</p>
 										</div>
 										<a class="tile-link btn" target="_blank" href="https://www.redsoxtickets.com/">View Feature</a>
@@ -426,7 +467,7 @@
 										<div class="project-desc">
 											<p>
 												I was tapped to migrate one of our flagship sites, <a href="https://www.ticketliquidator.com" target="_blank">TicketLiquidator.com</a>, from a CMS 
-                                                that was being decommissioned to our licensed third party CMS given my familiarity with the latter.
+                                                that was being decommissioned to our in-house CMS given my familiarity with the latter.
 											</p>
 										</div>
 										<a class="tile-link btn" target="_blank" href="http://ticketliquidator.com">View Site</a>
@@ -448,13 +489,18 @@
 										<p class="project-date">2018</p>
 										<div class="project-desc">
 											<p>
-												One of the common requests we received was for filters for our 'event results' plugin.  The plugin is a simple JavaScript endpoint that outputs to the page using document.write on page load. Because of this, the only way to add filtering parameters to the plugin call was to re-load the page entirely.
+												One of the common requests we received was for filters for our 'event results' plugin.  
+												The plugin is a simple JavaScript endpoint that outputs to the page using document.write on page load. Because of this, 
+												the only way to add filtering parameters to the plugin call was to re-load the page entirely.
 											</p>
 											<p>
-												As a workaround, I wrote some JavaScript that iterates through the results and adds classes to them based on what the site owner would like to filter by. During this iteration, each new instance of this parameter is stored in an array and any repeats are tallied. This is then appended to HTML on the page to create the actual filter interface.
+												As a workaround, I wrote some JavaScript that iterates through the results and adds classes to them based on what the site owner would like to filter by. 
+												During this iteration, each new instance of this parameter is stored in an array and any repeats are tallied. This is then appended to HTML on the page to create the actual filter interface.
 											</p>
 											<p>
-												The simple corresponding classes between the result and filter checkbox didn't work for dates, however. Instead I had the date converted to a number - yyyymmdd - and stored as a data attribute (since classes have to start with a letter). With the dates formatted as numbers, the filter can simply check whether the result"s data attribute is greater than or less than the requested dates.
+												The simple corresponding classes between the result and filter checkbox didn't work for dates, however. 
+												Instead I had the date converted to a number - yyyymmdd - and stored as a data attribute (since classes have to start with a letter). 
+												With the dates formatted as numbers, the filter can simply check whether the result"s data attribute is greater than or less than the requested dates.
 											</p>
 										</div>
 										<a class="tile-link btn" target="_blank" href="https://codepen.io/steven-willets/pen/XWdLbZp">View in CodePen</a>
@@ -873,9 +919,9 @@
 						</a>
 					</li>
 					<li class="contact-item">
-						<a class="contact-link p-tel" href="tel:+12036504590">
+						<a class="contact-link p-tel" href="tel:+12038236645">
 							<i class="fas fa-phone"></i>
-							<span>(203) 650-4590</span>
+							<span>(203) 823-6645</span>
 						</a>
 					</li>
 				</ul>
