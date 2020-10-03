@@ -151,6 +151,7 @@ section {
 }
 .tile-thumbnail {
     position: relative;
+    overflow: hidden;
 }
 [data-type='demo'] .tile-thumbnail::after {
     content: "demo";
@@ -172,7 +173,7 @@ section {
     font-weight: bold;
     font-size: 16px;
     transition: height .3s;
-    overflow:hidden;
+    overflow: hidden;
 }   
 .tile:hover {
     padding:0;
