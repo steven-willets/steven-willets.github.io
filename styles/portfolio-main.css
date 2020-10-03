@@ -144,16 +144,14 @@ section {
 }
 .tile {
     line-height: 0;
-    border: 1px solid rgba(0,0,0,.3);
+    border: 1px solid rgba(30,30,30,.12);
     background-color: white;
     padding: 0;
-    transition: padding .3s;
     border-radius:8px;
+    overflow: hidden;
 }
 .tile-thumbnail {
     position: relative;
-    overflow: hidden;
-    border-radius:8px;
 }
 /*[data-type='demo'] .tile-thumbnail::after {
     content: "demo";
@@ -188,7 +186,7 @@ section {
 	max-width: 100%;
 	transition: opacity .3s ease-in-out, border-color .3s ease-in-out;
 }
-.tile::hover .thumbnail-image,
+.tile:hover .thumbnail-image,
 .tile:focus .thumbnail-image{
 	opacity:.85;
 }
