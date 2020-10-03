@@ -145,7 +145,7 @@ header {
 }
 .tile {
     line-height: 0;
-    border: 1px solid rgba(0,0,0,.3);
+    border: 1px solid rgba(0,0,0,.2);
     background-color: white;
     padding: 4px;
     transition: padding .3s;
@@ -210,9 +210,17 @@ header {
     color:white;
     background-color: rgba(30,30,30,.8);
     line-height: 1.43;
-    padding:10px;
+    padding:20px;
     bottom:0;
     transform:translateY(100%);
+}
+.thumbnail-title {
+    font-weight:bold;
+    font-size: 20px;
+}
+.thumbnail-date {
+    font-size:12px;
+    font-weight:300;
 }
 .tile-thumbnail:hover .thumbnail-details{
     transform:translateY(0);
