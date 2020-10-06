@@ -28,6 +28,29 @@
 							<h2 class="name p-name">Steven Willets</h2>
 							<h3 class="position p-job-title">Front-End Developer</h3>
 						</div>
+						<ul class='contact-info content-section h-card'>
+							<li class="contact-item">
+								<span class="p-adr"> 
+									<i class="fas fa-map-marker-alt"></i>
+									<span class="p-street-address">289 Parmelee Hill Rd</span>
+									<span class="p-locality">Durham</span>
+									<span class="p-region">CT</span> 
+									<span class="p-postal-code">06422</span>
+								</span>
+							</li>
+							<li class="contact-item">
+								<a class="contact-link u-email" href="mailto:stevenawillets@gmail.com">
+									<i class="fas fa-envelope"></i>
+									<span>stevenawillets@gmail.com</span>
+								</a>
+							</li>
+							<li class="contact-item">
+								<a class="contact-link p-tel" href="tel:+12038236645">
+									<i class="fas fa-phone"></i>
+									<span>(203) 823-6645</span>
+								</a>
+							</li>
+						</ul>
 					</section>
 				</div>
 			</div>
@@ -37,1028 +60,1029 @@
             <div class="section-container">
                 <main class="content-section">
 					<h1 class="main-heading">Digital Portfolio</h1>
-					<section id="websites">
-						<h2 class="content-heading">Websites</h2>
-						<ul class="tile-container">
+					<section id="tile-grid-container">
+						<div id='tile-grid-header'>
+							<h2 class="content-heading grid-tab">Websites</h2>
+							<h2 class="content-heading grid-tab">Features</h2>
+							<div id='sliding-box'></div>
+						</div>
+						
+						<div id='tile-grid'>
+							<ul class="tile-container">
+								<!-- 2020 -->
 
-							<!-- 2020 -->
-
-							<!-- TICKETNETWORK, SITE, 2020 -->
-							<li id="ticketnetwork" tabindex="1" class="tile inactive" data-type='site' data-year='2020'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/site/ticketnetwork-thumbnail.png" alt="TicketNetwork" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">TicketNetwork</p>
-										<p class="thumbnail-type">Website</p>
-										<p class="thumbnail-date">2020</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/site/ticketnetwork.png" alt="TicketNetwork" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">TicketNetwork</h3>
-										<p class="project-date">2020</p>
-										<div class="project-desc">
-											<p>
-												When upper management decided to end their contract with TicketNetwork.com's third party CMS as a cost-cutting measure, 
-												the retail team that runs the site reached out to me to migrate it onto our in-house CMS.
-											</p>
-											<p>
-												This left us with a hard deadline a matter of months away.  
-												Luckily, I was actively collaborating with the team's creative director to build a new version of their other site, 
-												TicketLiquidator (one I had previously migrated).
-											</p>
-											<p>
-												Rather than pause that work and start from scratch with this, the team decided to repurpose the existing site in development to be the new TicketNetwork site.
-											</p>
-											<p>
-												The development of this site coincided nicely with the release of the client-side version of our newest ticket inventory API, 
-												this allowed me to create a lot of features for the site that previously would have been impossible.
-											</p>
+								<!-- TICKETNETWORK, SITE, 2020 -->
+								<li id="ticketnetwork" tabindex="1" class="tile inactive" data-type='site' data-year='2020'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/site/ticketnetwork-thumbnail.png" alt="TicketNetwork" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">TicketNetwork</p>
+											<p class="thumbnail-type">Website</p>
+											<p class="thumbnail-date">2020</p>
 										</div>
-										<a class="tile-link btn" target="_blank" href="https://ticketnetwork.com">View Site</a>
 									</div>
-								</article>
-							</li>
-
-							
-
-							<!-- 2019 -->
-
-							<!-- TICKET LIQUIDATOR, DEMO, 2019 -->
-							<li id="megaseats" tabindex="1" class="tile inactive" data-type='demo' data-year='2019'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/demo/ticketliquidator-demo-thumbnail.png" alt="Ticket Liquidator Demo" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">Ticket Liquidator</p>
-										<p class="thumbnail-type">Demo Site</p>
-										<p class="thumbnail-date">2019</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/demo/ticketliquidator-demo.png" alt="Ticket Liquidator Demo" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">Ticket Liquidator Demo</h3>
-										<p class="project-date">2019</p>
-										<div class="project-desc">
-											<p>
-												This demo ended up becoming a site, but instead of being implemented as a new look for TicketLiquidator, 
-												it was used as the design for new version of TicketNetwork after we migrated it to our in-house CMS.
-                                            </p>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/site/ticketnetwork.png" alt="TicketNetwork" />
 										</div>
-										<a class="tile-link btn" target="_blank" href="https://dev-tl.ticketstoday.us">View Site</a>
-									</div>
-								</article>
-							</li>
+										<div class="project-info project-content">
+											<h3 class="project-title">TicketNetwork</h3>
+											<p class="project-date">2020</p>
+											<div class="project-desc">
+												<p>
+													When upper management decided to end their contract with TicketNetwork.com's third party CMS as a cost-cutting measure, 
+													the retail team that runs the site reached out to me to migrate it onto our in-house CMS.
+												</p>
+												<p>
+													This left us with a hard deadline a matter of months away.  
+													Luckily, I was actively collaborating with the team's creative director to build a new version of their other site, 
+													TicketLiquidator (one I had previously migrated).
+												</p>
+												<p>
+													Rather than pause that work and start from scratch with this, the team decided to repurpose the existing site in development to be the new TicketNetwork site.
+												</p>
+												<p>
+													The development of this site coincided nicely with the release of the client-side version of our newest ticket inventory API, 
+													this allowed me to create a lot of features for the site that previously would have been impossible.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="https://ticketnetwork.com">View Site</a>
+										</div>
+									</article>
+								</li>
 
-							<!-- TICKET MYSTERY, DEMO, 2019 -->
-							<li id="megaseats" tabindex="1" class="tile inactive" data-type='demo' data-year='2019'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/demo/ticketmystery-demo-thumbnail.png" alt="TicketMystery Demo" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">Ticket Mystery</p>
-										<p class="thumbnail-type">Demo Site</p>
-										<p class="thumbnail-date">2019</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/demo/ticketmystery-demo.png" alt="TicketMystery Demo" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">TicketMystery Demo</h3>
-										<p class="project-date">2019</p>
-										<div class="project-desc">
-											<p>
-												A possible design revamp for one of our existing sites that borrowed heavily from a competitor's look.
-                                            </p>
-										</div>
-										<a class="tile-link btn" target="_blank" href="https://tm2.ticketstoday.us">View Site</a>
-									</div>
-								</article>
-							</li>
-
-							<!-- BROADWAY TODAY, SITE, 2019 -->
-							<li id="broadwaytoday" tabindex="1" class="tile inactive" data-type='site' data-year='2019'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/site/broadwaytoday-thumbnail.png" alt="Broadway Today" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">BroadwayToday</p>
-										<p class="thumbnail-type">Website</p>
-										<p class="thumbnail-date">2019</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/site/broadwaytoday.png" alt="Broadway Today" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">Broadway Today</h3>
-										<p class="project-date">2019</p>
-										<div class="project-desc">
-											<p>
-												This site was made in collaboration with a graphic designer I commonly work with.  He provided mockups through Zeplin
-											</p>
-											<p>
-												Note: This site is not currently in use, so the SSL has expired and you will get a warning when clicking on the link.
-                                            </p>
-										</div>
-										<a class="tile-link btn" target="_blank" href="http://broadwaytoday.org">View Site</a>
-									</div>
-								</article>
-							</li>
-
-							<!-- AMERICAN FORCES TRAVEL, SITE, 2019 -->
-							<li id="americanforcestravel" tabindex="1" class="tile inactive" data-type='site' data-year='2019'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/site/americanforcestravel-thumbnail.png" alt="American Forces Travel" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">American Forces Travel</p>
-										<p class="thumbnail-type">Website</p>
-										<p class="thumbnail-date">2019</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/site/americanforcestravel.png" alt="American Forces Travel" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">American Forces Travel</h3>
-										<p class="project-date">2019</p>
-										<div class="project-desc">
-											<p>
-												This is the site that the DoD Demo would become.
-											</p>
-											<p>
-												For this project I needed to work closely with an external team to make the site only accessible to authorized users.
-											</p>
-											<p>
-												Unfortunately, because of that users without a login cannot look at the site, so the pictures will have to suffice in this case.
-                                            </p>
-										</div>
-										<!--<a class="tile-link btn" target="_blank" href="http://events.americanforcestravel.com">View Site</a>-->
-									</div>
-								</article>
-							</li>
-							
-							<!-- TICKETS LIVE, SITE, 2019  
-							<li id="ticketslive" tabindex="1" class="tile inactive" data-type='site' data-year='2019' style="display:none">
-								<img class="thumbnail-image" src="images/site/ticketslive-thumbnail.png" alt="TicketsLive" />
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/site/ticketslive.png" alt="TicketsLive" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">TicketsLive</h3>
-										<p class="project-date">2019</p>
-										<div class="project-desc">
-											<p>
-												
-                                            </p>
-										</div>
-										<a class="tile-link btn" target="_blank" href="https://tlcketmaster.live">View Site</a>
-									</div>
-								</article>
-							</li>-->
 								
-							<!-- MEGASEATS, SITE, 2019 -->
-							<li id="megaseats" tabindex="1" class="tile inactive" data-type='site' data-year='2019'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/site/megaseats-thumbnail.png" alt="MegaSeats" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">MegaSeats</p>
-										<p class="thumbnail-type">Website</p>
-										<p class="thumbnail-date">2019</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/site/megaseats.png" alt="MegaSeats" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">MegaSeats</h3>
-										<p class="project-date">2019</p>
-										<div class="project-desc">
-											<p>
-												I built this site for an outside consultant who ultimately was hired specifically to run it.  
-											</p>
-											<p>
-												The site went through many looks as he tried to come up with a design that would stand out amongst all the other ticket sites.
-											</p>
-											<p>
-												The key feature he settled on was having the events displayed as cards rather than as rows.
-											</p>
+
+								<!-- 2019 -->
+
+								<!-- TICKET LIQUIDATOR, DEMO, 2019 -->
+								<li id="megaseats" tabindex="1" class="tile inactive" data-type='demo' data-year='2019'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/demo/ticketliquidator-demo-thumbnail.png" alt="Ticket Liquidator Demo" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">Ticket Liquidator</p>
+											<p class="thumbnail-type">Demo Site</p>
+											<p class="thumbnail-date">2019</p>
 										</div>
-										<a class="tile-link btn" target="_blank" href="https://megaseats.com">View Site</a>
 									</div>
-								</article>
-							</li>
-
-							<!-- TICKETS CENTER, SITE, 2019 -->
-							<li id="ticketscenter" tabindex="1" class="tile inactive" data-type='site' data-year='2019'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/site/ticketscenter-thumbnail.png" alt="Tickets Center" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">TicketsCenter</p>
-										<p class="thumbnail-type">Website</p>
-										<p class="thumbnail-date">2019</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/site/ticketscenter.png" alt="Tickets Center" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">Tickets Center</h3>
-										<p class="project-date">2019</p>
-										<div class="project-desc">
-											<p>
-												This MLB focused site was built around the graphic designer's idea for a list of teams with an interesting hover transition effect he liked.  
-												To attempt to put it into words, a shape slides in behind the team abbreviation, with both being complementing team colors.
-                                            </p>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/demo/ticketliquidator-demo.png" alt="Ticket Liquidator Demo" />
 										</div>
-										<a class="tile-link btn" target="_blank" href="https://tickets-center.org">View Site</a>
-									</div>
-								</article>
-							</li>
-
-
-							<!-- 2018 -->
-														
-							<!-- TICKET LIQUIDATOR, SITE, 2018 -->
-							<li id="ticketliqudator" tabindex="1" class="tile inactive" data-type='site' data-year='2018'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/site/ticketliquidator-thumbnail.png" alt="TicketLiquidator" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">TicketLiquidator</p>
-										<p class="thumbnail-type">Website</p>
-										<p class="thumbnail-date">2018</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/site/ticketliquidator.png" alt="TicketLiquidator" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">TicketLiquidator</h3>
-										<p class="project-date">2018</p>
-										<div class="project-desc">
-											<p>
-												I was tapped to migrate one of our flagship sites, <a href="https://www.ticketliquidator.com" target="_blank">TicketLiquidator.com</a>, from a CMS 
-                                                that was being decommissioned to our in-house CMS given my familiarity with the latter.
-											</p>
+										<div class="project-info project-content">
+											<h3 class="project-title">Ticket Liquidator Demo</h3>
+											<p class="project-date">2019</p>
+											<div class="project-desc">
+												<p>
+													This demo ended up becoming a site, but instead of being implemented as a new look for TicketLiquidator, 
+													it was used as the design for new version of TicketNetwork after we migrated it to our in-house CMS.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="https://dev-tl.ticketstoday.us">View Site</a>
 										</div>
-										<a class="tile-link btn" target="_blank" href="http://ticketliquidator.com">View Site</a>
-									</div>
-								</article>
-							</li>
+									</article>
+								</li>
 
-							
-							<!-- ZERO MARKUP, SITE, 2018 -->
-							<li id="zeromarkup" tabindex="1" class="tile inactive" data-type='site' data-year='2018'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/site/zeromarkup-thumbnail.png" alt="ZeroMarkup" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">ZeroMarkup</p>
-										<p class="thumbnail-type">Website</p>
-										<p class="thumbnail-date">2018</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/site/zeromarkup.png" alt="ZeroMarkup" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">Zero Markup</h3>
-										<p class="project-date">2018</p>
-										<div class="project-desc">
-                                            <p>
-                                                This site was made to be the sister site of another internal site run by our company,
-                                                <a target="_blank" href="https://www.sonicseats.com/">SonicSeats.com</a>.
-                                            </p>
-                                            <p>
-                                                The latter only offers inventory that can be
-                                                delivered electronically, so another site was wanted to send users to if only hard-stock inventory was available.
-                                            </p>
+								<!-- TICKET MYSTERY, DEMO, 2019 -->
+								<li id="megaseats" tabindex="1" class="tile inactive" data-type='demo' data-year='2019'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/demo/ticketmystery-demo-thumbnail.png" alt="TicketMystery Demo" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">Ticket Mystery</p>
+											<p class="thumbnail-type">Demo Site</p>
+											<p class="thumbnail-date">2019</p>
 										</div>
-										<a class="tile-link btn" target="_blank" href="https://zeromarkup.com">View Site</a>
 									</div>
-								</article>
-							</li>
-
-
-							<!-- 2017 -->
-							
-							<!-- New York Theater Tickets, SITE, 2017 -->
-							<li id="newyorktheatertickets" tabindex="1" class="tile inactive" data-type='site' data-year='2017'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/site/newyorktheatertickets-thumbnail.png" alt="NewYorkTheaterTickets" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">NewYorkTheaterTickets</p>
-										<p class="thumbnail-type">Website</p>
-										<p class="thumbnail-date">2017</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/site/newyorktheatertickets.png" alt="NewYorkTheaterTickets" />
-									</div>
-									<div class="project-info  project-content">
-										<h3 class="project-title">NewYorkTheaterTickets</h3>
-										<p class="project-date">2017</p>
-										<div class="project-desc">
-                                            <p>
-                                                I built this at the request of the CEO who wanted an internal Broadway-focused site to take advantage of the high sale prices.
-                                            </p>
-                                            <p>
-                                                I created it in accordance to his design requests, including writing custom JavaScript to achieve the event calendars
-                                                he wanted (referenced in the JavaScript section below)
-                                            </p>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/demo/ticketmystery-demo.png" alt="TicketMystery Demo" />
 										</div>
-										<a class="tile-link btn" target="_blank" href="http://newyorktheatertickets.center">View Site</a>
-									</div>
-								</article>
-							</li>
-
-							
-
-							<!-- EzEvent Tickets, SITE, 2017 -->
-							<li id="ezevent-tickets" tabindex="1" class="tile inactive" data-type='site' data-year='2017'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/site/tickets-ezevent-thumbnail.png" alt="EzEvent Tickets" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">EzEvent Tickets</p>
-										<p class="thumbnail-type">Website</p>
-										<p class="thumbnail-date">2017</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/site/tickets-ezevent.png" alt="EzEvent Tickets" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">EzEvent Tickets</h3>
-										<p class="project-date">2017</p>
-										<div class="project-desc">
-											<p>
-												Designed to match the branding of <a target="_blank" href="https://ezevent.com/">ezEvent</a>. 
-											</p>
+										<div class="project-info project-content">
+											<h3 class="project-title">TicketMystery Demo</h3>
+											<p class="project-date">2019</p>
+											<div class="project-desc">
+												<p>
+													A possible design revamp for one of our existing sites that borrowed heavily from a competitor's look.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="https://tm2.ticketstoday.us">View Site</a>
 										</div>
-										<a class="tile-link btn" target="_blank" href="https://tickets.ezevent.com">View Site</a>
-									</div>
-								</article>
-							</li>
+									</article>
+								</li>
 
-							<!-- WSJ Tickets, DEMO, 2017 -->
-							<li id="wsj-demo" tabindex="1" class="tile inactive" data-type='demo' data-year='2017'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/demo/wsj-demo-thumbnail.png" alt="Wall Street Journal Demo" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">WSJ Tickets</p>
-										<p class="thumbnail-type">Demo Site</p>
-										<p class="thumbnail-date">2017</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/demo/wsj-demo.png" alt="Wall Street Journal Demo" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">Wall Street Journal Demo</h3>
-										<p class="project-date">2017</p>
-										<div class="project-desc">
-                                            <p>
-                                                On 4pm on a Friday a member of our Ancilliary Revenue Team contacted me asking if it as too late of notice
-                                                to ask me to put together a site for EOD.
-                                            </p>
-                                            <p>
-                                                This site was to be a demo to present
-                                                to <a target="_blank" href="https://www.wsj.com/">The Wall Street Journal</a> as part of an offer to
-                                                form a business relationship.
-                                            </p>
+								<!-- BROADWAY TODAY, SITE, 2019 -->
+								<li id="broadwaytoday" tabindex="1" class="tile inactive" data-type='site' data-year='2019'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/site/broadwaytoday-thumbnail.png" alt="Broadway Today" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">BroadwayToday</p>
+											<p class="thumbnail-type">Website</p>
+											<p class="thumbnail-date">2019</p>
 										</div>
-										<a class="tile-link btn" target="_blank" href="http://wsj.fansupfront.com">View Site</a>
 									</div>
-								</article>
-							</li>
-
-							<!--Open Table Tickets, DEMO, 2017 -->
-							<li id="opentable-demo" tabindex="1" class="tile inactive" data-type='demo' data-year='2017'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/demo/opentable-demo-thumbnail.png" alt="OpenTable Demo" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">OpenTable</p>
-										<p class="thumbnail-type">Demo Site</p>
-										<p class="thumbnail-date">2017</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/demo/opentable-demo.png" alt="OpenTable Demo" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">OpenTable Tickets</h3>
-										<p class="project-date">2017</p>
-										<div class="project-desc">
-                                            <p>
-												One of the demo site's I was asked to create as part of a sales pitch.
-                                            </p>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/site/broadwaytoday.png" alt="Broadway Today" />
 										</div>
-										<a class="tile-link btn" target="_blank" href="https://opentable.showsearch.com/">View Site</a>
-									</div>
-								</article>
-							</li>
-
-							<!--Muzit Performer Demo, DEMO, 2017 -->
-							<li id="muzit-performer-demo" tabindex="1" class="tile inactive" data-type='demo' data-year='2017'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/demo/muzit-performer-demo-thumbnail.png" alt="Muzit Performer Demo" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">Pet Sounds</p>
-										<p class="thumbnail-type">Demo Site</p>
-										<p class="thumbnail-date">2017</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/demo/muzit-performer-demo.png" alt="Muzit Performer Demo" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">Muzit Performer Demo</h3>
-										<p class="project-date">2017</p>
-										<div class="project-desc">
-                                            <p>
-												A demo requested by the CTO as part of a proposal to a company called Muzit, showing how our ticket listings could be incorporated into their performer pages.
-                                            </p>
+										<div class="project-info project-content">
+											<h3 class="project-title">Broadway Today</h3>
+											<p class="project-date">2019</p>
+											<div class="project-desc">
+												<p>
+													This site was made in collaboration with a graphic designer I commonly work with.  He provided mockups through Zeplin
+												</p>
+												<p>
+													Note: This site is not currently in use, so the SSL has expired and you will get a warning when clicking on the link.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="http://broadwaytoday.org">View Site</a>
 										</div>
-										<a class="tile-link btn" target="_blank" href="http://railway.showsearch.com/">View Site</a>
-									</div>
-								</article>
-							</li>
+									</article>
+								</li>
 
-							
-							<!-- The Bloody Win, SITE, 2017 -->
-							<li id="the-bloody-win" tabindex="1" class="tile inactive" data-type='site' data-year='2017'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/site/thebloodywin-thumbnail.png" alt="The Bloody Win" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">The BloodyWin</p>
-										<p class="thumbnail-type">Website</p>
-										<p class="thumbnail-date">2017</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/site/thebloodywin.png" alt="The Bloody Win" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">The Bloody Win Tour Site</h3>
-										<p class="project-date">2017</p>
-										<div class="project-desc">
-											<p>
-												This was a special project from the CEO to sell tickets to a tour he had gotten tickets for.
-											</p>
-											<p>He provided me with imagery and requested the the results be formatted as a calendar.</p>
+								<!-- AMERICAN FORCES TRAVEL, SITE, 2019 -->
+								<li id="americanforcestravel" tabindex="1" class="tile inactive" data-type='site' data-year='2019'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/site/americanforcestravel-thumbnail.png" alt="American Forces Travel" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">American Forces Travel</p>
+											<p class="thumbnail-type">Website</p>
+											<p class="thumbnail-date">2019</p>
 										</div>
-										<a class="tile-link btn" target="_blank" href="http://www.bloodywintickets.com/">View Site</a>
 									</div>
-								</article>
-							</li>
-
-							<!--DOD Demo, DEMO, 2017 -->
-							<li id="dod-demo" tabindex="1" class="tile inactive" data-type='demo' data-year='2017'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/demo/dod-demo-thumbnail.png" alt="Wall Street Journal Tickets" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">DoD</p>
-										<p class="thumbnail-type">Demo Site</p>
-										<p class="thumbnail-date">2017</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/demo/dod-demo.png" alt="Dept. of Defense Demo" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">Dept. of Defense Demo</h3>
-										<p class="project-date">2017</p>
-										<div class="project-desc">
-                                            <p>
-												I imagine your reaction was my reaction - "I'm sorry, what? Are you serious?"
-											</p>
-											<p>
-												But, yes, I was asked to make a demo for the DoD.  
-												As it turns out, the DoD has a travel website for service members and our company was one of the contenders to run the actual site.
-											</p>
-											<p>
-												We would get the contract and I would again by tapped to create the actual site, which also is seen in this portfolio.
-											</p>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/site/americanforcestravel.png" alt="American Forces Travel" />
 										</div>
-										<a class="tile-link btn" target="_blank" href="https://dod.ticketstoday.us/">View Site</a>
-									</div>
-								</article>
-							</li>
-
-
-							<!-- 2016 -->
-
-							<!-- On Broadway, SITE, 2016 -->
-							<li id="onbroadway" tabindex="1" class="tile inactive" data-type='site' data-year='2017'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/site/onbroadway-thumbnail.png" alt="OnBroadway" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">OnBroadway</p>
-										<p class="thumbnail-type">Website</p>
-										<p class="thumbnail-date">2016</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/site/onbroadway.png" alt="OnBroadway" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">OnBroadway</h3>
-										<p class="project-date">2016</p>
-										<div class="project-desc">
-											<p>
-                                                Designed and built for a client with the main goal being to utilize their extensive catalog of Broadway imagery.
-											</p>
+										<div class="project-info project-content">
+											<h3 class="project-title">American Forces Travel</h3>
+											<p class="project-date">2019</p>
+											<div class="project-desc">
+												<p>
+													This is the site that the DoD Demo would become.
+												</p>
+												<p>
+													For this project I needed to work closely with an external team to make the site only accessible to authorized users.
+												</p>
+												<p>
+													Unfortunately, because of that users without a login cannot look at the site, so the pictures will have to suffice in this case.
+												</p>
+											</div>
+											<!--<a class="tile-link btn" target="_blank" href="http://events.americanforcestravel.com">View Site</a>-->
 										</div>
-										<a class="tile-link btn" target="_blank" href="http://onbroadway.com">View Site</a>
+									</article>
+								</li>
+								
+								<!-- TICKETS LIVE, SITE, 2019  
+								<li id="ticketslive" tabindex="1" class="tile inactive" data-type='site' data-year='2019' style="display:none">
+									<img class="thumbnail-image" src="images/site/ticketslive-thumbnail.png" alt="TicketsLive" />
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/site/ticketslive.png" alt="TicketsLive" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">TicketsLive</h3>
+											<p class="project-date">2019</p>
+											<div class="project-desc">
+												<p>
+													
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="https://tlcketmaster.live">View Site</a>
+										</div>
+									</article>
+								</li>-->
+									
+								<!-- MEGASEATS, SITE, 2019 -->
+								<li id="megaseats" tabindex="1" class="tile inactive" data-type='site' data-year='2019'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/site/megaseats-thumbnail.png" alt="MegaSeats" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">MegaSeats</p>
+											<p class="thumbnail-type">Website</p>
+											<p class="thumbnail-date">2019</p>
+										</div>
 									</div>
-								</article>
-							</li>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/site/megaseats.png" alt="MegaSeats" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">MegaSeats</h3>
+											<p class="project-date">2019</p>
+											<div class="project-desc">
+												<p>
+													I built this site for an outside consultant who ultimately was hired specifically to run it.  
+												</p>
+												<p>
+													The site went through many looks as he tried to come up with a design that would stand out amongst all the other ticket sites.
+												</p>
+												<p>
+													The key feature he settled on was having the events displayed as cards rather than as rows.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="https://megaseats.com">View Site</a>
+										</div>
+									</article>
+								</li>
 
-							<!-- 2015 -->
-							
-							<!-- Corporate TN, SITE, 2015 -->
-							<li id="corporate-tn" tabindex="1" class="tile inactive" data-type='site' data-year='2015'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/site/corporate-ticketnetwork-thumbnail.png" alt="TicketNetwork Corporate Site" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">Corporate TN</p>
-										<p class="thumbnail-type">Website</p>
-										<p class="thumbnail-date">2015</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/site/corporate-ticketnetwork.png" alt="TicketNetwork Corporate Site" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">TicketNetwork Corporate Site</h3>
-										<p class="project-date">2015</p>
-										<div class="project-desc">
-											<p>
-												A coworker and I were put in charge of overhauling the company's corporate website to give it a more modern 
-                                                appearance, make it responsive, and have it comport with our branding guidelines.
-											</p>
+								<!-- TICKETS CENTER, SITE, 2019 -->
+								<li id="ticketscenter" tabindex="1" class="tile inactive" data-type='site' data-year='2019'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/site/ticketscenter-thumbnail.png" alt="Tickets Center" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">TicketsCenter</p>
+											<p class="thumbnail-type">Website</p>
+											<p class="thumbnail-date">2019</p>
 										</div>
-										<a class="tile-link btn" target="_blank" href="https://corporate.ticketnetwork.com">View Site</a>
 									</div>
-								</article>
-							</li>
-						</ul>
-					</section>
-
-					<hr class="section-break" />
-
-					<section id="javascript">
-						<h2 class="content-heading">Features</h2>
-						<ul class="tile-container">
-
-							<!-- API EVENT RESULTS, FEATURE, 2020-->
-							<li id="api-event-results" tabindex="1" class="tile inactive" data-type='feature' data-year='2020'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/feature/results-widget-thumbnail.png" alt="Event Results Widget" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">Event Results Widget</p>
-										<p class="thumbnail-type">Feature</p>
-										<p class="thumbnail-date">2020</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/feature/results-widget.png" alt="Event Results Widget" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">Event Results Widget</h3>
-										<p class="project-date">2020</p>
-										<div class="project-desc">
-											<p>
-												This is one of a few projects that I revisited once the client-side version of the our newest ticket inventory API came out.
-											</p>
-											<p>
-												Since I was already rebuilding it, I decided it was a good time to try to expand the customization options such that a person could create a whole site around it.
-											</p>
-											<p>
-												This created a new problem is that there were so many customizations that it was overwhelming and the preview was pushed out of view.  It was a UX mess.
-											</p>
-											<p>
-												I reached out to a coworker, a graphic designer, and together we came up with a format where the customizations were split into steps to create visual bite-size chunks.  
-												Condensing the options like this also allowed us to expand the size of the preview and bring it front and center. 
-											</p>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/site/ticketscenter.png" alt="Tickets Center" />
 										</div>
-										<a class="tile-link btn" target="_blank" href="https://codepen.io/steven-willets/pen/rNegEqZ">View Builder</a>
-										<a class="tile-link btn" target="_blank" href="https://codepen.io/steven-willets/pen/yLOWmRr">View Widget</a>
-									</div>
-								</article>
-							</li> 
-
-							<!-- SEARCH WIDGET, FEATURE, 2020-->
-							<li id="api-search-widget" tabindex="1" class="tile inactive" data-type='feature' data-year='2020'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/feature/search-widget-thumbnail.png" alt="Search Widget" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">Search Widget</p>
-										<p class="thumbnail-type">Feature</p>
-										<p class="thumbnail-date">2020</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/feature/search-widget.png" alt="Search Widget" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">Search Widget</h3>
-										<p class="project-date">2020</p>
-										<div class="project-desc">
-											<p>
-												This widget builder was based on the ones I had made for affiliates.  
-												One of our business directors asked if I could extend the functionality so that our clients could build widgets to put on their non-retail sites (like blogs) 
-												to direct traffic to their white label sites.
-											</p>
-											<p>
-												When the client-side version of our ticket inventory API was released, it allow me to update this widget with search suggestions, a feature that had been sorely lacking.
-											</p>
+										<div class="project-info project-content">
+											<h3 class="project-title">Tickets Center</h3>
+											<p class="project-date">2019</p>
+											<div class="project-desc">
+												<p>
+													This MLB focused site was built around the graphic designer's idea for a list of teams with an interesting hover transition effect he liked.  
+													To attempt to put it into words, a shape slides in behind the team abbreviation, with both being complementing team colors.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="https://tickets-center.org">View Site</a>
 										</div>
-										<a class="tile-link btn" target="_blank" href="https://codepen.io/steven-willets/pen/vYGwoEG">View Builder</a>
-										<a class="tile-link btn" target="_blank" href="https://codepen.io/steven-willets/pen/zYqQgMG">View Widget</a>
-										
-									</div>
-								</article>
-							</li>	 						
-							
-							<!-- VENUES NEAR YOU, FEATURE, 2020 -->
-							<li id="venues-near-you" tabindex="1" class="tile inactive" data-type='feature' data-year='2020'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/feature/venues-near-you-thumbnail.png" alt="Venues Near You" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">Venues Near You</p>
-										<p class="thumbnail-type">Feature</p>
-										<p class="thumbnail-date">2020</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/feature/venues-near-you.png" alt="Venues Near You" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">Venues Near You</h3>
-										<p class="project-date">2020</p>
-										<div class="project-desc">
-											<p>
-												This was a feature present in the creative director's mockups for the version of TicketLiquidator I was developing (that would become the new TicknetNetwork instead).
-											</p>
-											<p>
-												I couldn't get the user's location client-side without causing the dreaded geolocation popup, so instead I took advantage of the fact that the CMS stored the user's location as a cookie.
-											</p>
-											<p>
-												Since this was a feature on the global sidebar, there was one other thing to consider.  
-												As the user progressed through the site, the call would be made on each new page, regardless of whether the location changed or not.
-											</p>
-											<p>
-												As a fix for this, when the call is first made, the venues it returns and the user location are stored in local storage.  
-												Then, whenever a subsequent call would be made, it checks to see if the location in the cookie matches the location in local storage first.  
-												If it does match, it re-uses the venues in local storage and skips making the call.
-											</p>
-										</div>
-										<a class="tile-link btn" target="_blank" href="https://www.ticketnetwork.com/sports-tickets">View Feature</a>
-									</div>
-								</article>
-							</li>
-							
-							<!-- TOP SELLERS, FEATURE, 2020 -->
-							<li id="top-sellers-tool" tabindex="1" class="tile inactive" data-type='feature' data-year='2020'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/feature/top-sellers-thumbnail.png" alt="Top Sellers Tool" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">Top Sellers Tool</p>
-										<p class="thumbnail-type">Feature</p>
-										<p class="thumbnail-date">2020</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/feature/top-sellers.png" alt="Top Sellers Tool" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">Top Sellers Tool</h3>
-										<p class="project-date">2020</p>
-										<div class="project-desc">
-											<p>
-												One of the dilemmas for ticket retail sites is how to keep content up-to-date.  
-												Things like 'featured events' or 'popular performers' should be regularly updated based on whats on tour and what's selling well.  
-												The problem arises in the how - curation from a content team, which costs in man(or woman)-hours or auto-generated, which costs in pageload time. 
-											</p>
-											<p>
-												For the newest site I was building, TicketNetwork.com, the navigation dropdowns utilized top seller lists for each non-sport category (almost a dozen) 
-												and top-level category pages have 3-4 top seller lists for sub-categories.
-											</p>
-											<p>
-												Since that was both too much for a content team to reasonably update and would cost too much load time, I devised this tool as a compromise.
-											</p>
-											<p>
-												To go along with this, I created a document of where the lists were on the site and what category they currently were for, 
-												standardized the HTML structure between those two varieties (navigation dropdown, category page) so that the tool could generate the full HTML, 
-												and demarcated the replacement spots with comments.
-											</p>
-										</div>
-										<a class="tile-link btn" target="_blank" href="https://www.ticketnetwork.com/en/top-sellers-tool">View Feature</a>
-									</div>
-								</article>
-							</li>
-							
-							<!-- ENHANCED EVENT RESULTS, FEATURE, 2020 -->
-							<li id="results-with-filters" tabindex="1" class="tile inactive" data-type='feature' data-year='2020'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/feature/enhanced-event-results-thumbnail.png" alt="Enhanced Event Results" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">Enhanced Event Results</p>
-										<p class="thumbnail-type">Feature</p>
-										<p class="thumbnail-date">2020</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/feature/enhanced-event-results.png" alt="Enhanced Event Results" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">Enhanced Event Results</h3>
-										<p class="project-date">2020</p>
-										<div class="project-desc">
-											<p>
-												One of the requested features from the retail team for TicketNetwork.com was to have a dynamic page that displays 
-												results based on ID's rather than names to serve as a landing page for their email marketing.
-											</p>
-											<p>
-												Since the CMS had no such functionality, I needed to built it.  The page I created made use of our ticket inventory API which had just been updated to allow client-side access.  
-												It's able to generate results from ID's for performers, venues, cities, states, categories and any combination thereof.
-											</p>
-											<p>
-												The page has some notable features I built into it.  First, it allows the user to filter the results by date, performer, city, and venue.  
-												These filters are context sensitive so that a filter that would not make sense (like city for venue results) and filters that only have a single option are not shown.
-												Applying a filter creates a 'filter tag' so that the user can see what filters are active, and the filters that are shown are updated to reflect the new results.
-											</p>
-											<p>
-												In addition to simple things like updating the heading and subheading to match the results, there's some more robust situational content.  
-												If a performer ID is generated, a performer image will generate, if a venue, a venue image along with venue info and an embedded google map.
-											</p>
-											<p>
-												Lastly, if there are no results, a modal will appear suggesting related pages for the user to try instead
-											</p>
-										</div>
-										<a class="tile-link btn" target="_blank" href="https://www.ticketnetwork.com/events/find-tickets?p=1145&v=26">View Feature</a>
-									</div>
-								</article>
-							</li>
-
-							<!-- HOME/AWAY, FEATURE, 2019 -->
-							<li id="home-away-filters" tabindex="1" class="tile inactive" data-type='feature' data-year='2019'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/feature/home-away-filters-thumbnail.png" alt="Home/Away Filters" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">Home/Away Filters</p>
-										<p class="thumbnail-type">Feature</p>
-										<p class="thumbnail-date">2019</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/feature/home-away-filters.png" alt="Home/Away Filters" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">Home/Away Filters</h3>
-										<p class="project-date">2019</p>
-										<div class="project-desc">
-											<p>
-												This was part of a project to improve the sites of clients who had strong domains (redsoxtickets.com) to capitalize on their organic traffic.
-											</p>
-											<p>
-												The ticket results we had to work with at the time allowed for very little customization, they were directly written to the page by doc.write as a table element.
-											</p>
-											<p>
-												To make the results more befitting a site for a specific team, I devised some JavaScript that would iterate through that table and tag each event as either home or away depending on what venue it was it.  
-												Then I put tabs at the top of the results table that show/hide events based on those tags.
-											</p>
-											<p>
-												Note: The SSL on this site has expired so you will receive a security warning.
-											</p>
-										</div>
-										<a class="tile-link btn" target="_blank" href="https://www.redsoxtickets.com/">View Feature</a>
-									</div>
-								</article>
-							</li>
-
-							<!-- RESULTS WITH FILTERS, FEATURE, 2018 -->
-							<li tabindex="1" class="tile inactive" data-type='feature' data-year='2018'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/feature/results-with-filters-thumbnail.png" alt="Event Results with Filters" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">Results with Filters</p>
-										<p class="thumbnail-type">Feature</p>
-										<p class="thumbnail-date">2018</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/feature/results-with-filters.png" alt="Event Results with Filters" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">Event Results with Filters</h3>
-										<p class="project-date">2018</p>
-										<div class="project-desc">
-											<p>
-												One of the common requests we received was for filters for our 'event results' plugin.  
-												The plugin is a simple JavaScript endpoint that outputs to the page using document.write on page load. Because of this, 
-												the only way to add filtering parameters to the plugin call was to re-load the page entirely.
-											</p>
-											<p>
-												As a workaround, I wrote some JavaScript that iterates through the results and adds classes to them based on what the site owner would like to filter by. 
-												During this iteration, each new instance of this parameter is stored in an array and any repeats are tallied. This is then appended to HTML on the page to create the actual filter interface.
-											</p>
-											<p>
-												The simple corresponding classes between the result and filter checkbox didn't work for dates, however. 
-												Instead I had the date converted to a number - yyyymmdd - and stored as a data attribute (since classes have to start with a letter). 
-												With the dates formatted as numbers, the filter can simply check whether the result"s data attribute is greater than or less than the requested dates.
-											</p>
-										</div>
-										<a class="tile-link btn" target="_blank" href="https://codepen.io/steven-willets/pen/XWdLbZp">View in CodePen</a>
-									</div>
-								</article>
-							</li>
+									</article>
+								</li>
 
 
-							<!-- Calendar Widget, FEATURE, 2017-->
-							<li id="calendar-widget" tabindex="1" class="tile inactive" data-type='feature' data-year='2017'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/feature/calendar-widget-thumbnail.png" alt="Calendar Widget" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">Calendar Widget</p>
-										<p class="thumbnail-type">Feature</p>
-										<p class="thumbnail-date">2017</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/feature/calendar-widget.png" alt="Calendar Widget" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">Calendar Widget</h3>
-										<p class="project-date">2017</p>
-										<div class="project-desc">
-											<p>
-												
-											</p>
+								<!-- 2018 -->
+															
+								<!-- TICKET LIQUIDATOR, SITE, 2018 -->
+								<li id="ticketliqudator" tabindex="1" class="tile inactive" data-type='site' data-year='2018'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/site/ticketliquidator-thumbnail.png" alt="TicketLiquidator" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">TicketLiquidator</p>
+											<p class="thumbnail-type">Website</p>
+											<p class="thumbnail-date">2018</p>
 										</div>
-										<a class="tile-link btn" target="_blank" href="https://codepen.io/steven-willets/pen/OJNYKZQ">View Builder</a>
-										<a class="tile-link btn" target="_blank" href="https://codepen.io/steven-willets/pen/NWNVQOL">View Widget</a>
 									</div>
-								</article>
-							</li> 
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/site/ticketliquidator.png" alt="TicketLiquidator" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">TicketLiquidator</h3>
+											<p class="project-date">2018</p>
+											<div class="project-desc">
+												<p>
+													I was tapped to migrate one of our flagship sites, <a href="https://www.ticketliquidator.com" target="_blank">TicketLiquidator.com</a>, from a CMS 
+													that was being decommissioned to our in-house CMS given my familiarity with the latter.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="http://ticketliquidator.com">View Site</a>
+										</div>
+									</article>
+								</li>
 
-							<!-- CARD RESULTS WITH IMAGES, FEATURE, 2017 -->
-							<li tabindex="1" class="tile inactive" data-type='feature' data-year='2017'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/feature/card-results-with-images-thumbnail.png" alt="Card Results with Images" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">Image Card Results</p>
-										<p class="thumbnail-type">Feature</p>
-										<p class="thumbnail-date">2017</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/feature/card-results-with-images.png" alt="Card Results with Images" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">Card Results with Images</h3>
-										<p class="project-date">2017</p>
-										<div class="project-desc">
-                                            <p>
-                                                One of the biggest challenges with ticketing sites is the desire to use images to advertise events without 
-                                                needing to constantly curate the events to keep them up-to-date.
-                                            </p>
-											<p>
-                                                This code takes advantage of NewYorkTheaterTickets being a Broadway specific site since there are a limited set 
-                                                of ongoing Broadway shows, and each show is specific to one theater.
-											</p>
-											<p>
-												The code takes the data from an 'Event Results' plugin specific for the upcoming week (pictured top left) and arranges it into Event-Venue cards 
-                                                with available showings in the next 7 days.  The image is pulled from a collection of Broadway show images kept on AWS S3.  The only time an update needs to 
-                                                be made is when a new Broadway show debuts and a image needs to be added for it.
-											</p>
+								
+								<!-- ZERO MARKUP, SITE, 2018 -->
+								<li id="zeromarkup" tabindex="1" class="tile inactive" data-type='site' data-year='2018'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/site/zeromarkup-thumbnail.png" alt="ZeroMarkup" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">ZeroMarkup</p>
+											<p class="thumbnail-type">Website</p>
+											<p class="thumbnail-date">2018</p>
 										</div>
-										<a class="tile-link btn" target="_blank" href="https://codepen.io/steven-willets/pen/oNxrXqE">View in CodePen</a>
 									</div>
-								</article>
-							</li>
-                         <!-- Template Revamp, FEATURE, 2017-->
-							<li id="template-revamp" tabindex="1" class="tile inactive" data-type='feature' data-year='2017'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/feature/template-revamp-thumbnail.png" alt="Template Revamp" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">Template Revamp</p>
-										<p class="thumbnail-type">Feature</p>
-										<p class="thumbnail-date">2017</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/feature/template-revamp.png" alt="Template Revamp" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">Template Revamp</h3>
-										<p class="project-date">2017</p>
-										<div class="project-desc">
-											<p>
-                                                Our company utilizes a licensed third-party CMS to provide pre-built template sites for ticket brokers and marketers. 
-                                                Recently our CEO reviewed the <a target="_blank" href="http://default.showsearch.com">default appearance</a> and 
-                                                was disappointed that the sites looked dated and that the template options didn't provide meaningful enough differentiation.
-											</p>
-											<p>
-												I was asked to create a new template that addressed these issues which would then be passed on to the 
-                                                CMS developer to implement as the new default.
-											</p>
-											<p>
-												I built this site on top of the existing template and implemented a quick and dirty configuration menu on it 
-                                                to demonstrate what options we wanted added to the CMS and how they would interact with the template's layout.
-											</p>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/site/zeromarkup.png" alt="ZeroMarkup" />
 										</div>
-										<a class="tile-link btn" target="_blank" href="http://revamp.showsearch.com">View Feature</a>
-									</div>
-								</article>
-							</li> 
+										<div class="project-info project-content">
+											<h3 class="project-title">Zero Markup</h3>
+											<p class="project-date">2018</p>
+											<div class="project-desc">
+												<p>
+													This site was made to be the sister site of another internal site run by our company,
+													<a target="_blank" href="https://www.sonicseats.com/">SonicSeats.com</a>.
+												</p>
+												<p>
+													The latter only offers inventory that can be
+													delivered electronically, so another site was wanted to send users to if only hard-stock inventory was available.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="https://zeromarkup.com">View Site</a>
+										</div>
+									</article>
+								</li>
 
-							<!-- FLIP CARDS, FEATURE, 2017-->
-							<li id="flip-cards" tabindex="1" class="tile inactive" data-type='feature' data-year='2017'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/feature/flip-cards-thumbnail.png" alt="Flip Cards" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">Flip Cards</p>
-										<p class="thumbnail-type">Feature</p>
-										<p class="thumbnail-date">2017</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/feature/flip-cards.png" alt="Flip Cards" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">Flip Cards</h3>
-										<p class="project-date">2017</p>
-										<div class="project-desc">
-											<p>
-												Rather than represent the home page in the images, I'm specifically showing and linking to the Octane page to 
-                                                demonstrate the flipping card mechanic I implemented on that page.
-											</p>
-										</div>
-										<a class="tile-link btn" target="_blank" href="https://octane.rad.tickets">View Feature</a>
-									</div>
-								</article>
-							</li> 
 
-							<!-- CALENDAR RESULTS, FEATURE, 2017--> 
-							<li tabindex="1" class="tile inactive" data-type='feature' data-year='2017'>
-								<div class='tile-thumbnail'>
-									<img class="thumbnail-image" src="images/feature/calendar-results-thumbnail.png" alt="Event Results Mapped to Calendar" />
-									<div class="thumbnail-details">
-										<p class="thumbnail-title">Calendar Results</p>
-										<p class="thumbnail-type">Feature</p>
-										<p class="thumbnail-date">2017</p>
-									</div>
-								</div>
-								<article class="tile-content">
-									<div class="project-image project-content">
-										<img src="images/feature/calendar-results.png" alt="Event Results Mapped to Calendar" />
-									</div>
-									<div class="project-info project-content">
-										<h3 class="project-title">Event Results Mapped to Calendar</h3>
-										<p class="project-date">2017</p>
-										<div class="project-desc">
-											<p>
-												Made for the NewYorkTheaterTickets site, this code takes the data from an 'event results' plugin (pictured top left) and maps it to a jQuery UI calendar.
-											</p>
+								<!-- 2017 -->
+								
+								<!-- New York Theater Tickets, SITE, 2017 -->
+								<li id="newyorktheatertickets" tabindex="1" class="tile inactive" data-type='site' data-year='2017'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/site/newyorktheatertickets-thumbnail.png" alt="NewYorkTheaterTickets" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">NewYorkTheaterTickets</p>
+											<p class="thumbnail-type">Website</p>
+											<p class="thumbnail-date">2017</p>
 										</div>
-										<a class="tile-link btn" target="_blank" href="https://codepen.io/steven-willets/pen/WNwqvYb">View in CodePen</a>
 									</div>
-								</article>
-							</li>   
-						</ul>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/site/newyorktheatertickets.png" alt="NewYorkTheaterTickets" />
+										</div>
+										<div class="project-info  project-content">
+											<h3 class="project-title">NewYorkTheaterTickets</h3>
+											<p class="project-date">2017</p>
+											<div class="project-desc">
+												<p>
+													I built this at the request of the CEO who wanted an internal Broadway-focused site to take advantage of the high sale prices.
+												</p>
+												<p>
+													I created it in accordance to his design requests, including writing custom JavaScript to achieve the event calendars
+													he wanted (referenced in the JavaScript section below)
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="http://newyorktheatertickets.center">View Site</a>
+										</div>
+									</article>
+								</li>
+
+								
+
+								<!-- EzEvent Tickets, SITE, 2017 -->
+								<li id="ezevent-tickets" tabindex="1" class="tile inactive" data-type='site' data-year='2017'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/site/tickets-ezevent-thumbnail.png" alt="EzEvent Tickets" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">EzEvent Tickets</p>
+											<p class="thumbnail-type">Website</p>
+											<p class="thumbnail-date">2017</p>
+										</div>
+									</div>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/site/tickets-ezevent.png" alt="EzEvent Tickets" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">EzEvent Tickets</h3>
+											<p class="project-date">2017</p>
+											<div class="project-desc">
+												<p>
+													Designed to match the branding of <a target="_blank" href="https://ezevent.com/">ezEvent</a>. 
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="https://tickets.ezevent.com">View Site</a>
+										</div>
+									</article>
+								</li>
+
+								<!-- WSJ Tickets, DEMO, 2017 -->
+								<li id="wsj-demo" tabindex="1" class="tile inactive" data-type='demo' data-year='2017'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/demo/wsj-demo-thumbnail.png" alt="Wall Street Journal Demo" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">WSJ Tickets</p>
+											<p class="thumbnail-type">Demo Site</p>
+											<p class="thumbnail-date">2017</p>
+										</div>
+									</div>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/demo/wsj-demo.png" alt="Wall Street Journal Demo" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">Wall Street Journal Demo</h3>
+											<p class="project-date">2017</p>
+											<div class="project-desc">
+												<p>
+													On 4pm on a Friday a member of our Ancilliary Revenue Team contacted me asking if it as too late of notice
+													to ask me to put together a site for EOD.
+												</p>
+												<p>
+													This site was to be a demo to present
+													to <a target="_blank" href="https://www.wsj.com/">The Wall Street Journal</a> as part of an offer to
+													form a business relationship.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="http://wsj.fansupfront.com">View Site</a>
+										</div>
+									</article>
+								</li>
+
+								<!--Open Table Tickets, DEMO, 2017 -->
+								<li id="opentable-demo" tabindex="1" class="tile inactive" data-type='demo' data-year='2017'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/demo/opentable-demo-thumbnail.png" alt="OpenTable Demo" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">OpenTable</p>
+											<p class="thumbnail-type">Demo Site</p>
+											<p class="thumbnail-date">2017</p>
+										</div>
+									</div>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/demo/opentable-demo.png" alt="OpenTable Demo" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">OpenTable Tickets</h3>
+											<p class="project-date">2017</p>
+											<div class="project-desc">
+												<p>
+													One of the demo site's I was asked to create as part of a sales pitch.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="https://opentable.showsearch.com/">View Site</a>
+										</div>
+									</article>
+								</li>
+
+								<!--Muzit Performer Demo, DEMO, 2017 -->
+								<li id="muzit-performer-demo" tabindex="1" class="tile inactive" data-type='demo' data-year='2017'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/demo/muzit-performer-demo-thumbnail.png" alt="Muzit Performer Demo" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">Pet Sounds</p>
+											<p class="thumbnail-type">Demo Site</p>
+											<p class="thumbnail-date">2017</p>
+										</div>
+									</div>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/demo/muzit-performer-demo.png" alt="Muzit Performer Demo" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">Muzit Performer Demo</h3>
+											<p class="project-date">2017</p>
+											<div class="project-desc">
+												<p>
+													A demo requested by the CTO as part of a proposal to a company called Muzit, showing how our ticket listings could be incorporated into their performer pages.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="http://railway.showsearch.com/">View Site</a>
+										</div>
+									</article>
+								</li>
+
+								
+								<!-- The Bloody Win, SITE, 2017 -->
+								<li id="the-bloody-win" tabindex="1" class="tile inactive" data-type='site' data-year='2017'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/site/thebloodywin-thumbnail.png" alt="The Bloody Win" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">The BloodyWin</p>
+											<p class="thumbnail-type">Website</p>
+											<p class="thumbnail-date">2017</p>
+										</div>
+									</div>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/site/thebloodywin.png" alt="The Bloody Win" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">The Bloody Win Tour Site</h3>
+											<p class="project-date">2017</p>
+											<div class="project-desc">
+												<p>
+													This was a special project from the CEO to sell tickets to a tour he had gotten tickets for.
+												</p>
+												<p>He provided me with imagery and requested the the results be formatted as a calendar.</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="http://www.bloodywintickets.com/">View Site</a>
+										</div>
+									</article>
+								</li>
+
+								<!--DOD Demo, DEMO, 2017 -->
+								<li id="dod-demo" tabindex="1" class="tile inactive" data-type='demo' data-year='2017'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/demo/dod-demo-thumbnail.png" alt="Wall Street Journal Tickets" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">DoD</p>
+											<p class="thumbnail-type">Demo Site</p>
+											<p class="thumbnail-date">2017</p>
+										</div>
+									</div>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/demo/dod-demo.png" alt="Dept. of Defense Demo" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">Dept. of Defense Demo</h3>
+											<p class="project-date">2017</p>
+											<div class="project-desc">
+												<p>
+													I imagine your reaction was my reaction - "I'm sorry, what? Are you serious?"
+												</p>
+												<p>
+													But, yes, I was asked to make a demo for the DoD.  
+													As it turns out, the DoD has a travel website for service members and our company was one of the contenders to run the actual site.
+												</p>
+												<p>
+													We would get the contract and I would again by tapped to create the actual site, which also is seen in this portfolio.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="https://dod.ticketstoday.us/">View Site</a>
+										</div>
+									</article>
+								</li>
+
+
+								<!-- 2016 -->
+
+								<!-- On Broadway, SITE, 2016 -->
+								<li id="onbroadway" tabindex="1" class="tile inactive" data-type='site' data-year='2017'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/site/onbroadway-thumbnail.png" alt="OnBroadway" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">OnBroadway</p>
+											<p class="thumbnail-type">Website</p>
+											<p class="thumbnail-date">2016</p>
+										</div>
+									</div>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/site/onbroadway.png" alt="OnBroadway" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">OnBroadway</h3>
+											<p class="project-date">2016</p>
+											<div class="project-desc">
+												<p>
+													Designed and built for a client with the main goal being to utilize their extensive catalog of Broadway imagery.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="http://onbroadway.com">View Site</a>
+										</div>
+									</article>
+								</li>
+
+								<!-- 2015 -->
+								
+								<!-- Corporate TN, SITE, 2015 -->
+								<li id="corporate-tn" tabindex="1" class="tile inactive" data-type='site' data-year='2015'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/site/corporate-ticketnetwork-thumbnail.png" alt="TicketNetwork Corporate Site" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">Corporate TN</p>
+											<p class="thumbnail-type">Website</p>
+											<p class="thumbnail-date">2015</p>
+										</div>
+									</div>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/site/corporate-ticketnetwork.png" alt="TicketNetwork Corporate Site" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">TicketNetwork Corporate Site</h3>
+											<p class="project-date">2015</p>
+											<div class="project-desc">
+												<p>
+													A coworker and I were put in charge of overhauling the company's corporate website to give it a more modern 
+													appearance, make it responsive, and have it comport with our branding guidelines.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="https://corporate.ticketnetwork.com">View Site</a>
+										</div>
+									</article>
+								</li>
+							</ul>
+
+							<ul class="tile-container">
+
+								<!-- API EVENT RESULTS, FEATURE, 2020-->
+								<li id="api-event-results" tabindex="1" class="tile inactive" data-type='feature' data-year='2020'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/feature/results-widget-thumbnail.png" alt="Event Results Widget" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">Event Results Widget</p>
+											<p class="thumbnail-type">Feature</p>
+											<p class="thumbnail-date">2020</p>
+										</div>
+									</div>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/feature/results-widget.png" alt="Event Results Widget" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">Event Results Widget</h3>
+											<p class="project-date">2020</p>
+											<div class="project-desc">
+												<p>
+													This is one of a few projects that I revisited once the client-side version of the our newest ticket inventory API came out.
+												</p>
+												<p>
+													Since I was already rebuilding it, I decided it was a good time to try to expand the customization options such that a person could create a whole site around it.
+												</p>
+												<p>
+													This created a new problem is that there were so many customizations that it was overwhelming and the preview was pushed out of view.  It was a UX mess.
+												</p>
+												<p>
+													I reached out to a coworker, a graphic designer, and together we came up with a format where the customizations were split into steps to create visual bite-size chunks.  
+													Condensing the options like this also allowed us to expand the size of the preview and bring it front and center. 
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="https://codepen.io/steven-willets/pen/rNegEqZ">View Builder</a>
+											<a class="tile-link btn" target="_blank" href="https://codepen.io/steven-willets/pen/yLOWmRr">View Widget</a>
+										</div>
+									</article>
+								</li> 
+
+								<!-- SEARCH WIDGET, FEATURE, 2020-->
+								<li id="api-search-widget" tabindex="1" class="tile inactive" data-type='feature' data-year='2020'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/feature/search-widget-thumbnail.png" alt="Search Widget" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">Search Widget</p>
+											<p class="thumbnail-type">Feature</p>
+											<p class="thumbnail-date">2020</p>
+										</div>
+									</div>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/feature/search-widget.png" alt="Search Widget" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">Search Widget</h3>
+											<p class="project-date">2020</p>
+											<div class="project-desc">
+												<p>
+													This widget builder was based on the ones I had made for affiliates.  
+													One of our business directors asked if I could extend the functionality so that our clients could build widgets to put on their non-retail sites (like blogs) 
+													to direct traffic to their white label sites.
+												</p>
+												<p>
+													When the client-side version of our ticket inventory API was released, it allow me to update this widget with search suggestions, a feature that had been sorely lacking.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="https://codepen.io/steven-willets/pen/vYGwoEG">View Builder</a>
+											<a class="tile-link btn" target="_blank" href="https://codepen.io/steven-willets/pen/zYqQgMG">View Widget</a>
+											
+										</div>
+									</article>
+								</li>	 						
+								
+								<!-- VENUES NEAR YOU, FEATURE, 2020 -->
+								<li id="venues-near-you" tabindex="1" class="tile inactive" data-type='feature' data-year='2020'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/feature/venues-near-you-thumbnail.png" alt="Venues Near You" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">Venues Near You</p>
+											<p class="thumbnail-type">Feature</p>
+											<p class="thumbnail-date">2020</p>
+										</div>
+									</div>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/feature/venues-near-you.png" alt="Venues Near You" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">Venues Near You</h3>
+											<p class="project-date">2020</p>
+											<div class="project-desc">
+												<p>
+													This was a feature present in the creative director's mockups for the version of TicketLiquidator I was developing (that would become the new TicknetNetwork instead).
+												</p>
+												<p>
+													I couldn't get the user's location client-side without causing the dreaded geolocation popup, so instead I took advantage of the fact that the CMS stored the user's location as a cookie.
+												</p>
+												<p>
+													Since this was a feature on the global sidebar, there was one other thing to consider.  
+													As the user progressed through the site, the call would be made on each new page, regardless of whether the location changed or not.
+												</p>
+												<p>
+													As a fix for this, when the call is first made, the venues it returns and the user location are stored in local storage.  
+													Then, whenever a subsequent call would be made, it checks to see if the location in the cookie matches the location in local storage first.  
+													If it does match, it re-uses the venues in local storage and skips making the call.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="https://www.ticketnetwork.com/sports-tickets">View Feature</a>
+										</div>
+									</article>
+								</li>
+								
+								<!-- TOP SELLERS, FEATURE, 2020 -->
+								<li id="top-sellers-tool" tabindex="1" class="tile inactive" data-type='feature' data-year='2020'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/feature/top-sellers-thumbnail.png" alt="Top Sellers Tool" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">Top Sellers Tool</p>
+											<p class="thumbnail-type">Feature</p>
+											<p class="thumbnail-date">2020</p>
+										</div>
+									</div>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/feature/top-sellers.png" alt="Top Sellers Tool" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">Top Sellers Tool</h3>
+											<p class="project-date">2020</p>
+											<div class="project-desc">
+												<p>
+													One of the dilemmas for ticket retail sites is how to keep content up-to-date.  
+													Things like 'featured events' or 'popular performers' should be regularly updated based on whats on tour and what's selling well.  
+													The problem arises in the how - curation from a content team, which costs in man(or woman)-hours or auto-generated, which costs in pageload time. 
+												</p>
+												<p>
+													For the newest site I was building, TicketNetwork.com, the navigation dropdowns utilized top seller lists for each non-sport category (almost a dozen) 
+													and top-level category pages have 3-4 top seller lists for sub-categories.
+												</p>
+												<p>
+													Since that was both too much for a content team to reasonably update and would cost too much load time, I devised this tool as a compromise.
+												</p>
+												<p>
+													To go along with this, I created a document of where the lists were on the site and what category they currently were for, 
+													standardized the HTML structure between those two varieties (navigation dropdown, category page) so that the tool could generate the full HTML, 
+													and demarcated the replacement spots with comments.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="https://www.ticketnetwork.com/en/top-sellers-tool">View Feature</a>
+										</div>
+									</article>
+								</li>
+								
+								<!-- ENHANCED EVENT RESULTS, FEATURE, 2020 -->
+								<li id="results-with-filters" tabindex="1" class="tile inactive" data-type='feature' data-year='2020'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/feature/enhanced-event-results-thumbnail.png" alt="Enhanced Event Results" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">Enhanced Event Results</p>
+											<p class="thumbnail-type">Feature</p>
+											<p class="thumbnail-date">2020</p>
+										</div>
+									</div>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/feature/enhanced-event-results.png" alt="Enhanced Event Results" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">Enhanced Event Results</h3>
+											<p class="project-date">2020</p>
+											<div class="project-desc">
+												<p>
+													One of the requested features from the retail team for TicketNetwork.com was to have a dynamic page that displays 
+													results based on ID's rather than names to serve as a landing page for their email marketing.
+												</p>
+												<p>
+													Since the CMS had no such functionality, I needed to built it.  The page I created made use of our ticket inventory API which had just been updated to allow client-side access.  
+													It's able to generate results from ID's for performers, venues, cities, states, categories and any combination thereof.
+												</p>
+												<p>
+													The page has some notable features I built into it.  First, it allows the user to filter the results by date, performer, city, and venue.  
+													These filters are context sensitive so that a filter that would not make sense (like city for venue results) and filters that only have a single option are not shown.
+													Applying a filter creates a 'filter tag' so that the user can see what filters are active, and the filters that are shown are updated to reflect the new results.
+												</p>
+												<p>
+													In addition to simple things like updating the heading and subheading to match the results, there's some more robust situational content.  
+													If a performer ID is generated, a performer image will generate, if a venue, a venue image along with venue info and an embedded google map.
+												</p>
+												<p>
+													Lastly, if there are no results, a modal will appear suggesting related pages for the user to try instead
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="https://www.ticketnetwork.com/events/find-tickets?p=1145&v=26">View Feature</a>
+										</div>
+									</article>
+								</li>
+
+								<!-- HOME/AWAY, FEATURE, 2019 -->
+								<li id="home-away-filters" tabindex="1" class="tile inactive" data-type='feature' data-year='2019'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/feature/home-away-filters-thumbnail.png" alt="Home/Away Filters" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">Home/Away Filters</p>
+											<p class="thumbnail-type">Feature</p>
+											<p class="thumbnail-date">2019</p>
+										</div>
+									</div>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/feature/home-away-filters.png" alt="Home/Away Filters" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">Home/Away Filters</h3>
+											<p class="project-date">2019</p>
+											<div class="project-desc">
+												<p>
+													This was part of a project to improve the sites of clients who had strong domains (redsoxtickets.com) to capitalize on their organic traffic.
+												</p>
+												<p>
+													The ticket results we had to work with at the time allowed for very little customization, they were directly written to the page by doc.write as a table element.
+												</p>
+												<p>
+													To make the results more befitting a site for a specific team, I devised some JavaScript that would iterate through that table and tag each event as either home or away depending on what venue it was it.  
+													Then I put tabs at the top of the results table that show/hide events based on those tags.
+												</p>
+												<p>
+													Note: The SSL on this site has expired so you will receive a security warning.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="https://www.redsoxtickets.com/">View Feature</a>
+										</div>
+									</article>
+								</li>
+
+								<!-- RESULTS WITH FILTERS, FEATURE, 2018 -->
+								<li tabindex="1" class="tile inactive" data-type='feature' data-year='2018'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/feature/results-with-filters-thumbnail.png" alt="Event Results with Filters" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">Results with Filters</p>
+											<p class="thumbnail-type">Feature</p>
+											<p class="thumbnail-date">2018</p>
+										</div>
+									</div>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/feature/results-with-filters.png" alt="Event Results with Filters" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">Event Results with Filters</h3>
+											<p class="project-date">2018</p>
+											<div class="project-desc">
+												<p>
+													One of the common requests we received was for filters for our 'event results' plugin.  
+													The plugin is a simple JavaScript endpoint that outputs to the page using document.write on page load. Because of this, 
+													the only way to add filtering parameters to the plugin call was to re-load the page entirely.
+												</p>
+												<p>
+													As a workaround, I wrote some JavaScript that iterates through the results and adds classes to them based on what the site owner would like to filter by. 
+													During this iteration, each new instance of this parameter is stored in an array and any repeats are tallied. This is then appended to HTML on the page to create the actual filter interface.
+												</p>
+												<p>
+													The simple corresponding classes between the result and filter checkbox didn't work for dates, however. 
+													Instead I had the date converted to a number - yyyymmdd - and stored as a data attribute (since classes have to start with a letter). 
+													With the dates formatted as numbers, the filter can simply check whether the result"s data attribute is greater than or less than the requested dates.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="https://codepen.io/steven-willets/pen/XWdLbZp">View in CodePen</a>
+										</div>
+									</article>
+								</li>
+
+
+								<!-- Calendar Widget, FEATURE, 2017-->
+								<li id="calendar-widget" tabindex="1" class="tile inactive" data-type='feature' data-year='2017'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/feature/calendar-widget-thumbnail.png" alt="Calendar Widget" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">Calendar Widget</p>
+											<p class="thumbnail-type">Feature</p>
+											<p class="thumbnail-date">2017</p>
+										</div>
+									</div>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/feature/calendar-widget.png" alt="Calendar Widget" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">Calendar Widget</h3>
+											<p class="project-date">2017</p>
+											<div class="project-desc">
+												<p>
+													
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="https://codepen.io/steven-willets/pen/OJNYKZQ">View Builder</a>
+											<a class="tile-link btn" target="_blank" href="https://codepen.io/steven-willets/pen/NWNVQOL">View Widget</a>
+										</div>
+									</article>
+								</li> 
+
+								<!-- CARD RESULTS WITH IMAGES, FEATURE, 2017 -->
+								<li tabindex="1" class="tile inactive" data-type='feature' data-year='2017'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/feature/card-results-with-images-thumbnail.png" alt="Card Results with Images" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">Image Card Results</p>
+											<p class="thumbnail-type">Feature</p>
+											<p class="thumbnail-date">2017</p>
+										</div>
+									</div>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/feature/card-results-with-images.png" alt="Card Results with Images" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">Card Results with Images</h3>
+											<p class="project-date">2017</p>
+											<div class="project-desc">
+												<p>
+													One of the biggest challenges with ticketing sites is the desire to use images to advertise events without 
+													needing to constantly curate the events to keep them up-to-date.
+												</p>
+												<p>
+													This code takes advantage of NewYorkTheaterTickets being a Broadway specific site since there are a limited set 
+													of ongoing Broadway shows, and each show is specific to one theater.
+												</p>
+												<p>
+													The code takes the data from an 'Event Results' plugin specific for the upcoming week (pictured top left) and arranges it into Event-Venue cards 
+													with available showings in the next 7 days.  The image is pulled from a collection of Broadway show images kept on AWS S3.  The only time an update needs to 
+													be made is when a new Broadway show debuts and a image needs to be added for it.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="https://codepen.io/steven-willets/pen/oNxrXqE">View in CodePen</a>
+										</div>
+									</article>
+								</li>
+							<!-- Template Revamp, FEATURE, 2017-->
+								<li id="template-revamp" tabindex="1" class="tile inactive" data-type='feature' data-year='2017'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/feature/template-revamp-thumbnail.png" alt="Template Revamp" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">Template Revamp</p>
+											<p class="thumbnail-type">Feature</p>
+											<p class="thumbnail-date">2017</p>
+										</div>
+									</div>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/feature/template-revamp.png" alt="Template Revamp" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">Template Revamp</h3>
+											<p class="project-date">2017</p>
+											<div class="project-desc">
+												<p>
+													Our company utilizes a licensed third-party CMS to provide pre-built template sites for ticket brokers and marketers. 
+													Recently our CEO reviewed the <a target="_blank" href="http://default.showsearch.com">default appearance</a> and 
+													was disappointed that the sites looked dated and that the template options didn't provide meaningful enough differentiation.
+												</p>
+												<p>
+													I was asked to create a new template that addressed these issues which would then be passed on to the 
+													CMS developer to implement as the new default.
+												</p>
+												<p>
+													I built this site on top of the existing template and implemented a quick and dirty configuration menu on it 
+													to demonstrate what options we wanted added to the CMS and how they would interact with the template's layout.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="http://revamp.showsearch.com">View Feature</a>
+										</div>
+									</article>
+								</li> 
+
+								<!-- FLIP CARDS, FEATURE, 2017-->
+								<li id="flip-cards" tabindex="1" class="tile inactive" data-type='feature' data-year='2017'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/feature/flip-cards-thumbnail.png" alt="Flip Cards" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">Flip Cards</p>
+											<p class="thumbnail-type">Feature</p>
+											<p class="thumbnail-date">2017</p>
+										</div>
+									</div>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/feature/flip-cards.png" alt="Flip Cards" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">Flip Cards</h3>
+											<p class="project-date">2017</p>
+											<div class="project-desc">
+												<p>
+													Rather than represent the home page in the images, I'm specifically showing and linking to the Octane page to 
+													demonstrate the flipping card mechanic I implemented on that page.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="https://octane.rad.tickets">View Feature</a>
+										</div>
+									</article>
+								</li> 
+
+								<!-- CALENDAR RESULTS, FEATURE, 2017--> 
+								<li tabindex="1" class="tile inactive" data-type='feature' data-year='2017'>
+									<div class='tile-thumbnail'>
+										<img class="thumbnail-image" src="images/feature/calendar-results-thumbnail.png" alt="Event Results Mapped to Calendar" />
+										<div class="thumbnail-details">
+											<p class="thumbnail-title">Calendar Results</p>
+											<p class="thumbnail-type">Feature</p>
+											<p class="thumbnail-date">2017</p>
+										</div>
+									</div>
+									<article class="tile-content">
+										<div class="project-image project-content">
+											<img src="images/feature/calendar-results.png" alt="Event Results Mapped to Calendar" />
+										</div>
+										<div class="project-info project-content">
+											<h3 class="project-title">Event Results Mapped to Calendar</h3>
+											<p class="project-date">2017</p>
+											<div class="project-desc">
+												<p>
+													Made for the NewYorkTheaterTickets site, this code takes the data from an 'event results' plugin (pictured top left) and maps it to a jQuery UI calendar.
+												</p>
+											</div>
+											<a class="tile-link btn" target="_blank" href="https://codepen.io/steven-willets/pen/WNwqvYb">View in CodePen</a>
+										</div>
+									</article>
+								</li>   
+							</ul>
+						</div>
 					</section>
 
                 </main>
@@ -1066,29 +1090,6 @@
 		</div>
 		<footer class="section-wrapper">
             <div class="section-container">
-				<ul class='contact-info content-section h-card'>
-					<li class="contact-item">
-						<span class="p-adr"> 
-							<i class="fas fa-map-marker-alt"></i>
-							<span class="p-street-address">289 Parmelee Hill Rd</span>
-							<span class="p-locality">Durham</span>
-							<span class="p-region">CT</span> 
-							<span class="p-postal-code">06422</span>
-						</span>
-					</li>
-					<li class="contact-item">
-						<a class="contact-link u-email" href="mailto:stevenawillets@gmail.com">
-							<i class="fas fa-envelope"></i>
-							<span>stevenawillets@gmail.com</span>
-						</a>
-					</li>
-					<li class="contact-item">
-						<a class="contact-link p-tel" href="tel:+12038236645">
-							<i class="fas fa-phone"></i>
-							<span>(203) 823-6645</span>
-						</a>
-					</li>
-				</ul>
 			</div>
         </footer>
 		<div id="overlay"></div>
