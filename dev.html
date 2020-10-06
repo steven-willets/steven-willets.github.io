@@ -96,14 +96,14 @@
 					<h1 class="main-heading">Digital Portfolio</h1>
 					<section id="tile-grid-container">
 						<div id='tile-grid-header'>
-							<a href='#' class="grid-tab active-tab"><h2 class="content-heading">Websites</h2></a>
+							<a data-target="website-grid" href='#' class="grid-tab active-tab"><h2 class="content-heading">Websites</h2></a>
 							<span class='grid-tab-separator'>|</span>
-							<a href='#' class="grid-tab"><h2 class="content-heading">Features</h2></a>
+							<a data-target="feature-grid" href='#' class="grid-tab"><h2 class="content-heading">Features</h2></a>
 							<div id='sliding-box'></div>
 						</div>
 						
 						<div id='tile-grid'>
-							<ul class="tile-container">
+							<ul id='website-grid' class="tile-container active-grid">
 								<!-- 2020 -->
 
 								<!-- TICKETNETWORK, SITE, 2020 -->
@@ -687,7 +687,7 @@
 								</li>
 							</ul>
 
-							<ul class="tile-container">
+							<ul id="feature-grid" class="tile-container">
 
 								<!-- API EVENT RESULTS, FEATURE, 2020-->
 								<li id="api-event-results" tabindex="1" class="tile inactive" data-type='feature' data-year='2020'>
@@ -1136,14 +1136,18 @@
 	</div>
 	<script>
 		$('.grid-tab').click(function(e){
-			console.log('clicked')
 			e.preventDefault();
+			
 			$('.grid-tab').removeClass('active-tab');
+			$('.tile-grid').removeClass('active-grid')
+
 			$(e.target).addClass('active-tab');
 			
 			var $activeTab = $('.active-tab');
-			var $slideBox = $('#sliding-box')	
-			var leftOffset = $activeTab.offset().left - $('.grid-tab:first-child').offset().left
+			var $slideBox = $('#sliding-box');	
+			var leftOffset = $activeTab.offset().left - $('.grid-tab:first-child').offset().left;
+			
+			$($activeTab.attr('data-target')).addClass('active-grid')
 			$slideBox.css('margin-left', leftOffset)
 			$slideBox.width($activeTab.outerWidth(true))
 		})
