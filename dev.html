@@ -1139,7 +1139,10 @@
 			$('.grid-tab', e).addClass('active-tab');
 			
 			var $activeTab = $('.active-tab');
-			$('#sliding-box').css('margin-left',$activeTab.offset().left - $('.grid-tab:first-child').offset().left).width($activeTab.outerWidth(true))
+			var $slideBox = $('#sliding-box')	
+			var leftOffset = $activeTab.offset().left - $('.grid-tab:first-child').offset().left
+			$slideBox.css('margin-left', leftOffset)
+			$slideBox.width($activeTab.outerWidth(true))
 		})
 	</script>
     <script src="scripts/portfolio-main.js"></script>
