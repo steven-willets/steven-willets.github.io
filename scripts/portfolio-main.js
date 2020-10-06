@@ -1,7 +1,7 @@
 // Tile Grid
 
 function gridFlexHeight(){
-    $('#tile-grid').height($('.active-grid').outerHeight(true))
+    $('#tile-grid').css('min-height', $('.active-grid').outerHeight(true))
 };
 
 $('.grid-tab').click(function(e){
