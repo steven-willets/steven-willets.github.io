@@ -14,52 +14,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
 
-	<style>
-		#tile-grid {
-			position:relative;
-		}
-		.tile-container {
-			position:absolute;
-			opacity:0;
-			transition:all .3s;
-			left: 0;
-			right: 0;
-			top: 0;
-			z-index:1;
-		}
-		.tile-container.active-grid {
-			opacity:1;
-			z-index:25;
-		}
-		#tile-grid-header {
-			display:inline-flex;
-			position:relative;
-			align-items: center;
-			margin-bottom:20px;
-		}
-		.grid-tab {
-			display:block;
-			margin:0 20px;
-			color: inherit;
-		}
-		.grid-tab * {
-			pointer-events: none;
-		}
-		.grid-tab-separator {
-			margin: 0 20px;
-		}
-		#sliding-box {
-			border: 1px solid rgb(62, 62, 62);
-			opacity: .7;
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 140px;
-			bottom: 0;
-			transition: all .3s;
-		}
-	</style>
-
 </head>
 
 <body>
@@ -1147,33 +1101,7 @@
         	<a id="next-slide" class="move-slide" href="next"><i class="fa fa-angle-right"></i></a>
         </div>
 	</div>
-	<script>
-		function gridFlexHeight(){
-			$('#tile-grid').height($('.active-grid').outerHeight(true))
-		};
 
-		$('.grid-tab').click(function(e){
-			e.preventDefault();
-			
-			$('.grid-tab').removeClass('active-tab');
-			$('.tile-container').removeClass('active-grid')
-			
-			$(e.target).addClass('active-tab');
-			
-			var $activeTab = $('.active-tab');
-			var $slideBox = $('#sliding-box');	
-			var leftOffset = $activeTab.offset().left - $('.grid-tab:first-child').offset().left;
-
-			gridFlexHeight()
-			$('#' + $activeTab.attr('data-target')).addClass('active-grid')
-			$slideBox.css('margin-left', leftOffset)
-			$slideBox.width($activeTab.outerWidth(true))
-		});
-
-		$(document).ready(function(){
-			gridFlexHeight()
-		});
-	</script>
     <script src="scripts/portfolio-main.js"></script>
 </body>
 </html>

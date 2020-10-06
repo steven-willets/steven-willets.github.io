@@ -1,3 +1,35 @@
+// Tile Grid
+
+function gridFlexHeight(){
+    $('#tile-grid').height($('.active-grid').outerHeight(true))
+};
+
+$('.grid-tab').click(function(e){
+    e.preventDefault();
+    
+    $('.grid-tab').removeClass('active-tab');
+    $('.tile-container').removeClass('active-grid')
+    
+    $(e.target).addClass('active-tab');
+    
+    var $activeTab = $('.active-tab');
+    var $slideBox = $('#sliding-box');	
+    var leftOffset = $activeTab.offset().left - $('.grid-tab:first-child').offset().left;
+
+    gridFlexHeight()
+    $('#' + $activeTab.attr('data-target')).addClass('active-grid')
+    $slideBox.css('margin-left', leftOffset)
+    $slideBox.width($activeTab.outerWidth(true))
+});
+
+$(document).ready(function(){
+    gridFlexHeight()
+});
+
+
+
+// Lightbox
+
 function checkArrows(target) {
 	if (target.next().length == 0) {
 		$('#next-slide').hide()
