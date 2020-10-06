@@ -44,10 +44,11 @@
 	</style>
 	<script>
 		$('.grid-tab').click(function(e){
+			e.preventDefault();
 			$('.grid-tab').removeClass('active-tab');
-			$(e.target).addClass('active-tab')
+			$(e.target).addClass('active-tab');
 			
-			var $activeTab = $('.active-tab')
+			var $activeTab = $('.active-tab');
 			$('#sliding-box').css('margin-left',$activeTab.offset().left - $('.grid-tab:first-child').offset().left).width($activeTab.outerWidth(true))
 		})
 	</script>
