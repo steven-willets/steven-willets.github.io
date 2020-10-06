@@ -18,6 +18,14 @@
 		#tile-grid {
 			position:relative;
 		}
+		.tile-container {
+			position:absolute;
+			opacity:0;
+			transition:all .3s;
+		}
+		.tile-container.active-grid {
+			opacity:1;
+		}
 		#tile-grid-header {
 			display:inline-flex;
 			position:relative;
@@ -1139,14 +1147,14 @@
 			e.preventDefault();
 			
 			$('.grid-tab').removeClass('active-tab');
-			$('.tile-grid').removeClass('active-grid')
+			$('.tile-container').removeClass('active-grid')
 
 			$(e.target).addClass('active-tab');
 			
 			var $activeTab = $('.active-tab');
 			var $slideBox = $('#sliding-box');	
 			var leftOffset = $activeTab.offset().left - $('.grid-tab:first-child').offset().left;
-			
+
 			$($activeTab.attr('data-target')).addClass('active-grid')
 			$slideBox.css('margin-left', leftOffset)
 			$slideBox.width($activeTab.outerWidth(true))
