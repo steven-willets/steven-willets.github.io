@@ -20,22 +20,36 @@
 		}
 		#tile-grid-header {
 			display:inline-flex;
-			margin: 0 -20px;
 			position:relative;
+			align-items: center;
 		}
 		.grid-tab {
 			display:block;
 			margin:0 20px;
+			color: inherit;
 		}
-		/*.grid-tab-separator {
-			
-		}*/
+		.grid-tab-separator {
+			margin: 0 20px;
+		}
 		#sliding-box {
 			border: 1px solid rgb(62, 62, 62);
 			opacity: .7;
-			position:absolute;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 140px;
+			bottom: 0;
 		}
 	</style>
+	<script>
+		$('.grid-tab:not(.active-tab)').click(function(e){
+			$('.grid-tab').removeClass('active-tab');
+			$(e.target).addClass('active-tab')
+			
+			var $activeTab = $('.active-tab')
+			$('#sliding-box').css('margin-left',$activeTab.offset().left - $('.grid-tab:first-child').offset().left).width($activeTab.outerWidth(true))
+		})
+	</script>
 </head>
 
 <body>
@@ -85,7 +99,7 @@
 					<h1 class="main-heading">Digital Portfolio</h1>
 					<section id="tile-grid-container">
 						<div id='tile-grid-header'>
-							<a href='#' class="grid-tab"><h2 class="content-heading">Websites</h2></a>
+							<a href='#' class="grid-tab active-tab"><h2 class="content-heading">Websites</h2></a>
 							<span class='grid-tab-separator'>|</span>
 							<a href='#' class="grid-tab"><h2 class="content-heading">Features</h2></a>
 							<div id='sliding-box'></div>
