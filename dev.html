@@ -22,6 +22,9 @@
 			position:absolute;
 			opacity:0;
 			transition:all .3s;
+			left: 0;
+			right: 0;
+			top: 0;
 		}
 		.tile-container.active-grid {
 			opacity:1;
@@ -1155,7 +1158,7 @@
 			var $slideBox = $('#sliding-box');	
 			var leftOffset = $activeTab.offset().left - $('.grid-tab:first-child').offset().left;
 
-			$($activeTab.attr('data-target')).addClass('active-grid')
+			$('#' + $activeTab.attr('data-target')).addClass('active-grid')
 			$slideBox.css('margin-left', leftOffset)
 			$slideBox.width($activeTab.outerWidth(true))
 		})
