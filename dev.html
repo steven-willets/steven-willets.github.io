@@ -22,6 +22,7 @@
 			display:inline-flex;
 			position:relative;
 			align-items: center;
+			margin-bottom:20px;
 		}
 		.grid-tab {
 			display:block;
@@ -44,6 +45,7 @@
 	</style>
 	<script>
 		$('.grid-tab').click(function(e){
+			console.log('clicked')
 			e.preventDefault();
 			$('.grid-tab').removeClass('active-tab');
 			$(e.target).addClass('active-tab');
