@@ -261,8 +261,8 @@ header {
     font-weight:bold;
     font-size: 20px;
 }
-.thumbnail-title::after {
-    content:","
+.thumbnail-name::after {
+    content:", "
 }
 .thumbnail-type {
     font-style: italic;
