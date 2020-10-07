@@ -368,9 +368,9 @@ header {
     right:0;
     top:0;
     bottom:0;
-    z-index:0;
+    z-index:-1;
     pointer-events:none;
-    background-color:white;
+    /*background-color:white;*/
 }
 .move-slide,
 #close-slide {
