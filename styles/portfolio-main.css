@@ -494,7 +494,6 @@ footer {
     }
     .content-heading {
         font-size: 18px;
-        margin: 6px 0;
     }
 }
 @media (max-width:632px) {
@@ -526,15 +525,6 @@ footer {
     .content-heading {
         font-size: 16px;
     }
-    /*.tile-container {
-        margin-left: -8px;
-        margin-right: -8px;
-		flex-direction: column;
-    }
-	.tile {
-	    padding: 8px;
-		flex: 0 0 auto;
-	}*/
 	.project-info {
         padding: 10px;
     }
