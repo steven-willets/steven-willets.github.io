@@ -261,15 +261,17 @@ header {
     font-weight:bold;
     font-size: 20px;
 }
+.thumbnail-title::after {
+    content:","
+}
 .thumbnail-type {
     font-style: italic;
 }
 .thumbnail-date {
     font-weight:300;
+    font-size:18px;
 }
-.thumbnail-date::before {
-    content:", "
-}
+
 .tile-thumbnail:hover .thumbnail-details{
     transform:translateY(0);
 }
