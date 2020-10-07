@@ -157,7 +157,7 @@ header {
 }
 .tile-container.active-grid {
     opacity:1;
-    position:relative;
+    position:static;
     pointer-events:auto;
 }
 #tile-grid-header {
@@ -353,7 +353,7 @@ header {
     right: 0;
     bottom: 0;
     background: rgba(0,0,0,.8);
-    z-index: 20;
+    z-index: 0;
 }
 .modal-open #overlay {
     pointer-events: auto;
