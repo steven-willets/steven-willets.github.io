@@ -265,8 +265,10 @@ header {
     font-style: italic;
 }
 .thumbnail-date {
-    font-size:12px;
     font-weight:300;
+}
+.thumbnail-date::before {
+    content:", "
 }
 .tile-thumbnail:hover .thumbnail-details{
     transform:translateY(0);
