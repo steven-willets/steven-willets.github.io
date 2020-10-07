@@ -4,6 +4,16 @@ function gridFlexHeight(){
     $('#tile-grid').css('min-height', $('.active-grid').outerHeight(true))
 };
 
+function slidingBox(){
+    var $activeTab = $('.active-tab');
+    var $slideBox = $('#sliding-box');	
+    var leftOffset = $activeTab.offset().left - $('.grid-tab:first-child').offset().left;
+
+    gridFlexHeight()
+    $slideBox.css('margin-left', leftOffset)
+    $slideBox.width($activeTab.outerWidth(true))
+}
+
 $('.grid-tab').click(function(e){
     e.preventDefault();
     
@@ -11,25 +21,20 @@ $('.grid-tab').click(function(e){
     $('.tile-container').removeClass('active-grid')
     
     $(e.target).addClass('active-tab');
-    
-    var $activeTab = $('.active-tab');
-    var $slideBox = $('#sliding-box');	
-    var leftOffset = $activeTab.offset().left - $('.grid-tab:first-child').offset().left;
+    $('#' + $('.active-tab').attr('data-target')).addClass('active-grid')
 
-
-    $('#' + $activeTab.attr('data-target')).addClass('active-grid')
-    gridFlexHeight()
-    $slideBox.css('margin-left', leftOffset)
-    $slideBox.width($activeTab.outerWidth(true))
+    slidingBox()
 });
 
 $(document).ready(function(){
-    gridFlexHeight();
+    slidingBox();
 });
 $(window).load(function(){
-    gridFlexHeight();
+    slidingBox();
 });
-
+$(window).resize(function(){
+    slidingBox();
+});
 
 // Lightbox
 
