@@ -261,6 +261,9 @@ header {
     font-weight:bold;
     font-size: 20px;
 }
+.thumbnail-type {
+    font-style: italic;
+}
 .thumbnail-date {
     font-size:12px;
     font-weight:300;
