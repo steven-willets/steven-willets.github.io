@@ -138,6 +138,7 @@ header {
 
 #tile-grid {
     position:relative;
+    overflow: hidden;
 }
 .tile-container {
     display: grid;

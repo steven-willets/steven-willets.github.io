@@ -16,8 +16,9 @@ $('.grid-tab').click(function(e){
     var $slideBox = $('#sliding-box');	
     var leftOffset = $activeTab.offset().left - $('.grid-tab:first-child').offset().left;
 
-    gridFlexHeight()
+
     $('#' + $activeTab.attr('data-target')).addClass('active-grid')
+    gridFlexHeight()
     $slideBox.css('margin-left', leftOffset)
     $slideBox.width($activeTab.outerWidth(true))
 });
