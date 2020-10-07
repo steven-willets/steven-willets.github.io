@@ -24,9 +24,11 @@ $('.grid-tab').click(function(e){
 });
 
 $(document).ready(function(){
-    gridFlexHeight()
+    gridFlexHeight();
 });
-
+$(window).load(function(){
+    gridFlexHeight();
+});
 
 
 // Lightbox
