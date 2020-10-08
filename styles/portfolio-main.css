@@ -262,7 +262,8 @@ header {
     font-size: 20px;
 }
 .thumbnail-name::after {
-    content:", "
+    content:", ";
+    font-weight:300;
 }
 .thumbnail-type {
     font-style: italic;
@@ -270,7 +271,7 @@ header {
 }
 .thumbnail-date {
     font-weight:300;
-    font-size:18px;
+    font-size:16px;
 }
 
 .tile-thumbnail:hover .thumbnail-details{
