@@ -276,6 +276,7 @@ header {
     font-weight: 900;
     opacity: 0;
     transition: opacity .3s;
+    filter: drop-shadow(0 0 2px #777);
 }
 .tile:hover .tile-thumbnail::before {
     opacity: 1;
