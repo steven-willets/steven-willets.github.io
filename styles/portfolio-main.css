@@ -259,7 +259,7 @@ header {
 .thumbnail-image:active{
 	opacity:.45;
 }
-.tile-thumbnail:hover::before {
+.tile:hover .tile-thumbnail::before {
     content: "\f002";
     font-family: "Font Awesome";
     position: absolute;
@@ -271,6 +271,9 @@ header {
     font-size: 56px;
     justify-content: center;
     align-items: center;
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
 }
 .thumbnail-details {
     display:none;
