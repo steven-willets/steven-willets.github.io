@@ -279,7 +279,7 @@ header {
     filter: drop-shadow(0 0 2px #777);
 }
 .tile:hover .tile-thumbnail::before {
-    opacity: 1;
+    opacity: .95;
 }
 .thumbnail-details {
     display:none;
