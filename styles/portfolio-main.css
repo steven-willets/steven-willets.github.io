@@ -260,7 +260,7 @@ header {
 	opacity:.45;
 }
 .tile-thumbnail::before {
-    content: "\f002";
+    content: "\f00e";
     font-family: "Font Awesome";
     position: absolute;
     color: white;
@@ -268,7 +268,7 @@ header {
     display: flex;
     height: 100%;
     width: 100%;
-    font-size: 56px;
+    font-size: 72px;
     justify-content: center;
     align-items: center;
     font-family: "Font Awesome 5 Free";
