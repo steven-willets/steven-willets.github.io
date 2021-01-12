@@ -119,6 +119,10 @@ header {
     text-align: center;
 }
 
+
+
+
+/* Bio */
 .card-info > * {
     padding: 10px 0;
 }
@@ -131,12 +135,17 @@ header {
     font-size: 26px;
     opacity: .7;
 }
-
-
-/* Bio */
-
 .h-card {
-    
+    position: relative;
+}
+.card-photo {
+    position: absolute;
+    border-radius: 100px;
+    overflow: hidden;
+    line-height: 0;
+}
+.u-photo {
+    line-height: 14px;
 }
 
 /* Tiles */
