@@ -259,7 +259,21 @@ header {
 .thumbnail-image:active{
 	opacity:.45;
 }
+.tile-thumbnail:hover::before {
+    content: "\f002";
+    font-family: "Font Awesome";
+    position: absolute;
+    color: white;
+    z-index: 1;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    font-size: 56px;
+    justify-content: center;
+    align-items: center;
+}
 .thumbnail-details {
+    display:none;
     position:absolute;
     transition: transform .3s;
     width:100%;
